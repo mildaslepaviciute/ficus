@@ -130,6 +130,62 @@ $("#form").click(function(){
     }
 });
 
+$("#form2").click(function(){
+    if ($(this).hasClass("unselected-feature")) {
+        $(this).removeClass("bg-light");
+        $(this).addClass("bg-primary");
+        $(this).removeClass("unselected-feature");
+        $(this).addClass("selected-feature");
+    } else {
+        $(this).removeClass("bg-primary");
+        $(this).addClass("bg-light");
+        $(this).addClass("unselected-feature")
+        $(this).removeClass("selected-feature")
+    }
+});
+
+$("#something1").click(function(){
+    if ($(this).hasClass("unselected-feature")) {
+        $(this).removeClass("bg-light");
+        $(this).addClass("bg-primary");
+        $(this).removeClass("unselected-feature");
+        $(this).addClass("selected-feature");
+    } else {
+        $(this).removeClass("bg-primary");
+        $(this).addClass("bg-light");
+        $(this).addClass("unselected-feature")
+        $(this).removeClass("selected-feature")
+    }
+});
+
+$("#something2").click(function(){
+    if ($(this).hasClass("unselected-feature")) {
+        $(this).removeClass("bg-light");
+        $(this).addClass("bg-primary");
+        $(this).removeClass("unselected-feature");
+        $(this).addClass("selected-feature");
+    } else {
+        $(this).removeClass("bg-primary");
+        $(this).addClass("bg-light");
+        $(this).addClass("unselected-feature")
+        $(this).removeClass("selected-feature")
+    }
+});
+
+$("#something3").click(function(){
+    if ($(this).hasClass("unselected-feature")) {
+        $(this).removeClass("bg-light");
+        $(this).addClass("bg-primary");
+        $(this).removeClass("unselected-feature");
+        $(this).addClass("selected-feature");
+    } else {
+        $(this).removeClass("bg-primary");
+        $(this).addClass("bg-light");
+        $(this).addClass("unselected-feature")
+        $(this).removeClass("selected-feature")
+    }
+});
+
 
 
 $(".next-step").click(function(){
@@ -175,14 +231,20 @@ $('.SeeMore2').click(function(){
 
 
 
-function hoverAnalytics(element) {
-    element.setAttribute('src', '../img/icon-googleanalytics-c.png');
-  }
-  
-function unhoverAnalytics(element) {
-    element.setAttribute('src', '../img/icon-googleanalytics.png');
-  }
+$('[data-toggle="popover"]').popover();
 
+
+$('[tabindex]').focus(function()
+{
+    $(this).css('outline', 'none');
+});
+$('[tabindex]').keyup(function (event)
+{
+    if(event.keyCode == 9)
+    {
+        $(this).css('outline', '');
+    }
+});
 
 
   

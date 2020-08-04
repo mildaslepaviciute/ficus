@@ -132,8 +132,14 @@ SECTION3
 .modal-title-top {
   margin-top: -200px; }
 
-.web-feature img {
-  cursor: pointer; }
+.web-feature {
+  cursor: pointer;
+  background: #f8f9fa;
+  transform: scale(1); }
+
+.web-feature:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s; }
 
 #spinner-front, #spinner-back {
   position: fixed;

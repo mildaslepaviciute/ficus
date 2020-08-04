@@ -222,11 +222,16 @@ SECTION3
   margin-top: -200px;
 }
 
-.web-feature img {
+.web-feature {
   cursor: pointer;
+  background: $grey;
+  transform: scale(1);
 }
 
-
+.web-feature:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
 
 #spinner-front, #spinner-back {
   position: fixed;
@@ -850,3 +855,4 @@ form p {
 .form-control:focus {
   border-color: $orange;
   box-shadow: none; }
+
