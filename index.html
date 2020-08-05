@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
         <script src="js/spinner.js"></script>
+        <script src="js/lang.js"></script>
         <title>Document</title>
 
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -74,6 +75,7 @@
                 <div class="arrow-move"></div>
             </div>
         </header>
+        
 
         <!-- <header>
             <div class="row">
@@ -151,9 +153,18 @@
             </div>
         </section> -->
 
+        <div class="d-flex justify-content-center align-items-center">
+            <select id="country_select" onchange="loadsLanguage(this.value);"></select>
+        </div>
+
         <section id="apie" class="mt-5">
             <div class="container">
                 <h2 class="text-center">ką mes veikiame?</h2>
+                <div style="margin: 15px;">
+                    <h2 class="text-center">
+                        <span class="lang-heading1"></span>
+                    </h2>
+                </div>
                 <div class="row justify-content-center mt-5">
                     <div class="col-md-4 d-flex flex-column justify-content-center align-items-center border-right js--wp-3">
                         <img src="img/talk-icon-c.jpg" alt="" height="100">
@@ -451,8 +462,8 @@
                         <h6 class="text-center mt-5">Puslapio funkcijos</h6>
                         <div class="row mt-4">
                             <div class="col-2 mx-auto">
-                                <img src="img/icon-googleanalytics-c.png" alt="" id="analytics" class="web-feature img-fluid p-2 rounded-circle unselected-feature" onmouseover="hoverAnalytics(this);" onmouseout="unhoverAnalytics(this);">
-                                <p class="text-center mt-2">„Google Analytics“<span class="d-flex align-items-center justify-content-center"><ion-icon name="information-circle-outline" tabindex="0" data-toggle="popover" data-placement="top" data-content="Prisijungus prie sistemos bus galima sekti svetainės lankytojų srautą, populiariausią lankymo laiką, laiką, praleistą svetainėje ir kt. " data-trigger="focus"></ion-icon></span></p>
+                                <img src="img/icon-googleanalytics-c.png" alt="" id="analytics" class="web-feature img-fluid p-2 rounded-circle unselected-feature" onmouseover="hoverAnalytics(this);" onmouseout="unhoverAnalytics(this);" class="red-tooltip" data-toggle="tooltip" data-placement="top" title="Prisijungus prie sistemos bus galima sekti svetainės lankytojų srautą, populiariausią lankymo laiką, laiką, praleistą svetainėje ir kt.">
+                                <p class="text-center mt-2">„Google Analytics“</p>
                             </div>
                             <div class="col-2 mx-auto">
                                 <img src="img/icon-responsive-c.png" alt="" id="responsive" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" onmouseover="hoverResponsive(this);" onmouseout="unhoverResponsive(this);">
@@ -463,8 +474,8 @@
                                 <p class="text-center mt-2">Vidinis SEO<span class="d-flex align-items-center justify-content-center"><ion-icon name="information-circle-outline" tabindex="0" data-toggle="popover" data-placement="top" data-content="Svetainės turinys bei struktūra bus paruošti pagal Google standartus tam, kad svetainė būtų rodoma aukštesnėse pozicijose Google paieškoje, dėl ko padidėtų svetainės lankomumas" data-trigger="focus"></ion-icon></span></p>
                             </div>
                             <div class="col-2">
-                                <img src="img/icon-responsive-c.png" alt="" id="something1" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature">
-                                <p class="text-center mt-2">Kažkas dar<span class="d-flex align-items-center justify-content-center"><ion-icon name="information-circle-outline" tabindex="0" data-toggle="popover" data-placement="top" data-content="Aprašymas" data-trigger="focus"></ion-icon></span></p>
+                                <img src="img/icon-language-c.png" alt="" id="something1" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature">
+                                <p class="text-center mt-2">Kitos kalbos<span class="d-flex align-items-center justify-content-center"><ion-icon name="information-circle-outline" tabindex="0" data-toggle="popover" data-placement="top" data-content="Lankytojas galės pasirinkti norimą svetainės kalbą. Vertimų paslaugos į šį punktą nėra įtraukiamos" data-trigger="focus"></ion-icon></span></p>
                             </div>
                             <div class="col-2">
                                 <img src="img/icon-video-c.png" alt="" id="video" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature">

@@ -232,6 +232,8 @@ $('.SeeMore2').click(function(){
 
 
 $('[data-toggle="popover"]').popover();
+$('[data-toggle="tooltip"]').tooltip();
+
 
 
 $('[tabindex]').focus(function()
@@ -286,3 +288,10 @@ document.getElementsByTagName("ul")[0].addEventListener("click", function(evt) {
   
   sidebar.addEventListener("transitionend", handleTransitionEnd);
 });
+
+
+
+
+
+
+
