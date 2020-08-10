@@ -1,6 +1,6 @@
 var LanguageList = {
-    "LT" : "Lietuvių",
-    "EN" : "English"
+    "LT" : "LT /",
+    "EN" : "EN"
   };
   
   //languages Objects
@@ -8,13 +8,13 @@ var LanguageList = {
   var WORDS_LT = {
     text1: "tekstas Vienas",
     text2: "tekstas Du",
-    heading1: "ką mes veikiame?"
+    heading1: "Ką mes veikiame?"
   };
 
   var WORDS_EN = {
     text1: "text One",
     text2: "text Two",
-    heading1: "what we do?"
+    heading1: "What we do?"
   };
   
   
@@ -30,7 +30,7 @@ var LanguageList = {
         text(value));
       });
       
-    loadsLanguage("EN");
+    loadsLanguage("LT");
   }
   
   function loadsLanguage(lang){
