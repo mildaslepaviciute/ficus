@@ -639,3 +639,16 @@ strong {
 
 .ion-2x {
   font-size: 2em; }
+
+.border-responsive {
+  border-width: 0px !important; }
+
+.display-1 {
+  font-size: 4.5rem; }
+
+@media (min-width: 768px) {
+  .border-responsive {
+    border-width: 1px !important; }
+
+  .display-1 {
+    font-size: 6rem; } }
