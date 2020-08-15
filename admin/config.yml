@@ -3,14 +3,35 @@ backend:
 
 media_folder: "source/images/uploads"
 public_folder: "/images/uploads"
+locale: 'lt'
 
 collections:
   - label: "Sekcijos"
     name: "pages"
     files:
-      - label: "Apie mus"
+      # - label: "Apie mus"
+      #   name: "about"
+      #   file: "content/cms.json"
+      #   - label: "LT"
+      #     name: "about-lt"
+      #     fields:
+      #     - {label: Antraštė, name: about-us-header:lt, widget: string}
+      #     - {label: Tekstas, name: about-us-text:lt, widget: string}
+      #   - label: "EN"
+      #     name: "about-en"
+      #     fields:
+      #     - {label: Antraštė, name: about-us-header:en, widget: string}
+      #     - {label: Tekstas, name: about-us-text:en, widget: string}
+      - label: "About Page"
         name: "about"
-        file: "content/cms.json"
+        file: "site/content/about.yml"
         fields:
-          - {label: Antraštė, name: about-us-header, widget: string}
-          - {label: Tekstas, name: about-us-text, widget: string}
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Position, name: position, widget: string}
+              - {label: Photo, name: photo, widget: image}
