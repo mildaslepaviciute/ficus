@@ -1,38 +1,16 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
-
 
 media_folder: "source/images/uploads"
 public_folder: "/images/uploads"
 
-
 collections:
-  - label: "Pages"
+  - label: "Sekcijos"
     name: "pages"
     files:
-      - label: "About Page"
+      - label: "Apie mus"
         name: "about"
-        file: "site/content/about.json"
+        file: "content/cms.json"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
-      - label: "Locations Page"
-        name: "locations"
-        file: "site/content/locations.json"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Locations
-            name: locations
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: string}
+          - {label: Antraštė, name: about-us-header, widget: string}
+          - {label: Tekstas, name: about-us-text, widget: string}
