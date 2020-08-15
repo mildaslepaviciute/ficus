@@ -17,13 +17,13 @@ collections:
             name: "about-us-header"
             widget: "object"
             fields: 
-              - {label: "LT", name: "about-us-header:lt", widget: "string"}
-              - {label: "EN", name: "about-us-header:en", widget: "string"}
-              - {label: "RU", name: "about-us-header:ru", widget: "string"}
+              - {label: "LT", name: "lt", widget: "string"}
+              - {label: "EN", name: "en", widget: "string"}
+              - {label: "RU", name: "ru", widget: "string"}
           - label: "Tekstas"
             name: "about-us-text"
             widget: "object"
             fields: 
-              - {label: "LT", name: "about-us-text:lt", widget: "string"}
-              - {label: "EN", name: "about-us-text:en", widget: "string"}
-              - {label: "RU", name: "about-us-text:ru", widget: "string"}
+              - {label: "LT", name: "lt", widget: "string"}
+              - {label: "EN", name: "en", widget: "string"}
+              - {label: "RU", name: "ru", widget: "string"}
