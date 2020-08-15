@@ -12,6 +12,7 @@ collections:
       - label: "Apie mus"
         name: "about"
         file: "content/cms.json"
+        fields:
           - label: "Antraštė"
             name: "about-us-header"
             widget: "object"
