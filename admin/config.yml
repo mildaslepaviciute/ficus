@@ -9,29 +9,20 @@ collections:
   - label: "Sekcijos"
     name: "pages"
     files:
-      # - label: "Apie mus"
-      #   name: "about"
-      #   file: "content/cms.json"
-      #   - label: "LT"
-      #     name: "about-lt"
-      #     fields:
-      #     - {label: Antraštė, name: about-us-header:lt, widget: string}
-      #     - {label: Tekstas, name: about-us-text:lt, widget: string}
-      #   - label: "EN"
-      #     name: "about-en"
-      #     fields:
-      #     - {label: Antraštė, name: about-us-header:en, widget: string}
-      #     - {label: Tekstas, name: about-us-text:en, widget: string}
-      - label: "About Page"
+      - label: "Apie mus"
         name: "about"
-        file: "site/content/about.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
+        file: "content/cms.json"
+          - label: "Antraštė"
+            name: "about-us-header"
+            widget: "object"
+            fields: 
+              - {label: "LT", name: "about-us-header:lt", widget: "string"}
+              - {label: "EN", name: "about-us-header:en", widget: "string"}
+              - {label: "RU", name: "about-us-header:ru", widget: "string"}
+          - label: "Tekstas"
+            name: "about-us-text"
+            widget: "object"
+            fields: 
+              - {label: "LT", name: "about-us-text:lt", widget: "string"}
+              - {label: "EN", name: "about-us-text:en", widget: "string"}
+              - {label: "RU", name: "about-us-text:ru", widget: "string"}

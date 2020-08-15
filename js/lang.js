@@ -3,18 +3,18 @@ var LanguageList = {
     "EN" : "EN"
   };
 
- window.onload = initializeTexts
+//  window.onload = initializeTexts
 
- function initializeTexts() {
-    $.getScript("../content/cms.json", function(res) {
-      translations = JSON.parse(res)
-      if (translations) {
-        Object.keys(translations).forEach(tr => {
-          $("." + tr).html(translations[tr])
-        })
-      }
-    })
- }
+//  function initializeTexts() {
+//     $.getScript("../content/cms.json", function(res) {
+//       translations = JSON.parse(res)
+//       if (translations) {
+//         Object.keys(translations).forEach(tr => {
+//           $("." + tr).html(translations[tr])
+//         })
+//       }
+//     })
+//  }
 
   var WORDS_LT = {
     text1: "tekstas Vienas",
@@ -30,7 +30,7 @@ var LanguageList = {
   
   
   
- // window.onload = initialize;
+ window.onload = initialize;
   
   function initialize() {
     var $dropdown = $("#country_select");    
