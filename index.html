@@ -429,7 +429,7 @@
                     <h6 class="text-center mt-5">Puslapių skaičius</h6>
                     <div class="d-flex">
                         <div class="range-wrap mt-4 mx-auto">
-                            <input type="range" class="range" min="1" max="10" step="1">
+                            <input id="page-amount" type="range" class="range" min="1" max="10" step="1">
                             <output class="bubble"></output>
                         </div>
                     </div>
@@ -439,20 +439,22 @@
                     <hr>
                     <div id="step-2" class="collapse">
                         <h6 class="text-center mt-5">Dizainas</h6>
-                        <div class="card-choose mt-4">
-                            <label>
-                                <input type="radio" name="radio"/>
-                                <div class="template box">
-                                    <span>Šabloninis</span>
-                                </div>
-                            </label>
-                            <label>
-                                <input type="radio" name="radio" checked/>
-                                <div class="unique box">
-                                    <span>Unikalus</span>
-                                </div>
-                            </label>
-                        </div>
+                        <form id="select-design-form">
+                            <div class="card-choose mt-4">
+                                <label>
+                                    <input type="radio" name="select-design" value="template"/>
+                                    <div class="template box">
+                                        <span>Šabloninis</span>
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="radio" name="select-design" value="unique" checked/>
+                                    <div class="unique box">
+                                        <span>Unikalus</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </form>
                         <div class="d-flex">
                             <a href="#step-3" data-toggle="collapse" data-parent="#calculate-price" class="next-step btn btn-1 mt-4 mx-auto">toliau</a>
                         </div>
@@ -474,7 +476,7 @@
                                 <p class="text-center mt-2">Vidinis SEO<span class="d-flex align-items-center justify-content-center"><ion-icon name="information-circle-outline" tabindex="0" data-toggle="popover" data-placement="top" data-content="Svetainės turinys bei struktūra bus paruošti pagal Google standartus tam, kad svetainė būtų rodoma aukštesnėse pozicijose Google paieškoje, dėl ko padidėtų svetainės lankomumas" data-trigger="focus"></ion-icon></span></p>
                             </div>
                             <div class="col-2">
-                                <img src="img/icon-language-c.png" alt="" id="something1" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature">
+                                <img src="img/icon-language-c.png" alt="" id="languages" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature">
                                 <p class="text-center mt-2">Kitos kalbos<span class="d-flex align-items-center justify-content-center"><ion-icon name="information-circle-outline" tabindex="0" data-toggle="popover" data-placement="top" data-content="Lankytojas galės pasirinkti norimą svetainės kalbą. Vertimų paslaugos į šį punktą nėra įtraukiamos" data-trigger="focus"></ion-icon></span></p>
                             </div>
                             <div class="col-2">
@@ -564,7 +566,7 @@
                         </div>
                         <hr>
                     </div>
-                    <h4 class="text-center text-black">Preliminari projekto kaina: 0 €</h4>
+                    <h4 class="text-center text-black">Preliminari projekto kaina: <span id="total-price">0</span> €</h4>
                     <div class="submit-btn d-none">
                         <div data-toggle="modal" data-target="#submitTable" class="btn btn-1 mx-auto">Pateikti</div>
                     </div>
@@ -669,7 +671,7 @@
             <div id="price-card" class="col-md-4 fixed-bottom mx-auto d-none">
                 <button id="price-card-close" class="close p-3">&times;</button>
                 <div class="p-4 bg-white border card-shadow">
-                    <h5 class="text-center m-0 text-black ">Preliminari projekto kaina:<br>0 €</h5>
+                    <h5 class="text-center m-0 text-black ">Preliminari projekto kaina:<br><span id='total-price-sticky'>0</span> €</h5>
                 </div>
             </div>
         </div>
@@ -1085,8 +1087,10 @@
         <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/animate.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="js/priceCalculator.js"></script>
         <script src="js/script.js"></script>
         <script src="js/range.js"></script>
+
 
     </body>
 </html>
