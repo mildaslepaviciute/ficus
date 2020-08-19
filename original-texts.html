@@ -157,8 +157,9 @@
 
         <section id="apie-mus" class="mt-5">
             <div class="container">
-                <h2 class="text-center"><span class="about-us-header"></span></h2>
-                <p class="text-center mt-5 px-5 about-us-text"><span class="about-us-text"></span></p>
+                <h2 class="text-center"><span class="about-us-header"></span>Apie mus</h2>
+                <p class="text-center mt-5 px-5 about-us-text">
+                    Ficus media – tai kūrybiškai ir šiuolaikiškai mąstančių žmonių komanda. Mes kuriame internetines svetaines, logotipus bei kitus reklaminius elementus, formuojame verslų stilių. Mūsų vizija – suteikti savo klientams kokybišką, individualų bei modernų sprendimą. Mes esame orientuoti į rezultatą, stengiamės įžvelgti ir pabrėžti kliento veiklos individualumą, unikalumą, suteikti veiklai pridėtinės vertės ir patenkinti visus kliento poreikius. Siūlome Jums šias paslaugas:
                 <div class="row justify-content-center mt-5">
                     <div class="col d-flex flex-column justify-content-start align-items-center">
                         <ion-icon name="checkmark-circle-outline" class="text-primary ion-2x"></ion-icon>
@@ -478,34 +479,32 @@
                     <h6 class="text-center mt-5">Puslapių skaičius</h6>
                     <div class="d-flex">
                         <div class="range-wrap mt-4 mx-auto">
-                            <input id="page-amount" type="range" class="range" min="1" max="10" step="1">
-                            <output id="bubble" class="bubble"></output>
+                            <input type="range" class="range" min="1" max="10" step="1">
+                            <output class="bubble"></output>
                         </div>
                     </div>
                     <div class="d-flex">
-                        <a href="#step-2" id="step-2-button" data-toggle="collapse" data-parent="#calculate-price" class="next-step btn-1 btn-1-primary mt-4 mx-auto">toliau</a>
+                        <a href="#step-2" data-toggle="collapse" data-parent="#calculate-price" class="next-step btn-1 btn-1-primary mt-4 mx-auto">toliau</a>
                     </div>
                     <hr>
                     <div id="step-2" class="collapse">
                         <h6 class="text-center mt-5">Dizainas</h6>
-                        <form id="select-design-form">
-                            <div class="card-choose mt-4">
-                                <label>
-                                    <input type="radio" name="select-design" value="template"/>
-                                    <div class="template box">
-                                        <span>Šabloninis</span>
-                                    </div>
-                                </label>
-                                <label>
-                                    <input type="radio" name="select-design" value="unique" checked/>
-                                    <div class="unique box">
-                                        <span>Unikalus</span>
-                                    </div>
-                                </label>
-                            </div>
-                        </form>
+                        <div class="card-choose mt-4">
+                            <label>
+                                <input type="radio" name="radio"/>
+                                <div class="template box">
+                                    <span>Šabloninis</span>
+                                </div>
+                            </label>
+                            <label>
+                                <input type="radio" name="radio" checked/>
+                                <div class="unique box">
+                                    <span>Unikalus</span>
+                                </div>
+                            </label>
+                        </div>
                         <div class="d-flex">
-                            <a href="#step-3" id="step-3-button" data-toggle="collapse" data-parent="#calculate-price" class="next-step btn-1 btn-1-primary mt-4 mx-auto">toliau</a>
+                            <a href="#step-3" data-toggle="collapse" data-parent="#calculate-price" class="next-step btn-1 btn-1-primary mt-4 mx-auto">toliau</a>
                         </div>
                         <hr>
                     </div>
@@ -572,7 +571,7 @@
                             </div>
                         </div>
                         <div class="d-flex">
-                            <a href="#step-4" id="step-4-button" data-toggle="collapse" data-parent="#calculate-price" class="next-step btn-1 btn-1-primary mt-4 mx-auto">toliau</a>
+                            <a href="#step-4" data-toggle="collapse" data-parent="#calculate-price" class="next-step btn-1 btn-1-primary mt-4 mx-auto">toliau</a>
                         </div>
                     </div>
                     <hr>
@@ -580,26 +579,26 @@
                         <h6 class="text-center mt-5">Turinio redagavimas</h6>
                         <div class="card-choose mt-4">
                             <label>
-                                <input type="radio" name="select-cms" value="static" />
+                                <input type="radio" name="radio1"/>
                                 <div class="static box">
                                     <span>Statinis</span>
                                 </div>
                             </label>
                             <label>
-                                <input type="radio" name="select-cms" value="wordpress" />
+                                <input type="radio" name="radio1"/>
                                 <div class="wordpress box">
                                     <span>WordPress</span>
                                 </div>
                             </label>
                             <label>
-                                <input type="radio" name="select-cms" value="other" checked/>
+                                <input type="radio" name="radio1" checked/>
                                 <div class="othercms box">
                                     <span>Kita platforma</span>
                                 </div>
                             </label>
                         </div>
                         <div class="d-flex laststep-btn">
-                            <a href="#step-5" id="step-5-button" data-toggle="collapse" data-parent="#calculate-price" class="next-step btn-1 btn-1-primary mt-4 mx-auto">toliau</a>
+                            <a href="#step-5" data-toggle="collapse" data-parent="#calculate-price" class="next-step btn-1 btn-1-primary mt-4 mx-auto">toliau</a>
                         </div>
                         <hr>
                     </div>
@@ -610,7 +609,7 @@
                                 <p class="m-0">Domeno įregistravimas ir svetainės talpinimas</p>
                             </div>
                             <div class="col-2 col-md-1">
-                                <p><input type="checkbox" id="domain" class="test" /><label for="domain"><span class="ui"></span></span></label></p>
+                                <p><input type="checkbox" id="test1" class="test" /><label for="test1"><span class="ui"></span></span></label></p>
                             </div>
                         </div>
                         <div class="row justify-content-center align-items-center mt-3">
@@ -618,7 +617,7 @@
                                 <p class="m-0">Reikalingas unikalaus dizaino logotipas</p>
                             </div>
                             <div class="col-2 col-md-1">
-                                <p><input type="checkbox" id="logo" class="test" /><label for="logo"><span class="ui"></span></label></p>
+                                <p><input type="checkbox" id="test2" class="test" /><label for="test2"><span class="ui"></span></label></p>
                             </div>
                         </div>
                         <div class="row justify-content-center align-items-center mt-3">
@@ -626,12 +625,12 @@
                                 <p class="m-0">Reikalingas maketas vizitinei kortelei</p>
                             </div>
                             <div class="col-2 col-md-1">
-                                <p><input type="checkbox" id="visitCard" class="test" /><label for="visitCard"><span class="ui"></span></span></label></p>
+                                <p><input type="checkbox" id="test3" class="test" /><label for="test3"><span class="ui"></span></span></label></p>
                             </div>
                         </div>
                         <hr>
                     </div>
-                    <h4 class="text-center text-black">Preliminari projekto kaina: <span id="total-price">0</span> €</h4>
+                    <h4 class="text-center text-black">Preliminari projekto kaina: 0 €</h4>
                     <div class="submit-btn d-none">
                         <div data-toggle="modal" data-target="#submitTable" class="btn-1 btn-1-primary mx-auto">Pateikti</div>
                     </div>
@@ -680,8 +679,8 @@
                     <div class="col-lg-5 mb-3 mb-lg-0">
                         <h2 class="text-center text-lg-left">Turite klausimų?<br>Rašykite mums</h2>
                     </div>
-                    <div class="col-lg-7 shadow p-5 mx-3 mx-md-0">
-                        <form id="emailForm" data-netlify="true" method="POST" name="PRANEŠIMAI" novalidate>
+                    <div class="col-lg-7 card-shadow p-5 mx-3 mx-md-0">
+                        <form novalidate>
                             <div class="form-group row">
                                 <label class="col-sm-3 col-form-label">Jūsų vardas:</label>
                                 <div class="col">
@@ -736,7 +735,7 @@
             <div id="price-card" class="col-md-4 fixed-bottom mx-auto d-none">
                 <button id="price-card-close" class="close p-3">&times;</button>
                 <div class="p-4 bg-white border card-shadow">
-                    <h5 class="text-center m-0 text-black ">Preliminari projekto kaina:<br><span id='total-price-sticky'>0</span> €</h5>
+                    <h5 class="text-center m-0 text-black ">Preliminari projekto kaina:<br>0 €</h5>
                 </div>
             </div>
         </div>
@@ -764,7 +763,7 @@
                                     <p><strong>Tipas:</strong><br>Reprezentacinė svetainė</p>
                                     <p><strong>Puslapių skaičius:</strong><br>5</p>
                                     <p><strong>Integracijos:</strong><br>„Messenger“ pokalbių laukelis<br>„Facebook“ naujienos<br>„Instagram“ naujienos<br>„Google Analytics“<br>Interaktyvus žemėlapis</p>
-                                    <p><strong>Kiti ypatumai:</strong><br>Modernus dizainas<br>Užsiėmimų tvarkaraščiai<br>Registracija į užsiėmimus<br>Elektroninės klientų užklausos<br>Formų validacija<br>Pritaikymas mobiliesiems<br>Vidinė SEO optimizacija</p>
+                                    <p><strong>Kiti ypatumai:</strong><br>Modernus dizainas<br>Užsiėmimų tvarkaraščiai<br>Registracija į užsiėmimus<br>Formų validacija<br>Automatinis elektroninių laiškų siuntimas<br>Pritaikymas mobiliesiems<br>Vidinė SEO optimizacija</p>
                                 </div>
                                 <div class="col-md-6">
                                     <h5 class="text-black">ATLIKTI DARBAI:</h5>
@@ -773,7 +772,7 @@
                                     <p class="mb-0 mt-3"><strong>Dizainas:</strong><br>Sukurtas Ficus grupės</p>
                                     <a href="#design-lizdelis" class="text-primary">peržiūrėti</a>
                                     <p class="mt-3"><strong>Programavimo darbai:</strong><br>Atlikta Ficus grupės</p>
-                                    <p class="mt-3"><strong>Svetainės talpinimas ir domenas:</strong><br>Atlikta Ficus grupės</p>
+                                    <p class="mt-3"><strong>Hostingas ir domeno talpinimas:</strong><br>Parinkta ir atlikta Ficus grupės</p>
                                     <h5 class="text-black mt-5">NAUDOTI ĮRANKIAI:</h5>
                                     <div class="row align-items-start mt-4">
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
@@ -875,7 +874,7 @@
                                     <p class="mb-0 mt-3"><strong>Dizainas:</strong><br>Sukurtas Ficus grupės</p>
                                     <a href="#design-partyplay" class="text-primary">peržiūrėti</a>
                                     <p class="mt-3"><strong>Programavimo darbai:</strong><br>Atlikta Ficus grupės</p>
-                                    <p class="mt-3"><strong>Svetainės talpinimas ir domenas:</strong><br>Atliko Ficus Media</p>
+                                    <p class="mt-3"><strong>Hostingas ir domeno talpinimas:</strong><br>Atlikta Ficus grupės</p>
                                     <h5 class="text-black mt-5">NAUDOTI ĮRANKIAI:</h5>
                                     <div class="row align-items-start mt-4">
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
@@ -981,7 +980,7 @@
                                     <p class="mb-0 mt-3"><strong>Dizainas:</strong><br>Sukurtas Ficus grupės</p>
                                     <a href="#design-kitokiosgeles" class="text-primary">peržiūrėti</a>
                                     <p class="mt-3"><strong>Programavimo darbai:</strong><br>Atlikta Ficus grupės</p>
-                                    <p class="mt-3"><strong>Svetainės talpinimas ir domenas:</strong><br>Domenas įregistruotas kliento, svetainės talpinimas atliktas Ficus grupės</p>
+                                    <p class="mt-3"><strong>Hostingas ir domeno talpinimas:</strong><br>Domeno talpinimas atliktas kliento, hostingas parinktas Ficus grupės</p>
                                     <h5 class="text-black mt-5">NAUDOTI ĮRANKIAI:</h5>
                                     <div class="row align-items-start mt-4">
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
@@ -1157,12 +1156,8 @@
                 <li class="menu__item"><a class="menu__link" href="#kainos">kainos</a></li>
                 <li class="menu__item"><a class="menu__link" href="#kontaktai">kontaktai</a></li>
                 <li class="menu__item">
-                    <a id="a_country_select" href="" class="menu__link">
-                        <select id="country_select">
-                            <option value="lt" selected>LT</option>
-                            <option value="en">EN</option>
-                            <option value="ru">RU</option>
-                        </select>
+                    <a href="#" class="menu__link">
+                        <select id="country_select" size="2" onchange="loadsLanguage(this.value);"></select>
                     </a>
                 </li>
             </ul>
@@ -1179,7 +1174,6 @@
         <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/animate.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="js/priceCalculator.js"></script>
         <script src="js/script.js"></script>
         <script src="js/range.js"></script>
 

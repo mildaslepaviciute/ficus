@@ -1,0 +1,29 @@
+backend:
+  name: git-gateway
+
+media_folder: "source/images/uploads"
+public_folder: "/images/uploads"
+locale: 'lt'
+
+collections:
+  - label: "Sekcijos"
+    name: "pages"
+    files:
+      - label: "Apie mus"
+        name: "about"
+        file: "content/cms.json"
+        fields:
+          - label: "Antraštė"
+            name: "about-us-header"
+            widget: "object"
+            fields: 
+              - {label: "LT", name: "lt", widget: "string"}
+              - {label: "EN", name: "en", widget: "string"}
+              - {label: "RU", name: "ru", widget: "string"}
+          - label: "Tekstas"
+            name: "about-us-text"
+            widget: "object"
+            fields: 
+              - {label: "LT", name: "lt", widget: "string"}
+              - {label: "EN", name: "en", widget: "string"}
+              - {label: "RU", name: "ru", widget: "string"}

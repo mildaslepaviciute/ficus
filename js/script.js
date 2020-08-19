@@ -14,7 +14,7 @@ $(".laststep-btn").click(function(){
 });
 
 $("#calculate-btn").click(function(){
-    if ($(this).hasClass("is-shown")) {
+    if ($(this).hasClass("is-s wn")) {
         $("#price-card").removeClass("d-block");
         $("#price-card").addClass("d-none");
         $(this).removeClass("is-shown");

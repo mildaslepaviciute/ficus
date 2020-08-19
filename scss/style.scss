@@ -51,6 +51,10 @@ a:hover {
   background: #fff;
 }
 
+.bg-transparent {
+  background: transparent;
+}
+
 .w-95 {
   width: 95%;
 }
@@ -212,14 +216,14 @@ SECTION3
 
 
 .modal-header {
-  height: 400px;
+  height: 320px;
   background-image: url("../img/bg-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .modal-title-top {
-  margin-top: -200px;
+  margin-top: -120px;
 }
 
 .web-feature {
@@ -372,30 +376,8 @@ SECTION3
 body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 
 /* General button style (reset) */
-.btn {
-	background: none;
-	cursor: pointer;
-	padding: 18px 50px;
-	display: inline-block;
-	margin: 15px 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 700;
-	outline: none;
-	position: relative;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
 
-.btn:after {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
+
 
 // /* Button 1 */
 // .btn-1 {
@@ -422,25 +404,38 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 // }
 
 
-/* Button 2 */
+
 .btn-1 {
-	background: $orange;
+	cursor: pointer;
+	padding: 15px 50px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 13px;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 	color: #fff;
-	box-shadow: 0 6px #b17f02;
 	-webkit-transition: none;
 	-moz-transition: none;
-	transition: none;
+  transition: none;
+  border-radius: 200px;
 }
 
-
-/* Button 2c */
-.btn-1 {
-	border-radius: 5px;
+.btn-1:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 .btn-1:hover {
-  background: #e4a506;
-	box-shadow: 0 4px #b17f02;
   top: 2px;
   color: #fff;
 }
@@ -448,6 +443,39 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 .btn-1:active {
 	box-shadow: 0 0 #b17f02;
 	top: 6px;
+}
+
+.btn-1-primary {
+  background: #EEAB02;
+	box-shadow: 0 4px #c99104;
+}
+
+.btn-1-primary:hover {
+  box-shadow: 0 3px #c99104;
+  background: #dfa105;
+  border-color: #dfa105;
+}
+
+.btn-1-secondary {
+  background: #FBDA03;
+	box-shadow: 0 4px #cfb506;
+}
+
+.btn-1-secondary:hover {
+  box-shadow: 0 3px #cfb506;
+  background: #ebcc05;
+  border-color: #ebcc05;
+}
+
+.btn-1-success {
+  background: #60D88E;
+	box-shadow: 0 4px #47b370;
+}
+
+.btn-1-success:hover {
+  box-shadow: 0 3px #47b370;
+  background: #5acf87;
+  border-color: #5acf87;
 }
 
 .btn-small {
@@ -806,15 +834,6 @@ form p {
 
 
 
-.lizdelis-bg {
-  background-image: url("../img/nicetry.png");
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  overflow: visible;
-}
-
-
 
 
 
@@ -868,3 +887,74 @@ form p {
 //     border-bottom-color: #fff; /* Red */
 //   }
 
+
+#modalKitokiosgeles a,
+#modalLizdelis a,
+#modalPartyplay a {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hr-small {
+  width: 80px;
+  border: 1px solid $orange;
+  margin: 0 auto;
+}
+
+strong {
+  font-weight: 500;
+}
+
+
+#country_select {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  overflow: hidden;
+  display: inline-block;   
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#country_select option {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  display: inline-block;
+  float:left;
+}
+
+#country_select:active {
+  border: 0px solid transparent !important;
+}
+
+
+
+.ion-2x {
+  font-size: 2em;
+}
+
+.border-responsive {
+  border-width: 0px !important;
+}
+
+
+.display-1 {
+  font-size: 4.5rem;
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .border-responsive {
+    border-width: 1px !important;
+  }
+
+  .display-1 {
+    font-size: 6rem;
+  }
+}
