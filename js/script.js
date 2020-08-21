@@ -144,7 +144,7 @@ $("#form2").click(function(){
     }
 });
 
-$("#something1").click(function(){
+$("#ssl").click(function(){
     if ($(this).hasClass("unselected-feature")) {
         $(this).removeClass("bg-light");
         $(this).addClass("bg-primary");
@@ -158,7 +158,7 @@ $("#something1").click(function(){
     }
 });
 
-$("#something2").click(function(){
+$("#email").click(function(){
     if ($(this).hasClass("unselected-feature")) {
         $(this).removeClass("bg-light");
         $(this).addClass("bg-primary");
@@ -175,11 +175,11 @@ $("#something2").click(function(){
 $("#something3").click(function(){
     if ($(this).hasClass("unselected-feature")) {
         $(this).removeClass("bg-light");
-        $(this).addClass("bg-primary");
+        $(this).addClass("bg-secondary");
         $(this).removeClass("unselected-feature");
         $(this).addClass("selected-feature");
     } else {
-        $(this).removeClass("bg-primary");
+        $(this).removeClass("bg-secondary");
         $(this).addClass("bg-light");
         $(this).addClass("unselected-feature")
         $(this).removeClass("selected-feature")

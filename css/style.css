@@ -65,18 +65,34 @@ nav {
 HEADER
 
 -------------------------------------*/
-#header-main {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  z-index: 1;
-  background-size: cover;
-  background-image: url(../Group_3.png); }
-
 .header-main-video {
   object-fit: cover;
   width: 100%;
   height: 100%; }
+
+#header-main {
+  position: relative; }
+
+.header-overlay {
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  z-index: 0;
+  width: 100%; }
+  .header-overlay h1 {
+    font-size: 6vw;
+    color: #031A70;
+    letter-spacing: 0.45rem;
+    font-weight: 700; }
+
+.header-image {
+  display: block;
+  z-index: -1;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
 
 /* -----------------------------------
 
@@ -226,7 +242,7 @@ SECTION-CONTACTUS
 
 .range-wrap::before {
   content: "";
-  background: linear-gradient(to right, #FBDA03, #EEAB02);
+  background: linear-gradient(to right, #924f85, #b53471);
   width: 100%;
   height: 8px;
   display: block;
@@ -280,13 +296,13 @@ SECTION-CONTACTUS
       border: 10px solid #A85698; }
       .card-choose input[type="radio"]:checked + .box span {
         color: #000;
-        transform: translateY(50px); }
+        transform: translateY(25px); }
         .card-choose input[type="radio"]:checked + .box span:before {
           transform: translateY(0px);
           opacity: 1; }
   .card-choose .box {
     width: 200px;
-    height: 200px;
+    height: 160px;
     background-color: #fff;
     border: 10px solid #E1E1E1;
     transition: all 250ms ease;
@@ -299,7 +315,7 @@ SECTION-CONTACTUS
       transform: translateY(10px); }
     .card-choose .box span {
       position: absolute;
-      transform: translate(0, 40px);
+      transform: translate(0, 10px);
       left: 0;
       right: 0;
       transition: all 300ms ease;
@@ -371,7 +387,7 @@ SECTION-CONTACTUS
 
 /* on checked */
 .test:checked + label:before {
-  background: #f8dd99a8; }
+  background: #d1becd; }
 
 .test:checked + label:after {
   background: #A85698;
@@ -502,3 +518,48 @@ strong {
 
 #country_select:active {
   border: 0px solid transparent !important; }
+
+.spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 999999; }
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 48%;
+  left: 48%; }
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #A85698;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out; }
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s; }
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0); }
+  50% {
+    -webkit-transform: scale(1); } }
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0); }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1); } }
