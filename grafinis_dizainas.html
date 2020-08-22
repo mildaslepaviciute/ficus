@@ -84,41 +84,5 @@
         <script src="js/script.js"></script>
         <script src="js/range.js"></script>
 
-        <script>
-            if (window.netlifyIdentity) {
-              window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                  window.netlifyIdentity.on("login", () => {
-                    document.location.href = "/admin/";
-                  });
-                }
-              });
-            }
-        </script>
-
-        <script>
-            $(document).ready(function () {
-                const loadTime = window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart
-
-                //Preloader
-                const preloaderFadeOutTime = 500
-                const minimumPreloaderTime = 2000
-                function hidePreloader() {
-                    var preloader = $('.spinner-wrapper')
-                    preloader.fadeOut(preloaderFadeOutTime)
-                }
-                
-                const preloadDiff = minimumPreloaderTime - loadTime
-                console.log(preloadDiff)
-                if (preloadDiff > 0) {
-                    setTimeout(() => {
-                        hidePreloader()
-                    }, preloadDiff)
-                } else {
-                    hidePreloader()
-                }
-            })
-        </script>
-
     </body>
 </html>

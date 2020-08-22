@@ -167,7 +167,180 @@
             </div>
         </section>
 
+
         <section id="calculate-price" class="mt-5">
+            <div class="container">
+                <h3 class="text-center">Mokėkite tik už tai, ko Jums reikia</h3>
+                <h5 class="text-black text-center">Pasirinkite Jums reikalingas paslaugas ir gaukite individualų pasiūlymą</h5>
+                <div class="d-flex">
+                    <a href="#step-all" data-toggle="collapse" data-parent="#calculate-price" id="calculate-btn" class="btn-1 btn-1-secondary mt-4 mx-auto">skaičiuoti kainą</a>
+                </div>
+                <div id="step-all" class="collapse">
+                    <h6 class="text-center mt-5">Puslapių skaičius</h6>
+                    <div class="d-flex">
+                        <div class="range-wrap mt-4 mx-auto">
+                            <input id="page-amount" type="range" class="range" min="1" max="10" step="1">
+                            <output id="bubble" class="bubble"></output>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <a href="#step-2" id="step-2-button" data-toggle="collapse" data-parent="#calculate-price" class="next-step btn-1 btn-1-secondary mt-4 mx-auto">toliau</a>
+                    </div>
+                    <hr>
+                    <div id="step-2" class="collapse">
+                        <h6 class="text-center mt-5">Dizainas</h6>
+                        <form id="select-design-form">
+                            <div class="card-choose mt-4">
+                                <label>
+                                    <input type="radio" name="select-design" value="template"/>
+                                    <div class="template box">
+                                        <span>Šabloninis</span>
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="radio" name="select-design" value="unique" checked/>
+                                    <div class="unique box">
+                                        <span>Unikalus</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </form>
+                        <div class="d-flex">
+                            <a href="#step-3" id="step-3-button" data-toggle="collapse" data-parent="#calculate-price" class="next-step btn-1 btn-1-secondary mt-4 mx-auto">toliau</a>
+                        </div>
+                        <hr>
+                    </div>
+                    <div id="step-3" class="collapse">
+                        <h6 class="text-center mt-5">Puslapio funkcijos</h6>
+                        <div class="row mt-4">
+                            <div class="col-4 col-md-2 mx-auto">
+                                <img src="img/Icons/icon-googleanalytics.png" alt="" id="analytics" class="web-feature img-fluid p-2 rounded-circle unselected-feature" class="red-tooltip" data-toggle="tooltip" data-placement="top" title="Prisijungus prie sistemos bus galima sekti svetainės lankytojų srautą, populiariausią lankymo laiką, laiką, praleistą svetainėje ir kt.">
+                                <p class="text-center mt-2">„Google Analytics“</p>
+                            </div>
+                            <div class="col-4 col-md-2 mx-auto">
+                                <img src="img/Icons/icon-responsive.png" alt="" id="responsive" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" class="red-tooltip" data-toggle="tooltip" data-placement="top" title="Svetainė bus pritaikyta įveiriems ekranų dydžiams (kompiuteriams, plančetėms, mobilisiems telefonams ir kt.)">
+                                <p class="text-center mt-2">Mobili svetainės versija</p>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="img/Icons/icon-seo.png" alt="" id="seo" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" class="red-tooltip" data-toggle="tooltip" data-placement="top" title="Svetainės turinys bei struktūra bus paruošti pagal Google standartus tam, kad svetainė būtų rodoma aukštesnėse pozicijose Google paieškoje, dėl ko padidėtų svetainės lankomumas">
+                                <p class="text-center mt-2">Vidinis SEO</p>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="img/Icons/icon-language.png" alt="" id="something1" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" class="red-tooltip" data-toggle="tooltip" data-placement="top" title="Lankytojas galės pasirinkti norimą svetainės kalbą. Vertimų paslaugos į šį punktą nėra įtraukiamos">
+                                <p class="text-center mt-2">Papildomos kalbos</p>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="img/Icons/icon-video.png" alt="" id="video" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" class="red-tooltip" data-toggle="tooltip" data-placement="top" title="Reprezentatyvinės ar kitos video medžiagos talpinimas svetainėje">
+                                <p class="text-center mt-2">Video medžiagos talpinimas</p>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="img/Icons/icon-map.png" alt="" id="maps" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" class="red-tooltip" data-toggle="tooltip" data-placement="top" title="Bus paruoštas ir integruotas Google žemėlapis pagal Jūsų norimą adresą">
+                                <p class="text-center mt-2">Interaktyvūs žemėlapiai</p>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-4 col-md-2">
+                                <img src="img/Icons/icon-messenger.png" alt="" id="messenger" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" class="red-tooltip" data-toggle="tooltip" data-placement="top" title="Ši integracija leis svetainės lankytojams su Jumis susisiekti per Messenger platformą tiesiogiai iš svetainės.">
+                                <p class="text-center mt-2">„Messenger“ pokalbių įskiepis</p>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="img/Icons/icon-form.png" alt="" id="form" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" class="red-tooltip" data-toggle="tooltip" data-placement="top" title="Ši Google Forms integracija, skirta lankytojų elektroninių užklausų pildymui, leis greitai ir paprastai tvarkyti gautus duomenis. Google Forms stilistika keičiama nebus">
+                                <p class="text-center mt-2">Elektroninės klientų užklausos</p>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="img/Icons/icon-responsive.png" alt="" id="form2" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" class="red-tooltip" data-toggle="tooltip" data-placement="top" title="Bus sukurtos unikalios, puslapio stilistiką atitinkančios elektroninęs klientų užklausos (Kontakiniams nuomenims įvesti, susisiekimui elektroniniu paštu ir kitiems tikslams). Taip pat bus atliekama formų validacija">
+                                <p class="text-center mt-2">Kažkas dar</p>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="img/Icons/icon-feed.png" alt="" id="feed" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" class="red-tooltip" data-toggle="tooltip" data-placement="top" title="Bus integruotos Jūsų Facebook arba Instagram paskyros naujienos, kurios, paskelbus naują pranešimą, automatiškai atsinaujins ir svetainėje">
+                                <p class="text-center mt-2">Socialinių tinklų naujienų srautas</p>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="img/Icons/icon-ssl.png" alt="" id="ssl" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" class="red-tooltip" data-toggle="tooltip" data-placement="top" title="Aprašymas">
+                                <p class="text-center mt-2">SSL sertifikatas</p>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <img src="img/Icons/icon-responsive.png" alt="" id="something3" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" class="red-tooltip" data-toggle="tooltip" data-placement="top" title="Aprašymas">
+                                <p class="text-center mt-2">Kažkas dar</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <a href="#step-4" data-toggle="collapse" data-parent="#calculate-price" class="next-step btn-1 btn-1-secondary mt-4 mx-auto">toliau</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="step-4" class="collapse">
+                        <h6 class="text-center mt-5">Turinio redagavimas</h6>
+                        <div class="card-choose mt-4">
+                            <label>
+                                <input type="radio" name="select-cms" value="static" />
+                                <div class="static box">
+                                    <span>Statinis</span>
+                                </div>
+                            </label>
+                            <label>
+                                <input type="radio" name="select-cms" value="wordpress" />
+                                <div class="wordpress box">
+                                    <span>WordPress</span>
+                                </div>
+                            </label>
+                            <label>
+                                <input type="radio" name="select-cms" value="other" checked/>
+                                <div class="othercms box">
+                                    <span>Kita platforma</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="d-flex laststep-btn">
+                            <a href="#step-5" id="step-5-button" data-toggle="collapse" data-parent="#calculate-price" class="next-step btn-1 btn-1-secondary mt-4 mx-auto">toliau</a>
+                        </div>
+                        <hr>
+                    </div>
+                    <div id="step-5" class="collapse">
+                        <h6 class="text-center mt-5">Priedai</h6>
+                        <div class="row justify-content-center align-items-center mt-4">
+                            <div class="col-8 col-md-4">
+                                <p class="m-0">Domeno įregistravimas ir svetainės talpinimas</p>
+                            </div>
+                            <div class="col-2 col-md-1">
+                                <p><input type="checkbox" id="domain" class="test" /><label for="domain"><span class="ui"></span></span></label></p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-3">
+                            <div class="col-8 col-md-4">
+                                <p class="m-0">Reikalingas unikalaus dizaino logotipas</p>
+                            </div>
+                            <div class="col-2 col-md-1">
+                                <p><input type="checkbox" id="logo" class="test" /><label for="logo"><span class="ui"></span></label></p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-3">
+                            <div class="col-8 col-md-4">
+                                <p class="m-0">Reikalingas maketas vizitinei kortelei</p>
+                            </div>
+                            <div class="col-2 col-md-1">
+                                <p><input type="checkbox" id="visitCard" class="test" /><label for="visitCard"><span class="ui"></span></span></label></p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-4">
+                            <div class="col-8 col-md-4">
+                                <p class="m-0">Domeno elektroninio pašto kūrimas ir konfigūravimas (perkėlimas į gmail?)</p>
+                            </div>
+                            <div class="col-2 col-md-1">
+                                <p><input type="checkbox" id="domainEmail" class="test" /><label for="domainEmail"><span class="ui"></span></span></label></p>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <h4 class="text-center text-black">Preliminari projekto kaina: <span id="total-price">0</span> €</h4>
+                    <div class="submit-btn d-none">
+                        <div data-toggle="modal" data-target="#submitTable" class="btn-1 btn-1-secondary mx-auto">Pateikti</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="calculate-price" class="mt-5">
             <div class="container">
                 <h3 class="text-center">Mokėkite tik už tai, ko Jums reikia</h3>
                 <h5 class="text-black text-center">Pasirinkite Jums reikalingas paslaugas ir gaukite individualų pasiūlymą</h5>
@@ -210,14 +383,6 @@
                     <div id="step-3" class="collapse">
                         <h6 class="text-center mt-5">Puslapio funkcijos</h6>
                         <div class="row mt-4">
-                            <!-- <div class="col-2 mx-auto">
-                                <img src="img/icon-googleanalytics-c.png" alt="" id="analytics" class="web-feature img-fluid p-2 rounded-circle unselected-feature" onmouseover="hoverAnalytics(this);" onmouseout="unhoverAnalytics(this);" class="red-tooltip" data-toggle="tooltip" data-placement="top" title="Prisijungus prie sistemos bus galima sekti svetainės lankytojų srautą, populiariausią lankymo laiką, laiką, praleistą svetainėje ir kt.">
-                                <p class="text-center mt-2">„Google Analytics“</p>
-                            </div> -->
-                            <!-- <div class="col-2">
-                                <img src="img/icon-map-c.png" alt="" id="maps" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature">
-                                <p class="text-center mt-2">Interaktyvūs žemėlapiai<span class="d-flex align-items-center justify-content-center"><ion-icon name="information-circle-outline" tabindex="0" data-toggle="popover" data-placement="top" data-content="Bus paruoštas ir integruotas Google žemėlapis pagal Jūsų norimą adresą" data-trigger="focus"></ion-icon></span></p>
-                            </div> -->
                             <div class="col-4 col-md-2 mx-auto">
                                 <img src="img/Icons/icon-googleanalytics.png" alt="" id="analytics" class="web-feature img-fluid p-2 rounded-circle unselected-feature" class="red-tooltip" data-toggle="tooltip" data-placement="top" title="Prisijungus prie sistemos bus galima sekti svetainės lankytojų srautą, populiariausią lankymo laiką, laiką, praleistą svetainėje ir kt.">
                                 <p class="text-center mt-2">„Google Analytics“</p>
@@ -343,7 +508,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="mt-5">
 
@@ -766,42 +931,10 @@
         <script src="js/animate.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="js/script.js"></script>
-        <script src="js/range.js"></script>
+        <script src="js/priceCalculator.js"></script>
 
         <script>
-            if (window.netlifyIdentity) {
-              window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                  window.netlifyIdentity.on("login", () => {
-                    document.location.href = "/admin/";
-                  });
-                }
-              });
-            }
-        </script>
-
-        <script>
-            $(document).ready(function () {
-                const loadTime = window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart
-
-                //Preloader
-                const preloaderFadeOutTime = 500
-                const minimumPreloaderTime = 2000
-                function hidePreloader() {
-                    var preloader = $('.spinner-wrapper')
-                    preloader.fadeOut(preloaderFadeOutTime)
-                }
-                
-                const preloadDiff = minimumPreloaderTime - loadTime
-                console.log(preloadDiff)
-                if (preloadDiff > 0) {
-                    setTimeout(() => {
-                        hidePreloader()
-                    }, preloadDiff)
-                } else {
-                    hidePreloader()
-                }
-            })
+    
         </script>
 
     </body>
