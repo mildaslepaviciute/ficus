@@ -14,7 +14,8 @@ const prices = {
         form: 20,
         form2: 20,
         feed: 20,
-        languages: 20
+        languages: 20,
+        ssl: 10
     },
     cms: {
         static: 0,
@@ -73,12 +74,12 @@ $("#step-3").find("img").click(function() {
     if ($(this).hasClass("unselected-feature")) {
         functionsList.push(this.id)
         $(this).removeClass("bg-light");
-        $(this).addClass("bg-primary");
+        $(this).addClass("bg-secondary");
         $(this).removeClass("unselected-feature");
         $(this).addClass("selected-feature");
     } else {
         functionsList = functionsList.filter(f => f !== this.id)
-        $(this).removeClass("bg-primary");
+        $(this).removeClass("bg-secondary");
         $(this).addClass("bg-light");
         $(this).addClass("unselected-feature")
         $(this).removeClass("selected-feature")

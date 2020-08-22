@@ -38,21 +38,34 @@
               </div>
         </div>
 
-        <nav class="navbar navbar-expand-sm position-absolute w-100 pt-4">
-            <div class="row justify-content-between w-100">
-                <a aria-label="Link" href="index.html" class="navbar-brand d-flex align-items-center">
-                    <img src="img/Standart-color-png.png" width="50" alt="">
-                    <p class="mb-0">FICUS MEDIA</p>
-                </a>
-                <ul class="navbar-nav">
+        <nav class="navbar navbar-expand-md w-100 pt-4" id="main-nav">
+            <a aria-label="Link" href="index.html" class="navbar-brand d-flex align-items-center">
+                <img src="#" width="50" alt="">
+                <p class="mb-0">FICUS MEDIA</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <ion-icon name="menu-outline" class="text-secondary"></ion-icon>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item ml-0 ml-md-4">
                         <a aria-label="Link" href="index.html" class="nav-link">Pradžia</a>
                     </li>
-                    <li class="nav-item ml-0 ml-md-4">
-                        <a aria-label="Link" href="index.html" class="nav-link">Pavyzdžiai</a>
+                    <li class="nav-item dropdown ml-0 ml-md-4">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="collapse" aria-haspopup="true" aria-expanded="false" data-toggle="collapse" data-target="#dropdown-menu01">Paslaugos</a>
+                        <div>
+                        <div id="dropdown-menu01" class="dropdown-menu collapse" aria-labelledby="dropdown01" data-parent="#main-nav">
+                            <a class="dropdown-item" href="internetines_svetaines.html">Internetinės svetainės</a>
+                            <a class="dropdown-item" href="grafinis_dizainas.html">Brandingas</a>
+                            <a class="dropdown-item" href="socialiniai_tinklai.html">Soc. tinklai</a>
+                        </div>
+                        </div>
                     </li>
                     <li class="nav-item ml-0 ml-md-4">
-                        <a aria-label="Link" href="contact.html" class="nav-link">Kontaktai</a>
+                        <a aria-label="Link" href="darbu-pavyzdziai.html" class="nav-link">Darbų pavyzdžiai</a>
+                    </li>
+                    <li class="nav-item ml-0 ml-md-4">
+                        <a aria-label="Link" href="kontaktai.html" class="nav-link">Kontaktai</a>
                     </li>
                 </ul>
             </div>
