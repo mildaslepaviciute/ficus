@@ -44,6 +44,55 @@ HEADINGS
 -------------------------------------*/
 /* -----------------------------------
 
+SPINNER
+
+-------------------------------------*/
+.spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 999999; }
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 48%;
+  left: 48%; }
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #A85698;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out; }
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s; }
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0); }
+  50% {
+    -webkit-transform: scale(1); } }
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0); }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1); } }
+/* -----------------------------------
+
 NAVBAR
 
 -------------------------------------*/
@@ -53,7 +102,8 @@ nav {
 .nav-item a {
   color: #A85698; }
 
-.nav-item a:hover {
+.nav-item a:hover,
+.nav-item a:active {
   color: #A85698; }
 
 .navbar-brand p {
@@ -241,7 +291,7 @@ SECTION-STRATEGY
 #section-strategy {
   width: 100%;
   height: auto;
-  background-image: url(../STRATEGY.png);
+  background-image: url(../main12.png);
   background-size: contain;
   background-repeat: no-repeat; }
 
@@ -262,14 +312,50 @@ SECTION-PRICING
 -------------------------------------*/
 /* -----------------------------------
 
-SECTION-CONTACTS
-
--------------------------------------*/
-/* -----------------------------------
-
 SECTION-CONTACTUS
 
 -------------------------------------*/
+.contact-form-container {
+  position: relative; }
+
+#emailForm {
+  position: relative;
+  z-index: 2; }
+
+.contact-form-leaf1 {
+  position: absolute;
+  z-index: 1;
+  height: 250px;
+  width: 250px;
+  top: 180px;
+  left: -170px;
+  background-image: url(../img/contact_form_leaf1.png);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.contact-form-leaf2 {
+  position: absolute;
+  z-index: 1;
+  height: 250px;
+  width: 250px;
+  top: 50px;
+  right: -190px;
+  background-image: url(../img/contact_form_leaf2.png);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+/* -----------------------------------
+
+SECTION-CONTACTS
+
+-------------------------------------*/
+#section-contacts {
+  background-image: url(../CONTACTS.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  min-height: 500px; }
+
 /* -----------------------------------  WEB PAGES  -------------------------------------*/
 /* -----------------------------------  GRAPHICAL DESIGN  -------------------------------------*/
 /* -----------------------------------  SOCIAL MEDIA  -------------------------------------*/
@@ -568,48 +654,3 @@ strong {
 
 #country_select:active {
   border: 0px solid transparent !important; }
-
-.spinner-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ffffff;
-  z-index: 999999; }
-
-.spinner {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 48%;
-  left: 48%; }
-
-.double-bounce1, .double-bounce2 {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #A85698;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-  animation: sk-bounce 2.0s infinite ease-in-out; }
-
-.double-bounce2 {
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s; }
-
-@-webkit-keyframes sk-bounce {
-  0%, 100% {
-    -webkit-transform: scale(0); }
-  50% {
-    -webkit-transform: scale(1); } }
-@keyframes sk-bounce {
-  0%, 100% {
-    transform: scale(0);
-    -webkit-transform: scale(0); }
-  50% {
-    transform: scale(1);
-    -webkit-transform: scale(1); } }
