@@ -262,7 +262,7 @@ FOOTER
 
 footer {
   height: 100px;
-  background: $primary;
+  background: transparent;
 }
 
 .text-gradient {
@@ -377,9 +377,24 @@ SECTION-STRATEGY
   width: 100%;
 }
 
-.text-positioning {
-  top: 25.9%;
-  left: 67%;
+.text-positioning-1 {
+  top: 14.5%;
+  left: 66%;
+}
+
+.text-positioning-2 {
+  top: 28.5%;
+  left: 66%;
+}
+
+.text-positioning-3 {
+  top: 42.5%;
+  left: 66%;
+}
+
+.text-positioning-4 {
+  top: 56.5%;
+  left: 66%;
 }
 
 
@@ -421,9 +436,9 @@ SECTION-CONTACTUS
   position: absolute;
   z-index: 1;
   height: 250px;
-  width: 250px;
+  width: 210px;
   top: 50px;
-  right: -190px;
+  right: -150px;
   background-image: url(../img/contact_form_leaf2.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -436,16 +451,29 @@ SECTION-CONTACTS
 -------------------------------------*/
 
 #section-contacts {
-  background-image: url(../CONTACTS.png);
+  background-image: url(../CONTACT.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: bottom;
   min-height: 500px;
 }
 
+.fa-facebook-f, 
+.fa-instagram,
+.fa-envelope,
+.fa-mobile-alt,
+.fa-linkedin-in {
+  color: $pink;
+}
 
+.contacts-nav-item {
+  color: #fff;
+}
 
-
+.contacts-nav-item:hover,
+.contacts-nav-item:active {
+  color: $pink;
+}
 
 /* -----------------------------------  WEB PAGES  -------------------------------------*/
 
@@ -466,9 +494,6 @@ SECTION-CONTACTS
 
 
 
-
-
-
 /* -----------------------------------  SOCIAL MEDIA  -------------------------------------*/
 
 
@@ -478,8 +503,33 @@ SECTION-CONTACTS
 
 
 
+/* -----------------------------------  CONTACTS  -------------------------------------*/
 
 
+.header-rounded {
+  position: absolute;
+  background-color: #fff;
+  width: 70px;
+  height: 70px;
+  top: -35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  text-shadow: white 2px 2px 2px;
+  line-height: 50px; }
+
+  #section-contacts-main .card  {
+    transform: scale(1);
+    transition-duration: 0.6s;
+  }
+
+  #section-contacts-main .card:hover  {
+    transform: scale(1.05);
+    transition-duration: 0.6s;
+  }
 
 /* -----------------------------------  ANIMATIONS  -------------------------------------*/
 

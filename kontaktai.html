@@ -88,16 +88,152 @@
             <img src="main3.png" alt="" class="header-image">
         </header>
 
-        <section>
-            <div class="container">
-                <h2>Mūsų kontaktai</h2>
+        <section id="section-contacts-main" class="bg-light py-5">
+            <div class="container pt-5">
+                <h2 class="text-center">Mūsų kontaktai</h2>
+                <div class="row justify-content-center align-items-stretch mt-5 pt-4">
+                    <div class="col-md-2">
+                        <a href="tel:+37062114494" class="card rounded shadow h-100">
+                            <div class="card-header header-rounded rounded-circle"><i class="fas fa-mobile-alt fa-lg"></i></div>
+                            <div class="card-body text-center d-flex flex-column justify-content-center align-items-center pt-5">
+                                <h6 class="text-secondary">Tel. nr</h6>
+                                <p>+ 3706 211 4494</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="mailto:info@ficusmedia.lt" class="card rounded shadow h-100">
+                            <div class="card-header header-rounded rounded-circle"><i class="far fa-envelope fa-lg"></i></div>
+                            <div class="card-body text-center d-flex flex-column justify-content-center align-items-center pt-5">
+                                <h6 class="text-secondary">El. paštas</h6>
+                                <p>info@<wbr>ficusmedia.lt</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://www.facebook.com/ficusmedia" target="_blank" class="card rounded shadow h-100">
+                            <div class="card-header header-rounded rounded-circle"><i class="fab fa-facebook-f fa-lg"></i></div>
+                            <div class="card-body text-center d-flex flex-column justify-content-center align-items-center pt-5">
+                                <h6 class="text-secondary">Facebook</h6>
+                                <p>/ficusmedia</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://www.instagram.com/ficusmedia/" target="_blank" class="card rounded shadow h-100">
+                            <div class="card-header header-rounded rounded-circle"><i class="fab fa-instagram fa-lg"></i></div>
+                            <div class="card-body text-center d-flex flex-column justify-content-center align-items-center pt-5">
+                                <h6 class="text-secondary">Instagram</h6>
+                                <p>@ficusmedia</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#" target="_blank" class="card rounded shadow h-100">
+                            <div class="card-header header-rounded rounded-circle"><i class="fab fa-linkedin-in fa-lg"></i></div>
+                            <div class="card-body text-center d-flex flex-column justify-content-center align-items-center pt-5">
+                                <h6 class="text-secondary">LinkedIn</h6>
+                                <p>@ficusmedia</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section>
-            <div class="container">
-                <h2>Susisiekite su mumis</h2>
+        <section id="email-us" class="mt-5 pt-5">
+            <div class="container mt-4">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-4 mb-3 mb-lg-0">
+                        <h2 class="text-center text-lg-left">Turite klausimų?<br>Rašykite mums</h2>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1 contact-form-container">
+                        <form id="emailForm" data-netlify="true" method="POST" name="PRANEŠIMAI" action="./success_message.html" class="bg-white shadow rounded p-5 mx-3 mx-md-0 " novalidate>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Jūsų vardas:</label>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" placeholder="Vardas" name="Vardas">
+                                        </div>
+                                        <div class="col-sm-6 mt-3 mt-sm-0">
+                                            <input type="text" class="form-control" placeholder="Pavardė" name="Pavardė">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputEmail1" class="col-sm-3 col-form-label">Jūsų el. paštas:</label>
+                                <div class="col">
+                                    <input type="email" name="El. paštas" class="form-control" id="inputEmail1" placeholder="El. paštas">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputPhoneNumber1" class="col-sm-3 col-form-label">Jūsų numeris:</label>
+                                <div class="col">
+                                    <input type="tel" name="Tel. nr." class="form-control" id="inputPhoneNumber1" placeholder="Tel. nr.">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputMessage" class="col-sm-3 col-form-label">Žinutė:</label>
+                                <div class="col">
+                                    <textarea class="form-control" name="Žinutė" id="inputMessage" rows="2"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row mb-0">
+                                <div class="col-sm-9 offset-sm-3 d-flex">
+                                    <a href="" type="submit" class="btn-1 btn-1-secondary mx-auto border-0">Siųsti</a>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="contact-form-leaf1"></div>
+                        <div class="contact-form-leaf2"></div>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section id="section-contacts" class="d-flex flex-column justify-content-end">
+            <div class="container">
+                <div class="row justify-content-center mt-4 align-items-stretch">
+                    <div class="col-md-4 text-center text-white border-right border-responsive">
+                        <div class="h-100">
+                            <h5 class="text-secondary">Paslaugos</h5>
+                            <a href="internetines_svetaines.html" class="d-block contacts-nav-item mt-4 mb-2">Internetinės svetainės</a>
+                            <a href="grafinis_dizainas.html" class="d-block contacts-nav-item mb-2">Grafinis dizainas</a>
+                            <a href="socialiniai_tinklai.html" class="d-block contacts-nav-item">Socialinių tinklų turinys</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-white">
+                        <div class="h-100">
+                            <h5 class="text-secondary">Kontaktai</h5>
+                            <h6 class="mt-4">El. paštas:</h6>
+                            <a aria-label="Link" href="mailto:info@ficusmedia.lt" class="contacts-nav-item">info@ficusmedia.lt</a>
+                            <h6 class="mt-2">Tel. nr.:</h6>
+                            <a aria-label="Link" href="tel:+37062114494" class="contacts-nav-item">+ 370 621 14494</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-white border-left border-responsive">
+                        <div class="h-100">
+                        <h5 class="text-secondary mb-4">Sekite mus:</h5>
+                            <div>
+                                <a href="https://www.facebook.com/ficusmedia" target="_blank">
+                                    <i class="fab fa-facebook-f fa-lg contacts-nav-item"></i>
+                                </a>
+                                <a href="https://www.instagram.com/ficusmedia/" target="_blank" class="ml-2">
+                                    <i class="fab fa-instagram fa-lg contacts-nav-item"></i>
+                                </a>
+                                <a href="#" target="_blank" class="ml-2">
+                                    <i class="fab fa-linkedin-in fa-lg contacts-nav-item"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="d-flex justify-content-center align-items-center mt-4">
+                <p class="text-gradient mb-0">copyright © ficusmedia.lt <span id="year"></span></p>
+            </footer>
         </section>
 
 
