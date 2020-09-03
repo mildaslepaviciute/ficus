@@ -46,12 +46,20 @@ a:hover {
   background: transparent;
 }
 
+.bg-light-pink {
+  background: #f3ebee;
+}
+
 .w-95 {
   width: 95%;
 }
 
 .w-85 {
   width: 85%;
+}
+
+.border-responsive {
+  border-right: 0px solid #fff !important;
 }
 
 
@@ -124,6 +132,10 @@ SPINNER
 NAVBAR
 
 -------------------------------------*/
+
+.logo-main {
+  width: 70px;
+}
 
 nav {
   z-index: 2;
@@ -225,7 +237,8 @@ HEADER
   height: 100%;
 }
 
-#header-main {
+#header-main,
+#header-main-mobile {
   position: relative;
 }
 
@@ -245,6 +258,21 @@ HEADER
  }
 }
 
+.header-overlay .col-10 {
+  position: absolute;
+  top: 18%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  z-index: 0;
+  width: 100%;
+  h1 {
+    font-size: 6vw;
+    color: $primary; 
+    letter-spacing: 0.45rem;
+    font-weight: 700;
+  }
+}
+
 .header-image {
  display: block;
   //overflow: visible;
@@ -261,7 +289,7 @@ FOOTER
 -------------------------------------*/
 
 footer {
-  height: 85px;
+  height: 65px;
   background: transparent;
 }
 
@@ -269,6 +297,10 @@ footer {
   background: linear-gradient(45deg, #3c63ff 0%, #b53471 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.logo-footer {
+  width: 80px;
 }
 
 /* -----------------------------------
@@ -369,7 +401,7 @@ SECTION-STRATEGY
 #section-strategy {
   width: 100%;
   height: auto;
-  background-image: url(../main12.png);
+  background-image: url(../main-2.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -381,24 +413,8 @@ SECTION-STRATEGY
   width: 100%;
 }
 
-.text-positioning-1 {
-  top: 14.5%;
-  left: 66%;
-}
-
-.text-positioning-2 {
-  top: 28.5%;
-  left: 66%;
-}
-
-.text-positioning-3 {
-  top: 42.5%;
-  left: 66%;
-}
-
-.text-positioning-4 {
-  top: 56.5%;
-  left: 66%;
+#section-strategy h4{
+  font-size: 1.2rem !important;
 }
 
 
@@ -415,6 +431,10 @@ SECTION-CONTACTUS
 
 -------------------------------------*/
 
+#email-us {
+  overflow-x: hidden;
+}
+
 .contact-form-container {
   position: relative;
 }
@@ -427,10 +447,10 @@ SECTION-CONTACTUS
 .contact-form-leaf1 {
   position: absolute;
   z-index: 1;
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   top: 180px;
-  left: -170px;
+  left: -120px;
   background-image: url(../img/contact_form_leaf1.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -439,10 +459,10 @@ SECTION-CONTACTUS
 .contact-form-leaf2 {
   position: absolute;
   z-index: 1;
-  height: 250px;
-  width: 210px;
+  height: 200px;
+  width: 167px;
   top: 50px;
-  right: -150px;
+  right: -100px;
   background-image: url(../img/contact_form_leaf2.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -455,11 +475,11 @@ SECTION-CONTACTS
 -------------------------------------*/
 
 #section-contacts {
-  background-image: url(../CONTACT.png);
+  background-image: url(../prailgintas.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: bottom;
-  min-height: 500px;
+  background-position-y: top;
+  padding-top: 150px;
 }
 
 .fa-facebook-f, 
@@ -554,7 +574,132 @@ SECTION-CONTACTS
 
 /* -----------------------------------  QUERIES  -------------------------------------*/
 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
 
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+  .contact-form-leaf1 {
+    height: 250px;
+    width: 250px;
+    top: 180px;
+    left: -170px;
+  }
+  
+  .contact-form-leaf2 {
+    height: 250px;
+    width: 210px;
+    top: 50px;
+    right: -150px;
+  }
+
+  .border-responsive {
+    border-right: 1px solid #fff !important;
+  }
+
+  footer {
+    height: 85px;
+  }
+
+  .logo-footer {
+    width: 100px;
+  }
+
+  #section-contacts {
+    padding-top: 150px;
+  }
+
+  .text-positioning-1 {
+    top: 7%;
+    left: 52%;
+    padding-right: 20px;
+  }
+  
+  .text-positioning-2 {
+    top: 28%;
+    left: 52%;
+    padding-right: 20px;
+  }
+  
+  .text-positioning-3 {
+    top: 49%;
+    left: 52%;
+    padding-right: 20px;
+  }
+  
+  .text-positioning-4 {
+    top: 70%;
+    left: 52%;
+    padding-right: 20px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+  .logo-main {
+    width: 100px;
+  }
+    .text-positioning-1 {
+    top: 14%;
+    left: 52%;
+    padding-right: 50px;
+  }
+  
+  .text-positioning-2 {
+    top: 28%;
+    left: 52%;
+    padding-right: 50px;
+  }
+  
+  .text-positioning-3 {
+    top: 42%;
+    left: 52%;
+    padding-right: 50px;
+  }
+  
+  .text-positioning-4 {
+    top: 56%;
+    left: 52%;
+    padding-right: 50px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  #section-strategy {
+    background-image: url(../main-1.png);
+  }
+
+  .text-positioning-1 {
+    top: 14%;
+    left: 60%;
+    padding-right: 100px;
+  }
+  
+  .text-positioning-2 {
+    top: 28%;
+    left: 60%;
+    padding-right: 100px;
+  }
+  
+  .text-positioning-3 {
+    top: 42%;
+    left: 60%;
+    padding-right: 100px;
+  }
+  
+  .text-positioning-4 {
+    top: 56%;
+    left: 60%;
+    padding-right: 100px;
+  }
+
+  #section-strategy h4 {
+    font-size: 1.5rem !important;
+  }
+}
 
 
 
@@ -824,15 +969,18 @@ SECTION-CONTACTS
 
 /* --- pavyzdžio atidarymo modalas ---*/
 
-.modal-header {
+#submitTable .modal-header {
   height: 320px;
-  background-image: url("../img/bg-header.jpg");
+  background-image: url("../table_modal_header.png");
   background-repeat: no-repeat;
   background-size: cover;
+  border: 0px;
 }
 
-.modal-title-top {
-  margin-top: -120px;
+.close {
+  font-weight: 300;
+  color: #fff;
+  font-size: 2rem;
 }
 
 #modalKitokiosgeles a,
@@ -844,7 +992,7 @@ SECTION-CONTACTS
 
 .hr-small {
   width: 80px;
-  border: 1px solid $pink;
+  border-top: 2px solid $pink;
   margin: 0 auto;
 }
 
