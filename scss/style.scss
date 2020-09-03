@@ -58,7 +58,7 @@ a:hover {
   width: 85%;
 }
 
-.border-responsive {
+.border-responsive-footer {
   border-right: 0px solid #fff !important;
 }
 
@@ -501,7 +501,9 @@ SECTION-CONTACTS
 
 /* -----------------------------------  WEB PAGES  -------------------------------------*/
 
-
+.border-responsive-webpages {
+  border-right: 0px solid #dee2e6 !important;
+}
 
 
 
@@ -594,7 +596,7 @@ SECTION-CONTACTS
     right: -150px;
   }
 
-  .border-responsive {
+  .border-responsive-footer {
     border-right: 1px solid #fff !important;
   }
 
@@ -632,6 +634,10 @@ SECTION-CONTACTS
     top: 70%;
     left: 52%;
     padding-right: 20px;
+  }
+
+  .border-responsive-webpages {
+    border-right: 1px solid #dee2e6 !important;
   }
 }
 

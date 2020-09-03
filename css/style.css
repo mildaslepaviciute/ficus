@@ -40,7 +40,7 @@ a:hover {
 .w-85 {
   width: 85%; }
 
-.border-responsive {
+.border-responsive-footer {
   border-right: 0px solid #fff !important; }
 
 /* -----------------------------------
@@ -402,6 +402,9 @@ SECTION-CONTACTS
   color: #A85698; }
 
 /* -----------------------------------  WEB PAGES  -------------------------------------*/
+.border-responsive-webpages {
+  border-right: 0px solid #dee2e6 !important; }
+
 /* -----------------------------------  GRAPHICAL DESIGN  -------------------------------------*/
 /* -----------------------------------  SOCIAL MEDIA  -------------------------------------*/
 /* -----------------------------------  CONTACTS  -------------------------------------*/
@@ -449,7 +452,7 @@ SECTION-CONTACTS
     top: 50px;
     right: -150px; }
 
-  .border-responsive {
+  .border-responsive-footer {
     border-right: 1px solid #fff !important; }
 
   footer {
@@ -479,7 +482,10 @@ SECTION-CONTACTS
   .text-positioning-4 {
     top: 70%;
     left: 52%;
-    padding-right: 20px; } }
+    padding-right: 20px; }
+
+  .border-responsive-webpages {
+    border-right: 1px solid #dee2e6 !important; } }
 @media (min-width: 992px) {
   .logo-main {
     width: 100px; }
