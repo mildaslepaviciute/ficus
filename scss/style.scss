@@ -92,6 +92,11 @@ h3 {
   color: $primary;
 }
 
+h4,
+h5 {
+  font-weight: 500;
+}
+
 /* -----------------------------------
 
 SPINNER
@@ -302,14 +307,13 @@ HEADER
   position: relative;
 }
 
-#header-main h4 {
-  text-transform: capitalize;
+#header-main h5 {
+  text-transform: none;
 }
 
 .header-overlay .col-5 {
  position: absolute;
- top: 45%;
- left: 5%;
+ top: 50%;
  transform: translateY(-50%);
  text-transform: uppercase;
  z-index: 0;
@@ -675,7 +679,7 @@ SECTION-CONTACTS
 @media (min-width: 992px) {
 
   .logo-main {
-    width: 100px;
+    width: 75px;
   }
     .text-positioning-1 {
     top: 14%;
