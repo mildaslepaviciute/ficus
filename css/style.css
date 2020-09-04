@@ -14,7 +14,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Work Sans', sans-serif; }
 
 .text-black {
   color: #000; }
@@ -48,6 +48,26 @@ a:hover {
 HEADINGS
 
 -------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif; }
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #031A70;
+  font-size: 3vw; }
+
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #031A70; }
+
 /* -----------------------------------
 
 SPINNER
@@ -109,11 +129,12 @@ nav {
   z-index: 2; }
 
 .nav-item a {
-  color: #A85698; }
-
-.nav-item a:hover,
-.nav-item a:active {
-  color: #A85698; }
+  color: #A85698;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px; }
 
 .navbar-brand p {
   color: #031A70;
@@ -127,6 +148,37 @@ nav {
 
 .dropdown-menu.collapsing {
   display: block; }
+
+/* hover */
+.nav-item a:hover,
+.nav-item a:active {
+  color: #66CCFF; }
+
+nav.stroke ul li a {
+  position: relative; }
+
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #66CCFF;
+  height: 1px; }
+
+nav.stroke ul li a:hover:after {
+  width: 100%; }
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s; }
+
+.dropdown-item:hover:after {
+  width: 0px !important; }
 
 @media (max-width: 767.98px) {
   .dropdown-menu {
@@ -183,19 +235,17 @@ HEADER
 #header-main-mobile {
   position: relative; }
 
+#header-main h4 {
+  text-transform: capitalize; }
+
 .header-overlay .col-5 {
   position: absolute;
   top: 45%;
-  left: 15%;
+  left: 5%;
   transform: translateY(-50%);
   text-transform: uppercase;
   z-index: 0;
   width: 100%; }
-  .header-overlay .col-5 h1 {
-    font-size: 6vw;
-    color: #031A70;
-    letter-spacing: 0.45rem;
-    font-weight: 700; }
 
 .header-overlay .col-10 {
   position: absolute;
@@ -204,11 +254,6 @@ HEADER
   text-transform: uppercase;
   z-index: 0;
   width: 100%; }
-  .header-overlay .col-10 h1 {
-    font-size: 6vw;
-    color: #031A70;
-    letter-spacing: 0.45rem;
-    font-weight: 700; }
 
 .header-image {
   display: block;
@@ -402,32 +447,14 @@ SECTION-CONTACTS
   color: #A85698; }
 
 /* -----------------------------------  WEB PAGES  -------------------------------------*/
-.border-responsive-webpages {
-  border-right: 0px solid #dee2e6 !important; }
-
 /* -----------------------------------  GRAPHICAL DESIGN  -------------------------------------*/
 /* -----------------------------------  SOCIAL MEDIA  -------------------------------------*/
 /* -----------------------------------  CONTACTS  -------------------------------------*/
-.header-rounded {
-  position: absolute;
-  background-color: #fff;
-  width: 70px;
-  height: 70px;
-  top: -35px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  text-align: center;
-  font-weight: bold;
-  font-size: 1em;
-  text-shadow: white 2px 2px 2px;
-  line-height: 50px; }
-
-#section-contacts-main .card {
+.contacts-card {
   transform: scale(1);
   transition-duration: 0.6s; }
 
-#section-contacts-main .card:hover {
+.contacts-card:hover {
   transform: scale(1.05);
   transition-duration: 0.6s; }
 
@@ -482,10 +509,7 @@ SECTION-CONTACTS
   .text-positioning-4 {
     top: 70%;
     left: 52%;
-    padding-right: 20px; }
-
-  .border-responsive-webpages {
-    border-right: 1px solid #dee2e6 !important; } }
+    padding-right: 20px; } }
 @media (min-width: 992px) {
   .logo-main {
     width: 100px; }
