@@ -39,30 +39,30 @@
         </div>
 
         <nav class="navbar navbar-expand-md stroke w-100 pt-2" id="main-nav">
-            <a aria-label="Link" href="index.html" class="navbar-brand mt-4">
-                <img src="img/logoblue.png" class="logo-main ml-5" alt="">
+            <a aria-label="Link" href="index.html" class="navbar-brand mt-1 mt-md-4">
+                <img src="img/logoblue.png" class="logo-main ml-3 ml-md-5" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <ion-icon name="menu-outline" class="text-secondary"></ion-icon>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto mr-5">
-                    <li class="nav-item ml-0 ml-md-4">
+                <ul class="navbar-nav ml-auto mr-md-3 mr-lg-5">
+                    <li class="nav-item ml-3 ml-md-2 ml-lg-4">
                         <a aria-label="Link" href="index.html" class="nav-link">Pradžia</a>
                     </li>
-                    <li class="nav-item ml-0 ml-md-4">
+                    <li class="nav-item ml-3 ml-md-2 ml-lg-4">
                         <a aria-label="Link" href="apie-mus.html" class="nav-link">Apie mus</a>
                     </li>
-                    <li class="nav-item dropdown ml-0 ml-md-4">
+                    <li class="nav-item dropdown ml-3 ml-md-2 ml-lg-4">
                         <a class="nav-link" href="#" id="dropdown01" data-toggle="collapse" aria-haspopup="true" aria-expanded="false" data-toggle="collapse" data-target="#dropdown-menu01">Paslaugos <span><ion-icon name="chevron-down-outline"></ion-icon></span></a>
                         <div>
                             <div id="dropdown-menu01" class="dropdown-menu collapse" aria-labelledby="dropdown01" data-parent="#main-nav">
-                                <a class="dropdown-item" href="internetines_svetaines.html">Internetinės svetainės</a>
-                                <a class="dropdown-item" href="grafinis_dizainas.html">Brandingas</a>
+                                <a class="dropdown-item px-md-0" href="internetines_svetaines.html">- Internetinės svetainės</a>
+                                <a class="dropdown-item px-md-0 mt-2" href="grafinis_dizainas.html">- Grafinis dizainas</a>
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item ml-0 ml-md-4">
+                    <li class="nav-item ml-3 ml-md-2 ml-lg-4">
                         <a aria-label="Link" href="kontaktai.html" class="nav-link">Kontaktai</a>
                     </li>
                 </ul>
@@ -76,19 +76,19 @@
         </header> -->
 
         <header id="header-main" class="d-none d-sm-block">
-            <div class="container header-overlay">
+            <div class="header-overlay">
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-5 ml-5 pl-3">
                         <h1>kaip pasiklosi, taip išmiegosi</h1>
                         <h5>Internetinių svetainių kūrimo ir grafinio dizaino darbai</h5>
                     </div>
                 </div>
             </div>
-            <img src="branding_.png" alt="" class="header-image">
+            <img src="img/Backgrounds/hero_design.png" alt="" class="header-image">
         </header>
 
         <header id="header-main-mobile" class="d-block d-sm-none">
-            <div class="container header-overlay">
+            <div class="header-overlay">
                 <div class="row justify-content-center">
                     <div class="col-10">
                         <h1 class="text-center text-white">FICUS<br>MEDIA</h1>
@@ -97,6 +97,38 @@
             </div>
             <img src="img/hero-image-mobile.png" alt="" class="header-image">
         </header>
+
+        <section id="portfolio-design" class="mt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div data-toggle="modal" data-target="#modalBio1" class="position-relative">
+                            <div class="hover-dark position-absolute h-100 w-100"></div>
+                            <img src="img/Grafinio_dizaino_portfolio/BIO1/main.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div data-toggle="modal" data-target="#modalBiomapas" class="position-relative">
+                            <div class="hover-dark position-absolute h-100 w-100"></div>
+                            <img src="img/Grafinio_dizaino_portfolio/Biomapas/main.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div data-toggle="modal" data-target="#modalMinded" class="position-relative">
+                            <div class="hover-dark position-absolute h-100 w-100"></div>
+                            <img src="img/Grafinio_dizaino_portfolio/Minded/posters.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="w-100 mt-5"></div>
+                    <div class="col-md-4">
+                        <div data-toggle="modal" data-target="#modalVPC" class="position-relative">
+                            <div class="hover-dark position-absolute h-100 w-100"></div>
+                            <img src="img/Grafinio_dizaino_portfolio/VPC_Biznis_ir_bapkės/main.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section id="section-contacts" class="mt-5 d-flex flex-column justify-content-end">
             <div class="container">
@@ -142,6 +174,377 @@
                 <p class="text-gradient mb-0">copyright © ficusmedia.lt <span id="year"></span></p>
             </footer>
         </section>
+
+
+
+        <div class="modal" id="modalBio1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header d-flex flex-column text-white">
+                        <button id="closeForm" class="close" data-dismiss="modal">&times;</button>
+                        <div class="text-center w-100 mb-auto mt-5">
+                            <i class="fas fa-file-signature fa-2x mb-4 text-secondary-darker"></i>
+                            <h5 class="modal-title mb-3">Internetinės svetainės užsakymas</h5>
+                        </div>
+                    </div>
+                    <div class="modal-body pt-0">
+                        <div class="container">
+                            <!-- <div class="d-flex flex-column">
+                                <img src="img/logo-lizdelis.png" alt="" height="100" class="mx-auto modal-title-top">
+                                <div class="d-flex justify-content-center align-items-cent mt-4">
+                                    <a href="https://www.lizdelis.lt/" target="_blank" class="text-center text-secondary mt-4 link-text mb-0">eiti į www.lizdelis.lt <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
+                                </div>
+                                <hr class="hr-small mt-4">
+                            </div> -->
+                            <div class="row mt-5">
+                                <div class="col-md-6">
+                                    <h5 class="text-black">FUNKCIJOS:</h5>
+                                    <p><strong>Tipas:</strong><br>Reprezentacinė svetainė</p>
+                                    <p><strong>Puslapių skaičius:</strong><br>5</p>
+                                    <p><strong>Integracijos:</strong><br>„Messenger“ pokalbių laukelis<br>„Facebook“ naujienos<br>„Instagram“ naujienos<br>„Google Analytics“<br>Interaktyvus žemėlapis</p>
+                                    <p><strong>Kiti ypatumai:</strong><br>Modernus dizainas<br>Užsiėmimų tvarkaraščiai<br>Registracija į užsiėmimus<br>Formų validacija<br>Automatinis elektroninių laiškų siuntimas<br>Pritaikymas mobiliesiems<br>Vidinė SEO optimizacija</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="text-black">ATLIKTI DARBAI:</h5>
+                                    <p class="mb-0 mt-3"><strong>Logotipas:</strong><br>Sukurtas Ficus grupės</p>
+                                    <a href="#logo-lizdelis" class="text-secondary">PERŽIŪRĖTI</a>
+                                    <p class="mb-0 mt-3"><strong>Dizainas:</strong><br>Sukurtas Ficus grupės</p>
+                                    <a href="#design-lizdelis" class="text-secondary">PERŽIŪRĖTI</a>
+                                    <p class="mt-3"><strong>Programavimo darbai:</strong><br>Atlikta Ficus grupės</p>
+                                    <p class="mt-3"><strong>Hostingas ir domeno talpinimas:</strong><br>Parinkta ir atlikta Ficus grupės</p>
+                                    <h5 class="text-black mt-5">NAUDOTI ĮRANKIAI:</h5>
+                                    <div class="row align-items-start mt-4">
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/html5.jpg" alt="" height="50">
+                                            <small class="text-center mt-2">HTML 5</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/css.png" alt="" height="50">
+                                            <small class="text-center mt-2">CSS 3</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/sass.png" alt="" height="50">
+                                            <small class="text-center mt-2">SASS</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/bootstrap.png" alt="" height="50">
+                                            <small class="text-center mt-2">Bootstrap 4</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/js.png" alt="" height="50">
+                                            <small class="text-center mt-2">Java Script</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/jquery.png" alt="" height="50">
+                                            <small class="text-center mt-2">JQuery</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 id="design-lizdelis" class="text-center text-black mt-5">Svetainės vaizdas</h4>
+                            <hr class="hr-small mt-4">
+                            <div class="row mt-2">
+                                <div class="col-6">
+                                    <img src="img/Grafinio_dizaino_portfolio/BIO1/1.png" alt="" class="img-fluid shadow">
+                                </div>
+                                <div class="col-6">
+                                    <img src="img/Grafinio_dizaino_portfolio/BIO1/2.png" alt="" class="img-fluid shadow">
+                                </div>
+                                <div class="col-6">
+                                    <img src="img/Grafinio_dizaino_portfolio/BIO1/3.png" alt="" class="img-fluid shadow">
+                                </div>
+                                <div class="col-6">
+                                    <img src="img/Grafinio_dizaino_portfolio/BIO1/4.png" alt="" class="img-fluid shadow">
+                                </div>
+                                <div class="col-6">
+                                    <img src="img/Grafinio_dizaino_portfolio/BIO1/5.png" alt="" class="img-fluid shadow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modalBiomapas">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header d-flex flex-column text-white">
+                        <button id="closeForm" class="close" data-dismiss="modal">&times;</button>
+                        <div class="text-center w-100 mb-auto mt-5">
+                            <i class="fas fa-file-signature fa-2x mb-4 text-secondary-darker"></i>
+                            <h5 class="modal-title mb-3">Internetinės svetainės užsakymas</h5>
+                        </div>
+                    </div>
+                    <div class="modal-body pt-0">
+                        <div class="container">
+                            <!-- <div class="d-flex flex-column">
+                                <img src="img/logo-lizdelis.png" alt="" height="100" class="mx-auto modal-title-top">
+                                <div class="d-flex justify-content-center align-items-cent mt-4">
+                                    <a href="https://www.lizdelis.lt/" target="_blank" class="text-center text-secondary mt-4 link-text mb-0">eiti į www.lizdelis.lt <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
+                                </div>
+                                <hr class="hr-small mt-4">
+                            </div> -->
+                            <div class="row mt-5">
+                                <div class="col-md-6">
+                                    <h5 class="text-black">FUNKCIJOS:</h5>
+                                    <p><strong>Tipas:</strong><br>Reprezentacinė svetainė</p>
+                                    <p><strong>Puslapių skaičius:</strong><br>5</p>
+                                    <p><strong>Integracijos:</strong><br>„Messenger“ pokalbių laukelis<br>„Facebook“ naujienos<br>„Instagram“ naujienos<br>„Google Analytics“<br>Interaktyvus žemėlapis</p>
+                                    <p><strong>Kiti ypatumai:</strong><br>Modernus dizainas<br>Užsiėmimų tvarkaraščiai<br>Registracija į užsiėmimus<br>Formų validacija<br>Automatinis elektroninių laiškų siuntimas<br>Pritaikymas mobiliesiems<br>Vidinė SEO optimizacija</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="text-black">ATLIKTI DARBAI:</h5>
+                                    <p class="mb-0 mt-3"><strong>Logotipas:</strong><br>Sukurtas Ficus grupės</p>
+                                    <a href="#logo-lizdelis" class="text-secondary">PERŽIŪRĖTI</a>
+                                    <p class="mb-0 mt-3"><strong>Dizainas:</strong><br>Sukurtas Ficus grupės</p>
+                                    <a href="#design-lizdelis" class="text-secondary">PERŽIŪRĖTI</a>
+                                    <p class="mt-3"><strong>Programavimo darbai:</strong><br>Atlikta Ficus grupės</p>
+                                    <p class="mt-3"><strong>Hostingas ir domeno talpinimas:</strong><br>Parinkta ir atlikta Ficus grupės</p>
+                                    <h5 class="text-black mt-5">NAUDOTI ĮRANKIAI:</h5>
+                                    <div class="row align-items-start mt-4">
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/html5.jpg" alt="" height="50">
+                                            <small class="text-center mt-2">HTML 5</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/css.png" alt="" height="50">
+                                            <small class="text-center mt-2">CSS 3</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/sass.png" alt="" height="50">
+                                            <small class="text-center mt-2">SASS</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/bootstrap.png" alt="" height="50">
+                                            <small class="text-center mt-2">Bootstrap 4</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/js.png" alt="" height="50">
+                                            <small class="text-center mt-2">Java Script</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/jquery.png" alt="" height="50">
+                                            <small class="text-center mt-2">JQuery</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 id="design-lizdelis" class="text-center text-black mt-5">Svetainės vaizdas</h4>
+                            <hr class="hr-small mt-4">
+                            <div class="row mt-5">
+                                <div class="col-12">
+                                    <video controls autoplay loop muted class="img-fluid">
+                                        <source src="img/Grafinio_dizaino_portfolio/Biomapas/Comp 1_3.mp4">
+                                     </video>                                
+                                </div>
+                                <div class="col-12">
+                                    <video controls loop muted class="img-fluid">
+                                        <source src="img/Grafinio_dizaino_portfolio/Biomapas/Tuberculosis_video.mp4">
+                                     </video>                                
+                                </div>
+                                <div class="col-12">
+                                    <video controls loop muted class="img-fluid">
+                                        <source src="img/Grafinio_dizaino_portfolio/Biomapas/videoCOVER.mp4">
+                                     </video>                                
+                                </div>
+                                <div class="col-12">
+                                    <video controls loop muted class="img-fluid">
+                                        <source src="img/Grafinio_dizaino_portfolio/Biomapas/Kazakhstan.mp4">
+                                     </video>                                
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <img src="img/Grafinio_dizaino_portfolio/Biomapas/VIZUALAS-4.png" alt="" class="img-fluid shadow">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <img src="img/Grafinio_dizaino_portfolio/Biomapas/1-vizualas.png" alt="" class="img-fluid shadow">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <img src="img/Grafinio_dizaino_portfolio/Biomapas/VIZUALAS-2.png" alt="" class="img-fluid shadow">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <img src="img/Grafinio_dizaino_portfolio/Biomapas/VIZUALAS-3.png" alt="" class="img-fluid shadow">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <img src="img/Grafinio_dizaino_portfolio/Biomapas/REGISTRACIJA.png" alt="" class="img-fluid shadow">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <img src="img/Grafinio_dizaino_portfolio/Biomapas/REGISTRACIJA3.png" alt="" class="img-fluid shadow">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <img src="img/Grafinio_dizaino_portfolio/Biomapas/REGISTRACIJA1.png" alt="" class="img-fluid shadow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modalMinded">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header d-flex flex-column text-white">
+                        <button id="closeForm" class="close" data-dismiss="modal">&times;</button>
+                        <div class="text-center w-100 mb-auto mt-5">
+                            <i class="fas fa-file-signature fa-2x mb-4 text-secondary-darker"></i>
+                            <h5 class="modal-title mb-3">Internetinės svetainės užsakymas</h5>
+                        </div>
+                    </div>
+                    <div class="modal-body pt-0">
+                        <div class="container">
+                            <!-- <div class="d-flex flex-column">
+                                <img src="img/logo-lizdelis.png" alt="" height="100" class="mx-auto modal-title-top">
+                                <div class="d-flex justify-content-center align-items-cent mt-4">
+                                    <a href="https://www.lizdelis.lt/" target="_blank" class="text-center text-secondary mt-4 link-text mb-0">eiti į www.lizdelis.lt <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
+                                </div>
+                                <hr class="hr-small mt-4">
+                            </div> -->
+                            <div class="row mt-5">
+                                <div class="col-md-6">
+                                    <h5 class="text-black">FUNKCIJOS:</h5>
+                                    <p><strong>Tipas:</strong><br>Reprezentacinė svetainė</p>
+                                    <p><strong>Puslapių skaičius:</strong><br>5</p>
+                                    <p><strong>Integracijos:</strong><br>„Messenger“ pokalbių laukelis<br>„Facebook“ naujienos<br>„Instagram“ naujienos<br>„Google Analytics“<br>Interaktyvus žemėlapis</p>
+                                    <p><strong>Kiti ypatumai:</strong><br>Modernus dizainas<br>Užsiėmimų tvarkaraščiai<br>Registracija į užsiėmimus<br>Formų validacija<br>Automatinis elektroninių laiškų siuntimas<br>Pritaikymas mobiliesiems<br>Vidinė SEO optimizacija</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="text-black">ATLIKTI DARBAI:</h5>
+                                    <p class="mb-0 mt-3"><strong>Logotipas:</strong><br>Sukurtas Ficus grupės</p>
+                                    <a href="#logo-lizdelis" class="text-secondary">PERŽIŪRĖTI</a>
+                                    <p class="mb-0 mt-3"><strong>Dizainas:</strong><br>Sukurtas Ficus grupės</p>
+                                    <a href="#design-lizdelis" class="text-secondary">PERŽIŪRĖTI</a>
+                                    <p class="mt-3"><strong>Programavimo darbai:</strong><br>Atlikta Ficus grupės</p>
+                                    <p class="mt-3"><strong>Hostingas ir domeno talpinimas:</strong><br>Parinkta ir atlikta Ficus grupės</p>
+                                    <h5 class="text-black mt-5">NAUDOTI ĮRANKIAI:</h5>
+                                    <div class="row align-items-start mt-4">
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/html5.jpg" alt="" height="50">
+                                            <small class="text-center mt-2">HTML 5</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/css.png" alt="" height="50">
+                                            <small class="text-center mt-2">CSS 3</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/sass.png" alt="" height="50">
+                                            <small class="text-center mt-2">SASS</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/bootstrap.png" alt="" height="50">
+                                            <small class="text-center mt-2">Bootstrap 4</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/js.png" alt="" height="50">
+                                            <small class="text-center mt-2">Java Script</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/jquery.png" alt="" height="50">
+                                            <small class="text-center mt-2">JQuery</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 id="design-lizdelis" class="text-center text-black mt-5">Svetainės vaizdas</h4>
+                            <hr class="hr-small mt-4">
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <video controls autoplay loop muted class="img-fluid">
+                                        <source src="img/Grafinio_dizaino_portfolio/Minded/MINDED_fbcover_6.mp4">
+                                     </video>                                
+                                </div>
+                                <div class="col-6">
+                                    <img src="img/Grafinio_dizaino_portfolio/Minded/POST1.png" alt="" class="img-fluid shadow">
+                                </div>
+                                <div class="col-6">
+                                    <img src="img/Grafinio_dizaino_portfolio/Minded/POST2.png" alt="" class="img-fluid shadow">
+                                </div>
+                                <div class="col-6">
+                                    <img src="img/Grafinio_dizaino_portfolio/Minded/POST3.png" alt="" class="img-fluid shadow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modalVPC">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header d-flex flex-column text-white">
+                        <button id="closeForm" class="close" data-dismiss="modal">&times;</button>
+                        <div class="text-center w-100 mb-auto mt-5">
+                            <i class="fas fa-file-signature fa-2x mb-4 text-secondary-darker"></i>
+                            <h5 class="modal-title mb-3">Internetinės svetainės užsakymas</h5>
+                        </div>
+                    </div>
+                    <div class="modal-body pt-0">
+                        <div class="container">
+                            <!-- <div class="d-flex flex-column">
+                                <img src="img/logo-lizdelis.png" alt="" height="100" class="mx-auto modal-title-top">
+                                <div class="d-flex justify-content-center align-items-cent mt-4">
+                                    <a href="https://www.lizdelis.lt/" target="_blank" class="text-center text-secondary mt-4 link-text mb-0">eiti į www.lizdelis.lt <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
+                                </div>
+                                <hr class="hr-small mt-4">
+                            </div> -->
+                            <div class="row mt-5">
+                                <div class="col-md-6">
+                                    <h5 class="text-black">FUNKCIJOS:</h5>
+                                    <p><strong>Tipas:</strong><br>Reprezentacinė svetainė</p>
+                                    <p><strong>Puslapių skaičius:</strong><br>5</p>
+                                    <p><strong>Integracijos:</strong><br>„Messenger“ pokalbių laukelis<br>„Facebook“ naujienos<br>„Instagram“ naujienos<br>„Google Analytics“<br>Interaktyvus žemėlapis</p>
+                                    <p><strong>Kiti ypatumai:</strong><br>Modernus dizainas<br>Užsiėmimų tvarkaraščiai<br>Registracija į užsiėmimus<br>Formų validacija<br>Automatinis elektroninių laiškų siuntimas<br>Pritaikymas mobiliesiems<br>Vidinė SEO optimizacija</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="text-black">ATLIKTI DARBAI:</h5>
+                                    <p class="mb-0 mt-3"><strong>Logotipas:</strong><br>Sukurtas Ficus grupės</p>
+                                    <a href="#logo-lizdelis" class="text-secondary">PERŽIŪRĖTI</a>
+                                    <p class="mb-0 mt-3"><strong>Dizainas:</strong><br>Sukurtas Ficus grupės</p>
+                                    <a href="#design-lizdelis" class="text-secondary">PERŽIŪRĖTI</a>
+                                    <p class="mt-3"><strong>Programavimo darbai:</strong><br>Atlikta Ficus grupės</p>
+                                    <p class="mt-3"><strong>Hostingas ir domeno talpinimas:</strong><br>Parinkta ir atlikta Ficus grupės</p>
+                                    <h5 class="text-black mt-5">NAUDOTI ĮRANKIAI:</h5>
+                                    <div class="row align-items-start mt-4">
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/html5.jpg" alt="" height="50">
+                                            <small class="text-center mt-2">HTML 5</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/css.png" alt="" height="50">
+                                            <small class="text-center mt-2">CSS 3</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/sass.png" alt="" height="50">
+                                            <small class="text-center mt-2">SASS</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/bootstrap.png" alt="" height="50">
+                                            <small class="text-center mt-2">Bootstrap 4</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/js.png" alt="" height="50">
+                                            <small class="text-center mt-2">Java Script</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/jquery.png" alt="" height="50">
+                                            <small class="text-center mt-2">JQuery</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 id="design-lizdelis" class="text-center text-black mt-5">Svetainės vaizdas</h4>
+                            <hr class="hr-small mt-4">
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <img src="img/Grafinio_dizaino_portfolio/VPC_Biznis_ir_bapkės/A.png" alt="" class="img-fluid shadow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <script src="https://kit.fontawesome.com/e3336da53c.js" crossorigin="anonymous"></script>

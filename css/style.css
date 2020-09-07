@@ -153,37 +153,6 @@ nav {
 .dropdown-menu.collapsing {
   display: block; }
 
-/* hover */
-.nav-item a:hover,
-.nav-item a:active {
-  color: #66CCFF; }
-
-nav.stroke ul li a {
-  position: relative; }
-
-nav.stroke ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #66CCFF;
-  height: 1px; }
-
-nav.stroke ul li a:hover:after {
-  width: 100%; }
-
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all .5s; }
-
-.dropdown-item:hover:after {
-  width: 0px !important; }
-
 @media (max-width: 767.98px) {
   .dropdown-menu {
     padding: 0;
@@ -368,7 +337,7 @@ SECTION-STRATEGY
 #section-strategy {
   width: 100%;
   height: auto;
-  background-image: url(../main-2.png);
+  background-image: url(../img/Backgrounds/section_strategy_small.png);
   background-size: contain;
   background-repeat: no-repeat; }
 
@@ -429,7 +398,7 @@ SECTION-CONTACTS
 
 -------------------------------------*/
 #section-contacts {
-  background-image: url(../prailgintas.png);
+  background-image: url(../img/Backgrounds/footer.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: top;
@@ -451,6 +420,12 @@ SECTION-CONTACTS
 
 /* -----------------------------------  WEB PAGES  -------------------------------------*/
 /* -----------------------------------  GRAPHICAL DESIGN  -------------------------------------*/
+.hover-dark {
+  background-color: transparent; }
+
+.hover-dark:hover {
+  background-color: rgba(0, 0, 0, 0.123); }
+
 /* -----------------------------------  SOCIAL MEDIA  -------------------------------------*/
 /* -----------------------------------  CONTACTS  -------------------------------------*/
 .contacts-card {
@@ -469,6 +444,12 @@ SECTION-CONTACTS
   opacity: 1; }
 
 /* -----------------------------------  QUERIES  -------------------------------------*/
+@media (min-width: 500px) {
+  .card-text-margin {
+    margin: 0 2rem 0 2rem; } }
+@media (min-width: 576px) {
+  .card-text-margin {
+    margin: 0; } }
 @media (min-width: 768px) {
   .contact-form-leaf1 {
     height: 250px;
@@ -512,7 +493,38 @@ SECTION-CONTACTS
   .text-positioning-4 {
     top: 70%;
     left: 52%;
-    padding-right: 20px; } }
+    padding-right: 20px; }
+
+  /* navbar hover */
+  .nav-item a:hover,
+  .nav-item a:active {
+    color: #66CCFF; }
+
+  nav.stroke ul li a {
+    position: relative; }
+
+  nav.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #66CCFF;
+    height: 1px; }
+
+  nav.stroke ul li a:hover:after {
+    width: 100%; }
+
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s; }
+
+  .dropdown-item:hover:after {
+    width: 0px !important; } }
 @media (min-width: 992px) {
   .logo-main {
     width: 75px; }
@@ -538,7 +550,7 @@ SECTION-CONTACTS
     padding-right: 50px; } }
 @media (min-width: 1200px) {
   #section-strategy {
-    background-image: url(../main-1.png); }
+    background-image: url(../img/Backgrounds/section_strategy_big.png); }
 
   .text-positioning-1 {
     top: 14%;
@@ -762,9 +774,9 @@ SECTION-CONTACTS
   transition-duration: 0.5s; }
 
 /* --- pavyzdžio atidarymo modalas ---*/
-#submitTable .modal-header {
+.modal-header {
   height: 320px;
-  background-image: url("../table_modal_header.png");
+  background-image: url("../img/Backgrounds/table_modal_header.png");
   background-repeat: no-repeat;
   background-size: cover;
   border: 0px; }
@@ -791,6 +803,9 @@ SECTION-CONTACTS
 
 strong {
   font-weight: 500; }
+
+.modal-dialog p {
+  font-weight: 300; }
 
 /* --- preloader ---*/
 #spinner-front, #spinner-back {
