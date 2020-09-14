@@ -37,6 +37,36 @@
               </div>
         </div>
 
+        <div id="navbar-sticky" class="d-none">
+            <nav class="navbar navbar-expand-md stroke w-100 pt-2 navbar-dark bg-secondary" id="main-nav">
+                <a aria-label="Link" href="index.html" class="navbar-brand mt-1 mt-md-4">
+                    <img src="img/logoblue.png" class="logo-main ml-3 ml-md-5" alt="">
+                </a>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav ml-auto mr-md-3 mr-lg-5">
+                        <li class="nav-item ml-3 ml-md-2 ml-lg-4">
+                            <a aria-label="Link" href="index.html" class="nav-link">Pradžia</a>
+                        </li>
+                        <li class="nav-item ml-3 ml-md-2 ml-lg-4">
+                            <a aria-label="Link" href="apie-mus.html" class="nav-link">Apie mus</a>
+                        </li>
+                        <li class="nav-item dropdown ml-3 ml-md-2 ml-lg-4">
+                            <a class="nav-link" href="#" id="dropdown01" data-toggle="collapse" aria-haspopup="true" aria-expanded="false" data-toggle="collapse" data-target="#dropdown-menu01">Paslaugos <span><ion-icon name="chevron-down-outline"></ion-icon></span></a>
+                            <div>
+                                <div id="dropdown-menu01" class="dropdown-menu collapse" aria-labelledby="dropdown01" data-parent="#main-nav">
+                                    <a class="dropdown-item px-md-0" href="internetines_svetaines.html">- Internetinės svetainės</a>
+                                    <a class="dropdown-item px-md-0 mt-2" href="grafinis_dizainas.html">- Grafinis dizainas</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item ml-3 ml-md-2 ml-lg-4">
+                            <a aria-label="Link" href="kontaktai.html" class="nav-link">Kontaktai</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
         <nav class="navbar navbar-expand-md stroke w-100 pt-2" id="main-nav">
             <a aria-label="Link" href="index.html" class="navbar-brand mt-1 mt-md-4">
                 <img src="img/logoblue.png" class="logo-main ml-3 ml-md-5" alt="">
@@ -99,7 +129,7 @@
             <img src="img/hero-image-mobile.png" alt="" class="header-image">
         </header>
 
-        <section id="section-whatwedo" class="position-relative">
+        <section id="section-whatwedo" class="position-relative js--sticky-navbar-start-point">
             <div class="container py-5">
                 <div class="row justify-content-center align-items-stretch">
                     <div class="col-10 col-sm-6 col-lg-4">
@@ -108,7 +138,7 @@
                                 <img src="img/choose-icon-web.png" alt="" height="100" class="mx-auto">
                                 <h5 class="text-secondary text-center mt-3">Internetinių svetainių kūrimas</h5>
                                 <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quam.</p>
-                                <div class="list-group mt-3">
+                                <div class="list-group mt-3 mb-4">
                                     <div class="list-item d-flex">
                                         <ion-icon name="checkmark-circle-outline" class="text-success mr-3"></ion-icon><p>Svetainių dizainas</p>
                                     </div>
@@ -129,7 +159,7 @@
                                 <img src="img/choose-icon-design.png" alt="" height="100" class="mx-auto">
                                 <h5 class="text-secondary text-center mt-3">Grafinio dizaino darbai</h5>
                                 <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quam.</p>
-                                <div class="list-group mt-3">
+                                <div class="list-group mt-3 mb-4">
                                     <div class="list-item d-flex">
                                         <ion-icon name="checkmark-circle-outline" class="text-success mr-3"></ion-icon><p>Lorem, ipsum dolor.</p>
                                     </div>
@@ -282,7 +312,7 @@
                 <div class="row justify-content-center mt-4 align-items-stretch">
                     <div class="col-md-4 text-center text-white border-right border-responsive-footer">
                         <div class="h-100">
-                            <h5 class="text-secondary">Paslaugos</h5>
+                            <h5 class="text-secondary">Sužinok</h5>
                             <hr class="hr-small mt-2 d-block d-md-none">
                             <a href="apie-mus.html" class="d-block contacts-nav-item mt-4 mb-1">Apie mus</a>
                             <a href="internetines_svetaines.html" class="d-block contacts-nav-item mb-1">Internetinės svetainės</a>
@@ -292,7 +322,7 @@
                     </div>
                     <div class="col-md-4 text-center text-white border-right border-responsive-footer mt-4 mt-md-0">
                         <div class="h-100">
-                            <h5 class="text-secondary">Kontaktai</h5>
+                            <h5 class="text-secondary">Susisiek</h5>
                             <hr class="hr-small mt-2 d-block d-md-none">
                             <h6 class="mt-4 mb-1">El. paštas:</h6>
                             <a aria-label="Link" href="mailto:info@ficusmedia.lt" class="contacts-nav-item">info@ficusmedia.lt</a>

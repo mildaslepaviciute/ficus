@@ -1,0 +1,9 @@
+Gradient: v: #00698a a:#308391
+
+TEKSTAS:
+Tipas:
+Atributikos dizainas
+Klientas:
+Vytauto Didžiojo universitetas, Ekonomikos ir vadybos fakultetas
+Pritaikymas:
+Spauda and megztinių, medžiaginių maišelių, lipdukų

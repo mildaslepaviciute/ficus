@@ -46,6 +46,16 @@ a:hover {
 .w-25px {
   width: 25px !important; }
 
+.close {
+  font-weight: 300;
+  font-size: 2rem; }
+
+.close-white {
+  color: #fff; }
+
+.close-white:hover {
+  color: #fff; }
+
 /* -----------------------------------
 
 HEADINGS
@@ -71,9 +81,13 @@ h3 {
   font-weight: 600;
   color: #031A70; }
 
+h3 {
+  font-size: 22px;
+  letter-spacing: 1px; }
+
 h4,
 h5 {
-  font-weight: 500; }
+  font-weight: 300; }
 
 /* -----------------------------------
 
@@ -142,10 +156,6 @@ nav {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 12px; }
-
-.navbar-brand p {
-  color: #031A70;
-  font-weight: 700; }
 
 .dropdown-menu,
 .dropdown,
@@ -248,6 +258,14 @@ footer {
 
 .logo-footer {
   width: 80px; }
+
+#section-contacts h5 {
+  color: #A85698;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 20px; }
 
 /* -----------------------------------
 
@@ -772,17 +790,12 @@ SECTION-CONTACTS
   transition-duration: 0.5s; }
 
 /* --- pavyzdžio atidarymo modalas ---*/
-.modal-header {
+.modal-header-table {
   height: 320px;
   background-image: url("../img/Backgrounds/table_modal_header.png");
   background-repeat: no-repeat;
   background-size: cover;
   border: 0px; }
-
-.close {
-  font-weight: 300;
-  color: #fff;
-  font-size: 2rem; }
 
 #modalKitokiosgeles a,
 #modalLizdelis a,

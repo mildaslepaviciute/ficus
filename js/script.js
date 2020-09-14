@@ -133,7 +133,20 @@ document.getElementsByTagName("ul")[0].addEventListener("click", function(evt) {
 });
 
 
+// FIXED NAVBAR
 
+$(document).ready(function() {
+    $('.js--sticky-navbar-start-point').waypoint(function(direction) {
+        if (direction == "down") {
+            console.log("labas");
+            $('#navbar-sticky').removeClass('d-none');
+             $('#navbar-sticky').addClass('fixed-top');
+        } else {
+            $('#navbar-sticky').removeClass('fixed-top');
+            $('#navbar-sticky').addClass('d-none');
+        }
+    });
+});
 
 
 
