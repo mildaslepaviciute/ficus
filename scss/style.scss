@@ -79,6 +79,9 @@ a:hover {
   color: #fff;
 }
 
+.pointer {
+  cursor: pointer;
+}
 /* -----------------------------------
 
 HEADINGS
@@ -564,13 +567,13 @@ SECTION-CONTACTS
   background-color: rgba(0, 0, 0, 0.123);
 }
 
+.gradient-blue {
+  background-image: linear-gradient(#00698a , #308391);
+}
 
-
-
-
-/* -----------------------------------  SOCIAL MEDIA  -------------------------------------*/
-
-
+.gradient-grey {
+  background-image: linear-gradient(#e8eaea , #7a7a7a);
+}
 
 
 
@@ -1145,7 +1148,7 @@ strong {
   border: 0;
   color: #fff;
   display: inline-block;
-  float:left;
+  float: left;
 }
 
 #country_select:active {

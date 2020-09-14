@@ -56,6 +56,9 @@ a:hover {
 .close-white:hover {
   color: #fff; }
 
+.pointer {
+  cursor: pointer; }
+
 /* -----------------------------------
 
 HEADINGS
@@ -442,7 +445,12 @@ SECTION-CONTACTS
 .hover-dark:hover {
   background-color: rgba(0, 0, 0, 0.123); }
 
-/* -----------------------------------  SOCIAL MEDIA  -------------------------------------*/
+.gradient-blue {
+  background-image: linear-gradient(#00698a, #308391); }
+
+.gradient-grey {
+  background-image: linear-gradient(#e8eaea, #7a7a7a); }
+
 /* -----------------------------------  CONTACTS  -------------------------------------*/
 .contacts-card {
   transform: scale(1);
