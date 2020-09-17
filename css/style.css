@@ -886,3 +886,6 @@ strong {
 
 #country_select:active {
   border: 0px solid transparent !important; }
+
+.modal-dialog {
+  max-width: 1200px !important; }
