@@ -356,7 +356,7 @@ SECTION-STRATEGY
 #section-strategy {
   width: 100%;
   height: auto;
-  background-image: url(../img/Backgrounds/section_strategy_small.png);
+  background-image: url(../img/Backgrounds/main1.png);
   background-size: contain;
   background-repeat: no-repeat; }
 
@@ -411,6 +411,9 @@ SECTION-CONTACTUS
   background-size: contain;
   background-repeat: no-repeat; }
 
+.form-margin-negative {
+  margin-top: -70px; }
+
 /* -----------------------------------
 
 SECTION-CONTACTS
@@ -438,18 +441,21 @@ SECTION-CONTACTS
   color: #A85698; }
 
 /* -----------------------------------  WEB PAGES  -------------------------------------*/
+.card-padding-negative {
+  margin-top: -20px;
+  position: relative;
+  z-index: 1; }
+
+.card-padding-negative-z {
+  position: relative;
+  z-index: 2; }
+
 /* -----------------------------------  GRAPHICAL DESIGN  -------------------------------------*/
 .hover-dark {
   background-color: transparent; }
 
 .hover-dark:hover {
   background-color: rgba(0, 0, 0, 0.123); }
-
-.gradient-blue {
-  background-image: linear-gradient(#00698a, #308391); }
-
-.gradient-grey {
-  background-image: linear-gradient(#e8eaea, #7a7a7a); }
 
 /* -----------------------------------  CONTACTS  -------------------------------------*/
 .contacts-card {
@@ -574,7 +580,7 @@ SECTION-CONTACTS
     padding-right: 50px; } }
 @media (min-width: 1200px) {
   #section-strategy {
-    background-image: url(../img/Backgrounds/section_strategy_big.png); }
+    background-image: url(../img/Backgrounds/main2.png); }
 
   .text-positioning-1 {
     top: 14%;
@@ -798,13 +804,6 @@ SECTION-CONTACTS
   transition-duration: 0.5s; }
 
 /* --- pavyzdžio atidarymo modalas ---*/
-.modal-header-table {
-  height: 320px;
-  background-image: url("../img/Backgrounds/table_modal_header.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 0px; }
-
 #modalKitokiosgeles a,
 #modalLizdelis a,
 #modalPartyplay a {
