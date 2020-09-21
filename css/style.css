@@ -356,7 +356,7 @@ SECTION-STRATEGY
 #section-strategy {
   width: 100%;
   height: auto;
-  background-image: url(../img/Backgrounds/main1.png);
+  background-image: url(../img/Backgrounds/section_strategy_small.png);
   background-size: contain;
   background-repeat: no-repeat; }
 
@@ -505,6 +505,11 @@ SECTION-CONTACTS
   #section-contacts {
     padding-top: 150px; }
 
+  .text-positioning-title {
+    top: 4%;
+    left: 52%;
+    padding-right: 20px; }
+
   .text-positioning-1 {
     top: 7%;
     left: 52%;
@@ -559,6 +564,11 @@ SECTION-CONTACTS
   .logo-main {
     width: 75px; }
 
+  .text-positioning-title {
+    top: 7%;
+    left: 52%;
+    padding-right: 50px; }
+
   .text-positioning-1 {
     top: 14%;
     left: 52%;
@@ -580,27 +590,32 @@ SECTION-CONTACTS
     padding-right: 50px; } }
 @media (min-width: 1200px) {
   #section-strategy {
-    background-image: url(../img/Backgrounds/main2.png); }
+    background-image: url(../img/Backgrounds/section_strategy_big.png); }
+
+  .text-positioning-title {
+    top: 11%;
+    left: 59%;
+    padding-right: 80px; }
 
   .text-positioning-1 {
-    top: 14%;
-    left: 60%;
-    padding-right: 100px; }
+    top: 19.5%;
+    left: 59%;
+    padding-right: 80px; }
 
   .text-positioning-2 {
-    top: 28%;
-    left: 60%;
-    padding-right: 100px; }
+    top: 33.5%;
+    left: 59%;
+    padding-right: 80px; }
 
   .text-positioning-3 {
-    top: 42%;
-    left: 60%;
-    padding-right: 100px; }
+    top: 47.5%;
+    left: 59%;
+    padding-right: 80px; }
 
   .text-positioning-4 {
-    top: 56%;
-    left: 60%;
-    padding-right: 100px; }
+    top: 61.5%;
+    left: 59%;
+    padding-right: 80px; }
 
   #section-strategy h4 {
     font-size: 1.5rem !important; } }
