@@ -82,6 +82,16 @@ a:hover {
 .pointer {
   cursor: pointer;
 }
+
+.modal-dialog {
+  max-width: 1200px !important;
+}
+
+.modal {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+
 /* -----------------------------------
 
 HEADINGS
@@ -296,19 +306,19 @@ HEADER
 
 .header-overlay .col-5 {
  position: absolute;
- top: 50%;
+ top: 43%;
  transform: translateY(-50%);
  text-transform: uppercase;
- z-index: 0;
+ z-index: 2;
  width: 100%;
 }
 
 .header-overlay .col-10 {
   position: absolute;
-  top: 18%;
+  top: 22%;
   transform: translateY(-50%);
   text-transform: uppercase;
-  z-index: 0;
+  z-index: 2;
   width: 100%;
 }
 
@@ -449,7 +459,7 @@ SECTION-STRATEGY
 #section-strategy {
   width: 100%;
   height: auto;
-  background-image: url(../img/Backgrounds/main1.png);
+  background-image: url(../img/Backgrounds/section_strategy_small.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -578,7 +588,10 @@ SECTION-CONTACTS
   background-color: rgba(0, 0, 0, 0.123);
 }
 
-
+#design-price-table {
+  position: relative;
+  z-index: 2;
+}
 
 
 
@@ -597,14 +610,60 @@ SECTION-CONTACTS
 
 /* -----------------------------------  ANIMATIONS  -------------------------------------*/
 
-.js--wp-1 {
-  opacity: 0;
-}
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5,
+.js--wp-6,
+.js--wp-7 {
+  opacity: 0; }
 
-.js--wp-1 .animated {
+.js--wp-1 .animated,
+.js--wp-2 .animated,
+.js--wp-3 .animated,
+.js--wp-4 .animated,
+.js--wp-5 .animated,
+.js--wp-6 .animated,
+.js--wp-7 .animated {
   opacity: 1;
+  animation-duration: 0.5s;
 }
 
+.js--wp-1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.js--wp-2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.js--wp-3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.js--wp-4 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.js--wp-5 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.js--wp-6 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.js--wp-7 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
 
 
 
@@ -822,35 +881,35 @@ nav ul li a:before {
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   #section-strategy {
-    background-image: url(../img/Backgrounds/main2.png);
+    background-image: url(../img/Backgrounds/section_strategy_big.png);
   }
 
   .text-positioning-title {
-    top: 13%;
+    top: 11%;
     left: 59%;
     padding-right: 60px;
   }
 
   .text-positioning-1 {
-    top: 23.3%;
+    top: 19.8%;
     left: 59%;
     padding-right: 60px;
   }
   
   .text-positioning-2 {
-    top: 40.3%;
+    top: 42.3%;
     left: 59%;
     padding-right: 60px;
   }
   
   .text-positioning-3 {
-    top: 61.8%;
+    top: 65%;
     left: 59%;
     padding-right: 60px;
   }
   
   .text-positioning-4 {
-    top: 78.5%;
+    top: 88%;
     left: 59%;
     padding-right: 60px;
   }
@@ -1245,7 +1304,6 @@ strong {
 
 
 
-
-.modal-dialog {
-  max-width: 1200px !important;
+button:focus {
+  outline: none;
 }
