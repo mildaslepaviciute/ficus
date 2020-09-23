@@ -356,7 +356,7 @@ SECTION-STRATEGY
 #section-strategy {
   width: 100%;
   height: auto;
-  background-image: url(../img/Backgrounds/section_strategy_small.png);
+  background-image: url(../img/Backgrounds/main1.png);
   background-size: contain;
   background-repeat: no-repeat; }
 
@@ -481,6 +481,39 @@ SECTION-CONTACTS
   .card-text-margin {
     margin: 0; } }
 @media (min-width: 768px) {
+  .text-positioning-title {
+    top: 9%;
+    left: 55%;
+    padding-right: 10px; }
+
+  .text-positioning-1 {
+    top: 17.3%;
+    left: 55%;
+    padding-right: 10px; }
+    .text-positioning-1 p {
+      font-size: 0.82rem; }
+
+  .text-positioning-2 {
+    top: 41.1%;
+    left: 55%;
+    padding-right: 10px; }
+    .text-positioning-2 p {
+      font-size: 0.82rem; }
+
+  .text-positioning-3 {
+    top: 67.3%;
+    left: 55%;
+    padding-right: 10px; }
+    .text-positioning-3 p {
+      font-size: 0.82rem; }
+
+  .text-positioning-4 {
+    top: 90.5%;
+    left: 55%;
+    padding-right: 10px; }
+    .text-positioning-4 p {
+      font-size: 0.82rem; }
+
   .contact-form-leaf1 {
     height: 250px;
     width: 250px;
@@ -504,31 +537,6 @@ SECTION-CONTACTS
 
   #section-contacts {
     padding-top: 150px; }
-
-  .text-positioning-title {
-    top: 4%;
-    left: 52%;
-    padding-right: 20px; }
-
-  .text-positioning-1 {
-    top: 7%;
-    left: 52%;
-    padding-right: 20px; }
-
-  .text-positioning-2 {
-    top: 28%;
-    left: 52%;
-    padding-right: 20px; }
-
-  .text-positioning-3 {
-    top: 49%;
-    left: 52%;
-    padding-right: 20px; }
-
-  .text-positioning-4 {
-    top: 70%;
-    left: 52%;
-    padding-right: 20px; }
 
   /* navbar hover */
   .nav-item a:hover,
@@ -565,60 +573,73 @@ SECTION-CONTACTS
     width: 75px; }
 
   .text-positioning-title {
-    top: 7%;
-    left: 52%;
     padding-right: 40px; }
 
   .text-positioning-1 {
-    top: 19.5%;
-    left: 52%;
     padding-right: 40px; }
+    .text-positioning-1 p {
+      font-size: 1rem; }
 
   .text-positioning-2 {
-    top: 35%;
-    left: 52%;
     padding-right: 40px; }
+    .text-positioning-2 p {
+      font-size: 1rem; }
 
   .text-positioning-3 {
-    top: 42%;
-    left: 52%;
     padding-right: 40px; }
+    .text-positioning-3 p {
+      font-size: 1rem; }
 
   .text-positioning-4 {
-    top: 56%;
-    left: 52%;
-    padding-right: 50px; } }
+    padding-right: 40px; }
+    .text-positioning-4 p {
+      font-size: 1rem; } }
 @media (min-width: 1200px) {
   #section-strategy {
-    background-image: url(../img/Backgrounds/section_strategy_big.png); }
+    background-image: url(../img/Backgrounds/main2.png); }
 
   .text-positioning-title {
-    top: 11%;
+    top: 13%;
     left: 59%;
-    padding-right: 80px; }
+    padding-right: 60px; }
 
   .text-positioning-1 {
-    top: 19.5%;
+    top: 23.3%;
     left: 59%;
-    padding-right: 80px; }
+    padding-right: 60px; }
 
   .text-positioning-2 {
-    top: 33.5%;
+    top: 40.3%;
     left: 59%;
-    padding-right: 80px; }
+    padding-right: 60px; }
 
   .text-positioning-3 {
-    top: 47.5%;
+    top: 61.8%;
     left: 59%;
-    padding-right: 80px; }
+    padding-right: 60px; }
 
   .text-positioning-4 {
-    top: 61.5%;
+    top: 78.5%;
     left: 59%;
-    padding-right: 80px; }
+    padding-right: 60px; }
 
   #section-strategy h4 {
     font-size: 1.5rem !important; } }
+@media (min-width: 1300px) {
+  .text-positioning-title {
+    padding-right: 75px; }
+
+  .text-positioning-1 {
+    padding-right: 75px; }
+
+  .text-positioning-2 {
+    padding-right: 75px; }
+
+  .text-positioning-3 {
+    padding-right: 75px; }
+
+  .text-positioning-4 {
+    padding-right: 75px; } }
 /* -----------------------------------  OLDIES  -------------------------------------*/
 /* --- skaičiuoklė. range pasirinkimas ---*/
 .range-wrap {
