@@ -343,6 +343,8 @@ footer {
 
 .text-gradient {
   background: linear-gradient(45deg, #3c63ff 0%, #b53471 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .logo-footer {
@@ -1236,6 +1238,17 @@ strong {
   border-color: $pink;
   box-shadow: none; }
 
-.l {
+
+
+
+
+
+
+
+
+
+
+
+.autoprefixer-check {
   display: flex;
 }
