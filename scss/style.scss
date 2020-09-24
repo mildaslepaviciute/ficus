@@ -92,6 +92,10 @@ a:hover {
   padding-left: 10px !important;
 }
 
+.modal-dialog p {
+  font-weight: 300;
+}
+
 /* -----------------------------------
 
 HEADINGS
@@ -923,23 +927,23 @@ nav ul li a:before {
 // Extra extra large devices (large desktops, 1300px and up)
 @media (min-width: 1300px) {
   .text-positioning-title {
-    padding-right: 75px;
+    padding-right: 120px;
   }
 
   .text-positioning-1 {
-    padding-right: 75px;
+    padding-right: 120px;
   }
   
   .text-positioning-2 {
-    padding-right: 75px;
+    padding-right: 120px;
   }
   
   .text-positioning-3 {
-    padding-right: 75px;
+    padding-right: 120px;
   }
   
   .text-positioning-4 {
-    padding-right: 75px;
+    padding-right: 120px;
   }
 }
 
@@ -1221,17 +1225,8 @@ nav ul li a:before {
   margin: 0 auto;
 }
 
-.modal-dialog {
-  max-width: 800px !important;
-  margin: 1.75rem auto; 
-}
-
 strong {
   font-weight: 500;
-}
-
-.modal-dialog p {
-  font-weight: 300;
 }
 
 /* --- preloader ---*/

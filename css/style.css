@@ -66,6 +66,9 @@ a:hover {
   padding-right: 10px !important;
   padding-left: 10px !important; }
 
+.modal-dialog p {
+  font-weight: 300; }
+
 /* -----------------------------------
 
 HEADINGS
@@ -679,19 +682,19 @@ SECTION-CONTACTS
     font-size: 1.5rem !important; } }
 @media (min-width: 1300px) {
   .text-positioning-title {
-    padding-right: 75px; }
+    padding-right: 120px; }
 
   .text-positioning-1 {
-    padding-right: 75px; }
+    padding-right: 120px; }
 
   .text-positioning-2 {
-    padding-right: 75px; }
+    padding-right: 120px; }
 
   .text-positioning-3 {
-    padding-right: 75px; }
+    padding-right: 120px; }
 
   .text-positioning-4 {
-    padding-right: 75px; } }
+    padding-right: 120px; } }
 /* -----------------------------------  OLDIES  -------------------------------------*/
 /* --- skaičiuoklė. range pasirinkimas ---*/
 .range-wrap {
@@ -903,15 +906,8 @@ SECTION-CONTACTS
   border-top: 2px solid #A85698;
   margin: 0 auto; }
 
-.modal-dialog {
-  max-width: 800px !important;
-  margin: 1.75rem auto; }
-
 strong {
   font-weight: 500; }
-
-.modal-dialog p {
-  font-weight: 300; }
 
 /* --- preloader ---*/
 #spinner-front, #spinner-back {
