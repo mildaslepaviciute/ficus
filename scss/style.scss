@@ -11,7 +11,6 @@ $grey:    #E1E1E1;
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -19,6 +18,10 @@ html {
   background-color: #fff;
   color: #444;
   text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+.modal {
   scroll-behavior: smooth;
 }
 
@@ -42,14 +45,6 @@ a:hover {
   background: #fff;
 }
 
-.bg-transparent {
-  background: transparent;
-}
-
-.bg-light-pink {
-  background: #f3ebee;
-}
-
 .w-95 {
   width: 95%;
 }
@@ -60,10 +55,6 @@ a:hover {
 
 .border-responsive-footer {
   border-right: 0px solid #fff !important;
-}
-
-.w-25px {
-  width: 25px !important;
 }
 
 .close {
@@ -94,6 +85,10 @@ a:hover {
 
 .modal-dialog p {
   font-weight: 300;
+}
+
+button:focus {
+  outline: none;
 }
 
 /* -----------------------------------
@@ -155,8 +150,9 @@ SPINNER
       width: 40px;
       height: 40px;
       position: absolute;
-      top: 48%;
-      left: 48%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     
     .double-bounce1, .double-bounce2 {
@@ -312,7 +308,7 @@ HEADER
  position: absolute;
  top: 43%;
  transform: translateY(-50%);
- text-transform: uppercase;
+
  z-index: 2;
  width: 100%;
 }
@@ -321,7 +317,6 @@ HEADER
   position: absolute;
   top: 22%;
   transform: translateY(-50%);
-  text-transform: uppercase;
   z-index: 2;
   width: 100%;
 }
@@ -348,8 +343,6 @@ footer {
 
 .text-gradient {
   background: linear-gradient(45deg, #3c63ff 0%, #b53471 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .logo-footer {
@@ -371,7 +364,7 @@ BUTTONS
 
 -------------------------------------*/
 
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+*, *:after, *:before { box-sizing: border-box; }
 body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 
 .btn-1 {
@@ -385,13 +378,9 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
   font-size: 13px;
 	outline: none;
 	position: relative;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 	color: #fff;
-	-webkit-transition: none;
-	-moz-transition: none;
-  transition: none;
+ transition: none;
   border-radius: 200px;
 }
 
@@ -399,8 +388,6 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 	content: '';
 	position: absolute;
 	z-index: -1;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
@@ -631,7 +618,8 @@ SECTION-CONTACTS
 .js--wp-6 .animated,
 .js--wp-7 .animated {
   opacity: 1;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 .js--wp-1 {
@@ -1016,7 +1004,10 @@ nav ul li a:before {
   place-items: center; /*  Place the number on the center  */
   font-weight: bold;
   transition: color 100ms ease, transform 100ms ease;
-  user-select: none; /*  Prevent Accidentally highlighting the number while sliding the cursor  */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; /*  Prevent Accidentally highlighting the number while sliding the cursor  */
 }
 
 .range-wrap:hover .bubble,
@@ -1068,7 +1059,10 @@ nav ul li a:before {
       right: 0;
       transition: all 300ms ease;
       font-size: 1.5em;
-      user-select: none;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
       color: #000;
       &:before {
         font-size: 1.2em;
@@ -1229,37 +1223,6 @@ strong {
   font-weight: 500;
 }
 
-/* --- preloader ---*/
-
-#spinner-front, #spinner-back {
-  position: fixed;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-  opacity: 0;
-  width: 100%;
-  transition: all 1s;
-}
-#spinner-front {
-  z-index: 999;
-  margin-top: 45vh;
-  color: #fff;
-  text-align: center;
-}
-#spinner-back {
-  z-index: 998;
-  height: 100vh;
-  background: #000;
-}
-#spinner-front.show {
-  visibility: visible;
-  opacity: 1;
-}
-#spinner-back.show {
-  visibility: visible;
-  opacity: 0.7;
-}
-
 /* --- contact us ---*/
 
 .form-group input,
@@ -1273,32 +1236,6 @@ strong {
   border-color: $pink;
   box-shadow: none; }
 
-  /* --- language select ---*/
-
-#country_select {
-  background: transparent;
-  border: 0;
-  color: #fff;
-  overflow: hidden;
-  display: inline-block;   
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-#country_select option {
-  background: transparent;
-  border: 0;
-  color: #fff;
-  display: inline-block;
-  float: left;
-}
-
-#country_select:active {
-  border: 0px solid transparent !important;
-}
-
-
-
-button:focus {
-  outline: none;
+.l {
+  display: flex;
 }
