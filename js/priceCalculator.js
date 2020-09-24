@@ -1,32 +1,33 @@
 const prices = {
     pricePerPage: 20,
     design: {
-        template: 100,
-        unique: 200,
+        template: 50,
+        unique: 100,
     },
     functions: {
-        analytics: 20,
-        responsive: 5000,
-        seo: 30,
-        video: 20,
-        maps: 20,
-        messenger: 20,
-        form: 20,
-        form2: 20,
+        analytics: 10,
+        responsive: 40,
+        seo: 20,
+        video: 10,
+        maps: 10,
+        messenger: 10,
+        form: 40,
+        gallery: 30,
         feed: 20,
-        languages: 20,
-        ssl: 10
+        languages: 50,
+        ssl: 5,
+        blog: 40,
     },
     cms: {
         static: 0,
-        wordpress: 100,
-        other: 50
+        wordpress: 50,
+        other: 40,
     },
     additionals: {
         domain: 10,
-        logo: 50,
-        visitCard: 30,
-        domainEmail: 10,
+        logo: 80,
+        visitCard: 40,
+        domainEmail: 40,
     }
 }
 
