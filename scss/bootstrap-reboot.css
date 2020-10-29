@@ -101,11 +101,11 @@ sup {
   top: -.5em; }
 
 a {
-  color: #EEAB02;
+  color: #031A70;
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #a27401;
+    color: #010925;
     text-decoration: underline; }
 
 a:not([href]) {

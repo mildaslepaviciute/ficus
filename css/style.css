@@ -65,6 +65,9 @@ a:hover {
 button:focus {
   outline: none; }
 
+.border-bottom-pink {
+  border-bottom: 2px solid #a8569888; }
+
 /* -----------------------------------
 
 HEADINGS
@@ -891,7 +894,8 @@ SECTION-CONTACTS
 /* --- pavyzdžio atidarymo modalas ---*/
 #modalKitokiosgeles a,
 #modalLizdelis a,
-#modalPartyplay a {
+#modalPartyplay a,
+#modalAnlidesign a {
   letter-spacing: 2px;
   text-transform: uppercase; }
 
