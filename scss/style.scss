@@ -490,35 +490,31 @@ SECTION-CONTACTUS
   overflow-x: hidden;
 }
 
-.contact-form-container {
-  position: relative;
-}
-
 #emailForm {
   position: relative;
   z-index: 2;
 }
 
-.contact-form-leaf1 {
+.side-leaf1 {
   position: absolute;
   z-index: 1;
   height: 200px;
   width: 200px;
   top: 180px;
   left: -120px;
-  background-image: url(../img/contact_form_leaf1.png);
+  background-image: url(../img/Graphical_elements/leaf1.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.contact-form-leaf2 {
+.side-leaf2 {
   position: absolute;
   z-index: 1;
   height: 200px;
   width: 167px;
   top: 50px;
   right: -100px;
-  background-image: url(../img/contact_form_leaf2.png);
+  background-image: url(../img/Graphical_elements/leaf2.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -733,14 +729,14 @@ SECTION-CONTACTS
     }
   }
 
-  .contact-form-leaf1 {
+  .side-leaf1 {
     height: 250px;
     width: 250px;
     top: 180px;
     left: -170px;
   }
   
-  .contact-form-leaf2 {
+  .side-leaf2 {
     height: 250px;
     width: 210px;
     top: 50px;

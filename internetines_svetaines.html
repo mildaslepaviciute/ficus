@@ -52,7 +52,7 @@
 
         <nav class="navbar navbar-expand-md stroke w-100 pt-2" id="main-nav">
             <a aria-label="Link" href="index.html" class="navbar-brand mt-1 mt-md-4">
-                <img src="img/logo_blue.png" class="logo-main ml-3 ml-md-5" alt="">
+                <img src="img/Logo/logo_blue.png" class="logo-main ml-3 ml-md-5" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <ion-icon name="menu-outline" class="text-secondary"></ion-icon>
@@ -117,7 +117,7 @@
                 <div class="row justify-content-center align-items-stretch mt-5">
                     <div class="col-10 col-sm-7 col-md-5 col-lg-4 col-xl-3 text-center px-0 card-padding-negative">
                         <div class="h-100 position-relative d-flex align-items-center justify-content-center">
-                            <img src="img/square_1.png" alt="" class="img-fluid">
+                            <img src="img/Graphical_elements/square_1.png" alt="" class="img-fluid">
                             <div class="card-text card-text-margin position-absolute p-5">
                                 <h5 class="text-secondary mb-4">Internetinių svetainių kūrimas</h5>
                                 <div class="list-group text-left mt-3">
@@ -136,7 +136,7 @@
                     </div>
                     <div class="col-10 col-sm-7 col-md-5 col-lg-4 col-xl-3 text-center px-0 card-padding-negative card-padding-negative-z">
                         <div class="h-100 position-relative d-flex align-items-center justify-content-center">
-                            <img src="img/square_2.png" alt="" class="img-fluid">
+                            <img src="img/Graphical_elements/square_2.png" alt="" class="img-fluid">
                             <div class="card-text card-text-margin position-absolute p-5">
                                 <h5 class="text-secondary mb-4">Internetinių svetainių dizainas</h5>
                                 <div class="list-group text-left mt-3">
@@ -153,7 +153,7 @@
                     <div class="w-100 d-block d-xl-none"></div>
                     <div class="col-10 col-sm-7 col-md-5 col-lg-4 col-xl-3 text-center px-0 card-padding-negative">
                         <div class="h-100 position-relative d-flex align-items-center justify-content-center">
-                            <img src="img/square_3.png" alt="" class="img-fluid">
+                            <img src="img/Graphical_elements/square_3.png" alt="" class="img-fluid">
                             <div class="card-text card-text-margin position-absolute p-5">
                                 <h5 class="text-secondary mb-4">Svetainių optimizavimas</h5>
                                 <div class="list-group text-left mt-3">
@@ -172,7 +172,7 @@
                     </div>
                     <div class="col-10 col-sm-7 col-md-5 col-lg-4 col-xl-3 text-center px-0 card-padding-negative">
                         <div class="h-100 position-relative d-flex align-items-center justify-content-center">
-                            <img src="img/square_4.png" alt="" class="img-fluid">
+                            <img src="img/Graphical_elements/square_4.png" alt="" class="img-fluid">
                             <div class="card-text card-text-margin position-absolute p-5">
                                 <h5 class="text-secondary mb-4">Internetinių svetainių tvarkymas</h5>
                                 <div class="list-group text-left mt-3">
@@ -288,7 +288,7 @@
             </div>
         </section>
 
-        <section id="calculate-price" class="mt-5 pt-5">
+        <!-- <section id="calculate-price" class="mt-5 pt-5">
             <div class="container">
                 <h2 class="text-center">Mokėkite tik už tai, ko Jums reikia</h2>
                 <h5 class="text-black text-center mt-4">Pasirinkite Jums reikalingas paslaugas ir gaukite individualų pasiūlymą</h5>
@@ -447,11 +447,85 @@
                     </div>
                     <hr class="mt-4">
                     <h4 class="text-center text-black mt-5">Preliminari projekto kaina: <span id="total-price">0</span> €</h4>
-                    <!-- <div class="submit-btn d-none mt-4">
-                        <div data-toggle="modal" data-target="#submitTable" class="btn-1 btn-1-secondary mx-auto">Užsakyti</div>
-                    </div> -->
                     <div class="submit-btn d-none mt-4">
                         <a href="kontaktai.html" class="btn-1 btn-1-secondary mx-auto">Susisiekti!</a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="price-table" class="mt-5 pt-5">
+            <div class="container">
+                <h2 class="text-center">Kainoraštis</h2>
+                <div class="row justify-content-center mt-5 pt-3">
+                    <div class="col-md-8 d-flex flex-column">
+                        <table id="design-price-table" class="table table-hover bg-white shadow">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th class="align-middle">PASLAUGA</th>
+                                    <th class="align-middle">KAINA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="price-table-category">
+                                    <th colspan="2" class="text-secondary">INTERNETINIŲ SVETAINIŲ KŪRIMAS</th>
+                                </tr>
+                                <tr>
+                                    <td>Įprasta svetainė</td>
+                                    <td>nuo 200 €</td>
+                                </tr>
+                                <tr>
+                                    <td>Unikalaus dizaino svetainė</td>
+                                    <td>nuo 400 €</td>
+                                </tr>
+                                <tr>
+                                    <td>Turinio valdymo sistemos įdiegimas</td>
+                                    <td>nuo 200 €</td>
+                                </tr>
+                                <tr class="price-table-category">
+                                    <th colspan="2"class="text-secondary">Integracijos</th>
+                                </tr>
+                                <tr>
+                                    <td>Elektroninės klientų formos</td>
+                                    <td>30 €</td>
+                                </tr>
+                                <tr>
+                                    <td>„Messenger“ pokalbių įskiepis</td>
+                                    <td>10 €</td>
+                                </tr>
+                                <tr>
+                                    <td>„Google Analytics“</td>
+                                    <td>10 €</td>
+                                </tr>
+                                <tr>
+                                    <td>Papildomos kalbos</td>
+                                    <td>40 €</td>
+                                </tr>
+                                <tr>
+                                    <td>Interaktyvūs žemėlapiai</td>
+                                    <td>10 €</td>
+                                </tr>
+                                <tr>
+                                    <td>Socialinių tinklų naujienų srautas</td>
+                                    <td>15 €</td>
+                                </tr>
+                                <tr>
+                                    <td>SSL sertifikatas</td>
+                                    <td>5 €</td>
+                                </tr>
+                                <tr class="price-table-category">
+                                    <th colspan="2"class="text-secondary">PAPILDOMOS PASLAUGOS</th>
+                                </tr>
+                                <tr>
+                                    <td>Domeno įregistravimas ir svetainės talpinimas</td>
+                                    <td>10 €</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="d-none d-md-block side-leaf1"></div>
+                        <div class="d-none d-md-block side-leaf2"></div>
+                        <h5 class="text-center text-secondary mt-4">JEIGU JUS DOMINANTI PASLAUGA NĖRA PAMINĖTA, LAUKSIME SUSISIEKIANT</h5>
+                        <a href="kontaktai.html" class="btn-1 btn-1-secondary mx-auto border-0 mt-4">Susisiekti</a>
                     </div>
                 </div>
             </div>
@@ -576,16 +650,13 @@
                     </div>
                     <div class="col-md-4 text-center text-white mt-4 mt-md-0">
                         <div class="h-100">
-                        <img src="img/logo_white.png" class="logo-footer" alt="">
+                        <img src="img/Logo/logo_white.png" class="logo-footer" alt="">
                             <div class="mt-4">
                                 <a href="https://www.facebook.com/ficusmedia" target="_blank">
                                     <i class="fab fa-facebook-f fa-lg contacts-nav-item"></i>
                                 </a>
                                 <a href="https://www.instagram.com/ficusmedia/" target="_blank" class="ml-2">
                                     <i class="fab fa-instagram fa-lg contacts-nav-item"></i>
-                                </a>
-                                <a href="#" target="_blank" class="ml-2">
-                                    <i class="fab fa-linkedin-in fa-lg contacts-nav-item"></i>
                                 </a>
                             </div>
                         </div>
@@ -605,9 +676,9 @@
                         <button class="close mr-4" data-dismiss="modal">&times;</button>
                         <div class="container">
                             <div class="row flex-column justify-content-center align-items-center mt-5">
-                                <img src="img/logo-lizdelis.png" alt="" height="150">
+                                <img src="img/logo.png" alt="" height="150">
                                 <div class="col-md-8 mt-2">
-                                    <img src="img/Portfolio/portfolio_1.jpg" alt="" class="img-fluid">
+                                    <img src="img/Svetaines_portfolio/Lizdelis/main.jpg" alt="" class="img-fluid">
                                 </div>
                                 <a href="https://www.lizdelis.lt/" target="_blank" class="text-center text-secondary mt-4 link-text mb-0">eiti į www.lizdelis.lt <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
                                 <hr class="hr-small mt-4">
@@ -631,27 +702,27 @@
                                     <h3 class="text-secondary mt-5">Naudoti įrankiai:</h3>
                                     <div class="row align-items-start mt-4">
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/html5.jpg" alt="" height="50">
+                                            <img src="img/Tools/html5.jpg" alt="" height="50">
                                             <small class="text-center mt-2">HTML 5</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/css.png" alt="" height="50">
+                                            <img src="img/Tools/css.png" alt="" height="50">
                                             <small class="text-center mt-2">CSS 3</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/sass.png" alt="" height="50">
+                                            <img src="img/Tools/sass.png" alt="" height="50">
                                             <small class="text-center mt-2">SASS</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/bootstrap.png" alt="" height="50">
+                                            <img src="img/Tools/bootstrap.png" alt="" height="50">
                                             <small class="text-center mt-2">Bootstrap 4</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/js.png" alt="" height="50">
+                                            <img src="img/Tools/js.png" alt="" height="50">
                                             <small class="text-center mt-2">Java Script</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/jquery.png" alt="" height="50">
+                                            <img src="img/Tools/jquery.png" alt="" height="50">
                                             <small class="text-center mt-2">JQuery</small>
                                         </div>
                                     </div>
@@ -659,32 +730,32 @@
                             </div>
                         </div>
                         <h3 id="logo-lizdelis" class="text-center text-secondary mt-5 pt-4">Logotipas</h3>
-                            <div class="row justify-content-center mt-5">
-                                <div class="col-7 col-md-3 col-lg-2">
-                                    <img src="img/lizdelis_screen/logo1.png" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-7 col-md-3 col-lg-2 offset-md-1 mt-5 mt-md-0">
-                                    <img src="img/lizdelis_screen/logo2.jpg" alt="" class="img-fluid">
-                                </div>
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-7 col-md-3 col-lg-2">
+                                <img src="img/Svetaines_portfolio/Lizdelis/logo.png" alt="" class="img-fluid">
                             </div>
-                            <h3 id="design-lizdelis" class="text-center text-secondary mt-5 pt-4">Svetainės vaizdas</h3>
-                            <div class="mt-5">
-                                <div>
-                                    <img src="img/lizdelis_screen/1.jpg" alt="" class="w-100 shadow">
-                                </div>
-                                <div class="mt-5 pt-4">
-                                    <img src="img/lizdelis_screen/2.jpg" alt="" class="w-100 shadow">
-                                </div>
-                                <div class="mt-5 pt-4">
-                                    <img src="img/lizdelis_screen/3.jpg" alt="" class="w-100 shadow">
-                                </div>
-                                <div class="mt-5 pt-4">
-                                    <img src="img/lizdelis_screen/4.jpg" alt="" class="w-100 shadow">
-                                </div>
-                                <div class="mt-5 pt-4">
-                                    <img src="img/lizdelis_screen/5.jpg" alt="" class="w-100 shadow">
-                                </div>
+                            <div class="col-7 col-md-3 col-lg-2 offset-md-1 mt-5 mt-md-0">
+                                <img src="img/Svetaines_portfolio/Lizdelis/logo2.jpg" alt="" class="img-fluid">
                             </div>
+                        </div>
+                        <h3 id="design-lizdelis" class="text-center text-secondary mt-5 pt-4">Svetainės vaizdas</h3>
+                        <div class="mt-5">
+                            <div>
+                                <img src="img/Svetaines_portfolio/Lizdelis/1.jpg" alt="" class="w-100 shadow">
+                            </div>
+                            <div class="mt-5 pt-4">
+                                <img src="img/Svetaines_portfolio/Lizdelis/2.jpg" alt="" class="w-100 shadow">
+                            </div>
+                            <div class="mt-5 pt-4">
+                                <img src="img/Svetaines_portfolio/Lizdelis/3.jpg" alt="" class="w-100 shadow">
+                            </div>
+                            <div class="mt-5 pt-4">
+                                <img src="img/Svetaines_portfolio/Lizdelis/4.jpg" alt="" class="w-100 shadow">
+                            </div>
+                            <div class="mt-5 pt-4">
+                                <img src="img/Svetaines_portfolio/Lizdelis/5.jpg" alt="" class="w-100 shadow">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -697,9 +768,9 @@
                         <button class="close mr-4" data-dismiss="modal">&times;</button>
                         <div class="container">
                             <div class="row flex-column justify-content-center align-items-center mt-5">
-                                <img src="img/logo-partyplay.jpg" alt="" height="120">
+                                <img src="img/Svetaines_portfolio/Party_Play/logo.jpg" alt="" height="120">
                                 <div class="col-md-8 mt-2">
-                                    <img src="img/Portfolio/portfolio_2.jpg" alt="" class="img-fluid">
+                                    <img src="img/Svetaines_portfolio/Party_Play/main.jpg" alt="" class="img-fluid">
                                 </div>
                                 <a href="https://www.partyplay.lt/" target="_blank" class="text-center text-secondary mt-4 link-text mb-0">eiti į www.partyplay.lt <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
                                 <hr class="hr-small mt-4">
@@ -715,7 +786,6 @@
                                 <div class="col-md-5 mt-5 mt-md-0">
                                     <h3 class="text-secondary">Atlikti darbai:</h3>
                                     <p class="mb-0 mt-3"><strong>Logotipas:</strong><br>Kliento</p>
-                                    <p class="mb-0 mt-3"><strong>Vizitinė kortelė:</strong><br>Sukurta Ficus Media grupės</p>
                                     <a href="#card-partyplay" class="text-secondary">PERŽIŪRTI</a>
                                     <p class="mb-0 mt-3"><strong>Dizainas:</strong><br>Sukurtas Ficus Media grupės</p>
                                     <a href="#design-partyplay" class="text-secondary">PERŽIŪRĖTI</a>
@@ -724,55 +794,49 @@
                                     <h3 class="text-secondary mt-5">Naudoti įrankiai:</h3>
                                     <div class="row align-items-start mt-4">
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/html5.jpg" alt="" height="50">
+                                            <img src="img/Tools/html5.jpg" alt="" height="50">
                                             <small class="text-center mt-2">HTML 5</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/css.png" alt="" height="50">
+                                            <img src="img/Tools/css.png" alt="" height="50">
                                             <small class="text-center mt-2">CSS 3</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/sass.png" alt="" height="50">
+                                            <img src="img/Tools/sass.png" alt="" height="50">
                                             <small class="text-center mt-2">SASS</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/bootstrap.png" alt="" height="50">
+                                            <img src="img/Tools/bootstrap.png" alt="" height="50">
                                             <small class="text-center mt-2">Bootstrap 4</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/js.png" alt="" height="50">
+                                            <img src="img/Tools/js.png" alt="" height="50">
                                             <small class="text-center mt-2">Java Script</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/jquery.png" alt="" height="50">
+                                            <img src="img/Tools/jquery.png" alt="" height="50">
                                             <small class="text-center mt-2">JQuery</small>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <h3 id="card-partyplay" class="text-center text-secondary mt-5 pt-4">Vizitinė kortelė</h3>
-                        <div class="row justify-content-center mt-5">
-                            <div class="col-8 col-md-6">
-                                <img src="img/partyplay-screen/vizitine.png" alt="" class="shadow img-fluid rounded">
-                            </div>
-                        </div>
                         <h3 id="design-partyplay" class="text-center text-secondary mt-5 pt-4">Svetainės vaizdas</h3>
                         <div class="mt-5">
                             <div>
-                                <img src="img/partyplay-screen/1.jpg" alt="" class="w-100 shadow">
+                                <img src="img/Svetaines_portfolio/Party_Play/1.jpg" alt="" class="w-100 shadow">
                             </div>
                             <div class="mt-5 pt-4">
-                                <img src="img/partyplay-screen/2.jpg" alt="" class="w-100 shadow">
+                                <img src="img/Svetaines_portfolio/Party_Play/2.jpg" alt="" class="w-100 shadow">
                             </div>
                             <div class="mt-5 pt-4">
-                                <img src="img/partyplay-screen/3.jpg" alt="" class="w-100 shadow">
+                                <img src="img/Svetaines_portfolio/Party_Play/3.jpg" alt="" class="w-100 shadow">
                             </div>
                             <div class="mt-5 pt-4">
-                                <img src="img/partyplay-screen/4.jpg" alt="" class="w-100 shadow">
+                                <img src="img/Svetaines_portfolio/Party_Play/4.jpg" alt="" class="w-100 shadow">
                             </div>
                             <div class="mt-5 pt-4">
-                                <img src="img/partyplay-screen/5.jpg" alt="" class="w-100 shadow">
+                                <img src="img/Svetaines_portfolio/Party_Play/5.jpg" alt="" class="w-100 shadow">
                             </div>
                         </div>
                     </div>
@@ -787,9 +851,9 @@
                         <button class="close mr-4" data-dismiss="modal">&times;</button>
                         <div class="container">
                             <div class="row flex-column justify-content-center align-items-center mt-5">
-                                <img src="img/logo-kitokiosgeles.png" alt="" height="65">
+                                <img src="img/Svetaines_portfolio/Kitokios_geles/logo.png" alt="" height="65">
                                 <div class="col-md-8 mt-4">
-                                    <img src="img/Portfolio/portfolio_3.jpg" alt="" class="img-fluid">
+                                    <img src="img/Svetaines_portfolio/Kitokios_geles/main.jpg" alt="" class="img-fluid">
                                 </div>
                                 <a href="https://www.kitokiosgeles.lt/" target="_blank" class="text-center text-secondary mt-5 link-text mb-0">eiti į www.kitokiosgeles.lt <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
                                 <hr class="hr-small mt-4">
@@ -821,19 +885,19 @@
                                     <h3 class="text-secondary mt-5">Naudoti įrankiai:</h3>
                                     <div class="row align-items-start mt-4">
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/html5.jpg" alt="" height="50">
+                                            <img src="img/Tools/html5.jpg" alt="" height="50">
                                             <small class="text-center mt-2">HTML 5</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/css.png" alt="" height="50">
+                                            <img src="img/Tools/css.png" alt="" height="50">
                                             <small class="text-center mt-2">CSS 3</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/js.png" alt="" height="50">
+                                            <img src="img/Tools/js.png" alt="" height="50">
                                             <small class="text-center mt-2">Java Script</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/wordpress.png" alt="" height="50">
+                                            <img src="img/Tools/wordpress.png" alt="" height="50">
                                             <small class="text-center mt-2">WordPress</small>
                                         </div>
                                     </div>
@@ -843,28 +907,28 @@
                         <h3 id="design-kitokiosgeles" class="text-center text-secondary mt-5 pt-4">Svetainės vaizdas</h3>
                         <div class="mt-5">
                             <div>
-                                <img src="img/kitokiosgeles-screen/1.jpg" alt="" class="w-100 shadow">
+                                <img src="img/Svetaines_portfolio/Kitokios_geles/1.jpg" alt="" class="w-100 shadow">
                             </div>
                             <div class="mt-5 pt-4">
-                                <img src="img/kitokiosgeles-screen/2.jpg" alt="" class="w-100 shadow">
+                                <img src="img/Svetaines_portfolio/Kitokios_geles/2.jpg" alt="" class="w-100 shadow">
                             </div>
                             <div class="mt-5 pt-4">
-                                <img src="img/kitokiosgeles-screen/3.jpg" alt="" class="w-100 shadow">
+                                <img src="img/Svetaines_portfolio/Kitokios_geles/3.jpg" alt="" class="w-100 shadow">
                             </div>
                             <div class="mt-5 pt-4">
-                                <img src="img/kitokiosgeles-screen/4.jpg" alt="" class="w-100 shadow">
+                                <img src="img/Svetaines_portfolio/Kitokios_geles/4.jpg" alt="" class="w-100 shadow">
                             </div>
                             <div class="mt-5 pt-4">
-                                <img src="img/kitokiosgeles-screen/5.jpg" alt="" class="w-100 shadow">
+                                <img src="img/Svetaines_portfolio/Kitokios_geles/5.jpg" alt="" class="w-100 shadow">
                             </div>
                             <div class="mt-5 pt-4">
-                                <img src="img/kitokiosgeles-screen/6.jpg" alt="" class="w-100 shadow">
+                                <img src="img/Svetaines_portfolio/Kitokios_geles/6.jpg" alt="" class="w-100 shadow">
                             </div>
                             <div class="mt-5 pt-4">
-                                <img src="img/kitokiosgeles-screen/7.jpg" alt="" class="w-100 shadow">
+                                <img src="img/Svetaines_portfolio/Kitokios_geles/7.jpg" alt="" class="w-100 shadow">
                             </div>
                             <div class="mt-5 pt-4">
-                                <img src="img/kitokiosgeles-screen/8.jpg" alt="" class="w-100 shadow">
+                                <img src="img/Svetaines_portfolio/Kitokios_geles/8.jpg" alt="" class="w-100 shadow">
                             </div>
                         </div>
                     </div>
@@ -879,9 +943,9 @@
                         <button class="close mr-4" data-dismiss="modal">&times;</button>
                         <div class="container">
                             <div class="row flex-column justify-content-center align-items-center mt-5">
-                                <img src="img/logo-anlidesign.jpg" alt="" height="70">
+                                <img src="img/Svetaines_portfolio/Anli_Design/logo.jpg" alt="" height="70">
                                 <div class="col-md-8 mt-2">
-                                    <img src="img/Portfolio/portfolio_4.jpg" alt="" class="img-fluid">
+                                    <img src="img/Svetaines_portfolio/Anli_Design/main.jpg" alt="" class="img-fluid">
                                 </div>
                                 <a href="https://anli-design.ie/" target="_blank" class="text-center text-secondary mt-4 link-text mb-0">eiti į www.anli-design.ie <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
                                 <hr class="hr-small mt-4">
@@ -903,31 +967,31 @@
                                     <h3 class="text-secondary mt-5">Naudoti įrankiai:</h3>
                                     <div class="row align-items-start mt-4">
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/html5.jpg" alt="" height="50">
+                                            <img src="img/Tools/html5.jpg" alt="" height="50">
                                             <small class="text-center mt-2">HTML 5</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/css.png" alt="" height="50">
+                                            <img src="img/Tools/css.png" alt="" height="50">
                                             <small class="text-center mt-2">CSS 3</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/sass.png" alt="" height="50">
+                                            <img src="img/Tools/sass.png" alt="" height="50">
                                             <small class="text-center mt-2">SASS</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/bootstrap.png" alt="" height="50">
+                                            <img src="img/Tools/bootstrap.png" alt="" height="50">
                                             <small class="text-center mt-2">Bootstrap 4</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/js.png" alt="" height="50">
+                                            <img src="img/Tools/js.png" alt="" height="50">
                                             <small class="text-center mt-2">Java Script</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/jquery.png" alt="" height="50">
+                                            <img src="img/Tools/jquery.png" alt="" height="50">
                                             <small class="text-center mt-2">JQuery</small>
                                         </div>
                                         <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
-                                            <img src="img/php.svg" alt="" height="50">
+                                            <img src="img/Tools/php.svg" alt="" height="50">
                                             <small class="text-center mt-2">PHP</small>
                                         </div>
                                     </div>
@@ -937,13 +1001,13 @@
                         <h3 id="design-anlidesign" class="text-center text-secondary mt-5 pt-4">Svetainės vaizdas</h3>
                         <div class="mt-5">
                             <div>
-                                <img src="img/anli-screen/1.png" alt="" class="w-100 shadow">
+                                <img src="img/Svetaines_portfolio/Anli_Design/1.png" alt="" class="w-100 shadow">
                             </div>
                             <div class="mt-5 pt-4">
-                                <img src="img/anli-screen/2.png" alt="" class="w-100 shadow">
+                                <img src="img/Svetaines_portfolio/Anli_Design/2.png" alt="" class="w-100 shadow">
                             </div>
                             <div class="mt-5 pt-4">
-                                <img src="img/anli-screen/3.png" alt="" class="w-100 shadow">
+                                <img src="img/Svetaines_portfolio/Anli_Design/3.png" alt="" class="w-100 shadow">
                             </div>
                         </div>
                     </div>
@@ -951,7 +1015,7 @@
             </div>
         </div>
 
-        <div class="modal" id="submitTable">
+        <!-- <div class="modal" id="submitTable">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
@@ -1050,7 +1114,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
         <script src="https://kit.fontawesome.com/e3336da53c.js" crossorigin="anonymous"></script>
