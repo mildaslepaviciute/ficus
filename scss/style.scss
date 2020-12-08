@@ -134,6 +134,10 @@ h5 {
   font-weight: 300;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 /* -----------------------------------
 
 SPINNER
@@ -1207,14 +1211,6 @@ nav ul li a:before {
 }
 
 /* --- pavyzdžio atidarymo modalas ---*/
-
-#modalKitokiosgeles a,
-#modalLizdelis a,
-#modalPartyplay a,
-#modalAnlidesign a {
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
 
 .hr-small {
   width: 80px;

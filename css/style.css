@@ -101,6 +101,9 @@ h4,
 h5 {
   font-weight: 300; }
 
+.uppercase {
+  text-transform: uppercase; }
+
 /* -----------------------------------
 
 SPINNER
@@ -889,13 +892,6 @@ SECTION-CONTACTS
   transition-duration: 0.5s; }
 
 /* --- pavyzdžio atidarymo modalas ---*/
-#modalKitokiosgeles a,
-#modalLizdelis a,
-#modalPartyplay a,
-#modalAnlidesign a {
-  letter-spacing: 2px;
-  text-transform: uppercase; }
-
 .hr-small {
   width: 80px;
   border-top: 2px solid #A85698;
