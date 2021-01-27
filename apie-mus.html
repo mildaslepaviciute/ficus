@@ -21,8 +21,7 @@
         <!-- links and scripts -->
         <link rel="image_src" href="img/logo_cover.png">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;900&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/animate.css">
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -47,55 +46,45 @@
             <div class="spinner">
                 <div class="double-bounce1"></div>
                 <div class="double-bounce2"></div>
-              </div>
+            </div>
         </div>
 
-        <nav class="navbar navbar-expand-md stroke w-100 pt-2" id="main-nav">
-            <a aria-label="Link" href="index.html" class="navbar-brand mt-1 mt-md-4">
-                <img src="img/Logo/logo_blue.png" class="logo-main d-block d-md-none ml-3 ml-md-5" alt="">
-                <img src="img/Logo/logo_white.png" class="logo-main d-none d-md-block ml-3 ml-md-5" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <ion-icon name="menu-outline" class="text-secondary"></ion-icon>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto mr-md-3 mr-lg-5">
-                    <li class="nav-item ml-3 ml-md-2 ml-lg-4">
-                        <a aria-label="Link" href="index.html" class="nav-link">Pradžia</a>
-                    </li>
-                    <li class="nav-item ml-3 ml-md-2 ml-lg-4">
-                        <a aria-label="Link" href="apie-mus.html" class="nav-link">Apie mus</a>
-                    </li>
-                    <li class="nav-item dropdown ml-3 ml-md-2 ml-lg-4">
-                        <a class="nav-link" href="#" id="dropdown01" aria-haspopup="true" aria-expanded="false" data-toggle="collapse" data-target="#dropdown-menu01">Paslaugos <span><ion-icon name="chevron-down-outline"></ion-icon></span></a>
-                        <div>
-                            <div id="dropdown-menu01" class="dropdown-menu collapse" aria-labelledby="dropdown01" data-parent="#main-nav">
-                                <a class="dropdown-item px-md-0" href="internetines-svetaines.html">- Internetinės svetainės</a>
-                                <a class="dropdown-item px-md-0 mt-2" href="grafinis-dizainas.html">- Grafinis dizainas</a>
+        <nav class="navbar navbar-expand-md position-md-absolute w-100 z-2" id="main-nav">
+            <div class="d-flex align-items-start w-100 px-md-5">
+                <a href="index.html" class="navbar-brand mt-md-3">
+                    <img src="img/Logo/logo_blue.png" alt="" class="d-md-none">
+                    <img src="img/Logo/logo_white.png" alt="" class="d-none d-md-block">
+                </a>
+                <button class="navbar-toggler border-0 mt-2 pt-2" data-toggle="collapse" data-target="#navbarNav">
+                    <i class="fas fa-bars text-dark"></i>
+                </button>
+                <div class="collapse navbar-collapse mt-md-4" id="navbarNav">
+                    <hr class="d-md-none">
+                    <ul class="navbar-nav ml-auto mt-md-3 mt-lg-0">
+                        <li class="nav-item ml-lg-3">
+                            <a href="index.html" class="nav-link text-uppercase">Pradžia</a>
+                        </li>
+                        <li class="nav-item ml-lg-3">
+                            <a href="apie-mus.html" class="nav-link text-uppercase">Apie mus</a>
+                        </li>
+                        <li class="nav-item ml-lg-3">
+                            <a href="#" class="nav-link text-uppercase d-flex align-items-center" data-target="#dropdown-services" data-toggle="collapse">Paslaugos<span><ion-icon name="chevron-down-outline" class="pt-1 ml-2"></ion-icon></span></a>
+                            <div id="dropdown-services" class="collapse nav-dropdown position-md-absolute">
+                                <a href="internetines-svetaines.html" class="nav-link">Internetinės svetainės</a>
+                                <a href="grafinis-dizainas.html" class="nav-link">Grafinis dizainas</a>
                             </div>
-                        </div>
-                    </li>
-                    <li class="nav-item ml-3 ml-md-2 ml-lg-4">
-                        <a aria-label="Link" href="kontaktai.html" class="nav-link">Kontaktai</a>
-                    </li>
-                </ul>
+                        </li>
+                        <li class="nav-item ml-lg-3">
+                            <a href="kontaktai.html" class="nav-link text-uppercase">Kontaktai</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
-        <header id="header-main" class="d-none d-sm-block">
-            <div class="header-overlay">
-                <div class="row">
-                    <!-- <div class="col-5 ml-5 pl-3">
-                        <h1>Internetinių svetainių kūrimas</h1>
-                        <h5>Internetinių svetainių kūrimo ir grafinio dizaino darbai</h5>
-                    </div> -->
-                </div>
-            </div>
-            <img src="img/Backgrounds/hero_about.png" alt="" class="header-image">
-        </header>
-
-        <header id="header-main-mobile" class="d-block d-sm-none">
-            <img src="img/Backgrounds/hero_about_mobile.png" alt="" class="header-image">
+        <header id="header-main">
+            <img src="img/Backgrounds/hero_about_mobile.png" alt="" class="header-background d-block d-sm-none">
+            <img src="img/Backgrounds/hero_about.png" alt="" class="header-background d-none d-sm-block">
         </header>
 
         <section>
@@ -103,7 +92,7 @@
                 <h2 class="text-center mt-5 mt-md-0">Apie mus</h2>
                 <div class="row mt-5 pt-0 pt-md-5 js--wp-1">
                     <div class="col-md-3">
-                        <h3>Sveiki!</h3>
+                        <h3>Labas!</h3>
                     </div>
                     <div class="col-md-7 offset-md-1 mt-4 mt-md-0">
                         <p class="text-justify">Ficus Media - tai drąsi ir savo darbą mylinti komanda, priimanti ir įgyvendinanti inovatyvius internetinės rinkodaros sprendimus. Mūsų komanda atlieka internetinių svetainių, grafinio dizaino, verslo identiteto kūrimo bei kitus darbus.
@@ -114,34 +103,34 @@
                         </p>
                     </div>
                 </div>
-                <div class="row mt-5 pt-0 pt-md-5 js--wp-2">
+                <div class="row mt-5 pt-md-5 js--wp-2">
                     <div class="col-md-3">
                         <h3>Mūsų paslaugos</h3>
                     </div>
                     <div class="col-md-7 offset-md-1 mt-4 mt-md-0">
                         <div class="row">
                             <div class="col-sm-6">
-                                <h5 class="text-secondary text-uppercase">Svetainių kūrimas</h5>
-                                <h5 class="text-secondary text-uppercase mt-4">Svetainių dizainas</h5>
-                                <h5 class="text-secondary text-uppercase mt-4">Unikalios svetainių iliustracijos</h5>
-                                <h5 class="text-secondary text-uppercase mt-4">Svetainių administravimas</h5>
-                                <h5 class="text-secondary text-uppercase mt-4">Vidinis SEO</h5>
-                                <h5 class="text-secondary text-uppercase mt-4">Turinio valdymo sisitemos</h5>
-                                <h5 class="text-secondary text-uppercase mt-4">Puslapių karpymas</h5>
+                                <h5 class="text-secondary">Svetainių kūrimas</h5>
+                                <h5 class="text-secondary mt-4">Svetainių dizainas</h5>
+                                <h5 class="text-secondary mt-4">Unikalios svetainių iliustracijos</h5>
+                                <h5 class="text-secondary mt-4">Svetainių administravimas</h5>
+                                <h5 class="text-secondary mt-4">Vidinis SEO</h5>
+                                <h5 class="text-secondary mt-4">Turinio valdymo sisitemos</h5>
+                                <h5 class="text-secondary mt-4">Puslapių karpymas</h5>
                             </div>
                             <div class="col-sm-6">
-                                <h5 class="text-secondary text-uppercase">Logotipai</h5>
-                                <h5 class="text-secondary text-uppercase mt-4">Stiliaus knygos</h5>
-                                <h5 class="text-secondary text-uppercase mt-4">Vizitinės kortelės</h5>
-                                <h5 class="text-secondary text-uppercase mt-4">Plakatų dizainas</h5>
-                                <h5 class="text-secondary text-uppercase mt-4">Iliustravimas</h5>
-                                <h5 class="text-secondary text-uppercase mt-4">Animacija</h5>
-                                <h5 class="text-secondary text-uppercase mt-4">Aiškinamieji video</h5>
+                                <h5 class="text-secondary">Logotipai</h5>
+                                <h5 class="text-secondary mt-4">Stiliaus knygos</h5>
+                                <h5 class="text-secondary mt-4">Vizitinės kortelės</h5>
+                                <h5 class="text-secondary mt-4">Plakatų dizainas</h5>
+                                <h5 class="text-secondary mt-4">Iliustravimas</h5>
+                                <h5 class="text-secondary mt-4">Animacija</h5>
+                                <h5 class="text-secondary mt-4">Aiškinamieji video</h5>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row mt-5 pt-0 pt-md-5 js--wp-3">
+                <div class="row mt-5 pt-md-5 js--wp-3">
                     <div class="col-md-3">
                         <h3>Mūsų tikslas</h3>
                     </div>
@@ -152,7 +141,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="row mt-5 pt-0 pt-md-5 js--wp-4">
+                <div class="row mt-5 pt-md-5 js--wp-4">
                     <div class="col-md-3">
                         <h3>Mūsų vertybės</h3>
                     </div>
@@ -165,7 +154,7 @@
                         <p class="text-justify">Norime padėti mūsų klientams būti ne tik efektyviems, bet žengti koja kojon su šių laikų technologijomis ir tendencijomis.</p>
                     </div>
                 </div>
-                <div class="row mt-5 pt-0 pt-md-5 js--wp-5">
+                <div class="row mt-5 pt-md-5 js--wp-5">
                     <div class="col-md-3">
                         <h3>Mūsų darbo strategija</h3>
                     </div>
@@ -186,20 +175,23 @@
                     </div>
                     <div class="col-md-7 offset-md-1 mt-4 mt-md-0">
                         <p>Susidomėjote mūsų paslaugomis?</p>
-                        <h6>
+                        <h5>
                             <a href="kontaktai.html" target="_blank" class="text-secondary">SUSISIEKIME! <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
-                        </h6>
+                        </h5>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="section-clients" class="mt-5 pt-5 pb-5 js--wp-7">
-            <div class="container">
+        <section id="section-clients" class="mt-5 pt-5">
+            <div class="container mt-md-5">
                 <h2 class="text-center">Mumis pasitiki</h2>
-                <div class="row justify-content-center mt-0 mt-md-5 pb-0 pb-md-5">
+                <div class="row justify-content-center mt-md-5">
                     <div class="col-md-3 d-flex justify-content-center align-items-center mt-5 mt-md-0">
                         <img src="img/Clients/bio1.png" alt="" class="img-fluid" style="max-height: 80px;">
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-center align-items-center mt-5 mt-md-0">
+                        <img src="img/Clients/vilpra.png" alt="" class="img-fluid" style="max-height: 80px;">
                     </div>
                     <div class="col-md-3 d-flex justify-content-center align-items-center mt-5 mt-md-0">
                         <img src="img/Clients/kitokios_geles.png" alt="" class="img-fluid" style="max-height: 80px;">
@@ -208,7 +200,7 @@
                         <img src="img/Clients/lizdelis.png" alt="" class="img-fluid" style="max-height: 120px;">
                     </div>
                 </div>
-                <div class="row justify-content-center mt-0 mt-md-5 pt-0 pt-md-4">
+                <div class="row justify-content-center mt-md-5">
                     <div class="col-md-3 d-flex justify-content-center align-items-center mt-5 mt-md-0">
                         <img src="img/Clients/minded.png" alt="" class="img-fluid" style="max-height: 80px;">
                     </div>
@@ -222,48 +214,38 @@
             </div>
         </section>
 
-        <section id="section-contacts" class="mt-5 d-flex flex-column justify-content-end">
+        <footer class="mt-5 d-flex flex-column justify-content-end">
             <div class="container">
-                <div class="row justify-content-center mt-4 align-items-stretch">
-                    <div class="col-md-4 text-center text-white border-right border-responsive-footer">
-                        <div class="h-100">
-                            <h5 class="text-secondary">Sužinok</h5>
-                            <hr class="hr-small mt-2 d-block d-md-none">
-                            <a href="apie-mus.html" class="d-block contacts-nav-item mt-4 mb-1">Apie mus</a>
-                            <a href="internetines-svetaines.html" class="d-block contacts-nav-item mb-1">Internetinės svetainės</a>
-                            <a href="grafinis-dizainas.html" class="d-block contacts-nav-item mb-1">Grafinis dizainas</a>
-                            <a href="kontaktai.html" class="d-block contacts-nav-item">Kontaktai</a>
-                        </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-lg-3 d-flex flex-column">
+                        <img src="img/Logo/logo_white.png" class="w-75 mx-auto mx-md-0 px-5 pl-md-0 pr-md-4" alt="">
                     </div>
-                    <div class="col-md-4 text-center text-white border-right border-responsive-footer mt-4 mt-md-0">
-                        <div class="h-100">
-                            <h5 class="text-secondary">Susisiek</h5>
-                            <hr class="hr-small mt-2 d-block d-md-none">
-                            <h6 class="mt-4 mb-1">El. paštas:</h6>
-                            <a aria-label="Link" href="mailto:info@ficusmedia.lt" class="contacts-nav-item">info@ficusmedia.lt</a>
-                            <h6 class="mt-2 mb-1">Tel. nr.:</h6>
-                            <a aria-label="Link" href="tel:+37062114494" class="contacts-nav-item">+ 370 621 14494</a>
-                        </div>
+                    <div class="col-md-4 col-lg-3 text-center text-md-left text-white mt-5 mt-md-0">
+                        <h5 class="text-uppercase text-secondary mb-md-4">Sužinok</h5>
+                        <hr class="hr-small mt-2 mb-3 d-block d-md-none">
+                        <a href="apie-mus.html" class="d-block white-hover mb-1">Apie mus</a>
+                        <a href="internetines-svetaines.html" class="d-block white-hover mb-1">Internetinės svetainės</a>
+                        <a href="grafinis-dizainas.html" class="d-block white-hover mb-1">Grafinis dizainas</a>
+                        <a href="kontaktai.html" class="d-block white-hover">Kontaktai</a>
                     </div>
-                    <div class="col-md-4 text-center text-white mt-4 mt-md-0">
-                        <div class="h-100">
-                        <img src="img/Logo/logo_white.png" class="logo-footer" alt="">
-                            <div class="mt-4">
-                                <a href="https://www.facebook.com/ficusmedia" target="_blank">
-                                    <i class="fab fa-facebook-f fa-lg contacts-nav-item"></i>
-                                </a>
-                                <a href="https://www.instagram.com/ficusmedia/" target="_blank" class="ml-2">
-                                    <i class="fab fa-instagram fa-lg contacts-nav-item"></i>
-                                </a>
-                            </div>
+                    <div class="col-md-4 col-lg-3 text-center text-md-left text-white mt-4 mt-md-0">
+                        <h5 class="text-uppercase text-secondary mb-md-4">Susisiek</h5>
+                        <hr class="hr-small mt-2 mb-3 d-block d-md-none">
+                        <a aria-label="Link" href="mailto:info@ficusmedia.lt" class="d-block white-hover mb-1">info@ficusmedia.lt</a>
+                        <a aria-label="Link" href="tel:+37062114494" class="d-block white-hover mb-1">+ 370 621 14494</a>
+                        <div class="mt-2 ml-1">
+                            <a href="https://www.facebook.com/ficusmedia" target="_blank">
+                                <i class="fab fa-facebook-f white-hover"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ficusmedia/" target="_blank" class="ml-2">
+                                <i class="fab fa-instagram white-hover"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
+                <p class="text-center text-white mb-0 py-5"><span id="year"></span> © ficusmedia.lt 🌱</p>
             </div>
-            <footer class="d-flex justify-content-center align-items-center mt-3">
-                <p class="text-gradient mb-0">copyright © ficusmedia.lt <span id="year"></span></p>
-            </footer>
-        </section>
+        </footer>
         
 
 
@@ -271,7 +253,6 @@
         <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/animate.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

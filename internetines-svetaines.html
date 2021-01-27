@@ -21,10 +21,11 @@
         <!-- links and scripts -->
         <link rel="image_src" href="img/logo_cover.png">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;900&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         
         <!-- title -->
@@ -47,62 +48,52 @@
             <div class="spinner">
                 <div class="double-bounce1"></div>
                 <div class="double-bounce2"></div>
-              </div>
+            </div>
         </div>
 
-        <nav class="navbar navbar-expand-md stroke w-100 pt-2" id="main-nav">
-            <a aria-label="Link" href="index.html" class="navbar-brand mt-1 mt-md-4">
-                <img src="img/Logo/logo_blue.png" class="logo-main ml-3 ml-md-5" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <ion-icon name="menu-outline" class="text-secondary"></ion-icon>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto mr-md-3 mr-lg-5">
-                    <li class="nav-item ml-3 ml-md-2 ml-lg-4">
-                        <a aria-label="Link" href="index.html" class="nav-link">Pradžia</a>
-                    </li>
-                    <li class="nav-item ml-3 ml-md-2 ml-lg-4">
-                        <a aria-label="Link" href="apie-mus.html" class="nav-link">Apie mus</a>
-                    </li>
-                    <li class="nav-item dropdown ml-3 ml-md-2 ml-lg-4">
-                        <a class="nav-link" href="#" id="dropdown01" aria-haspopup="true" aria-expanded="false" data-toggle="collapse" data-target="#dropdown-menu01">Paslaugos <span><ion-icon name="chevron-down-outline"></ion-icon></span></a>
-                        <div>
-                            <div id="dropdown-menu01" class="dropdown-menu collapse" aria-labelledby="dropdown01" data-parent="#main-nav">
-                                <a class="dropdown-item px-md-0" href="internetines-svetaines.html">- Internetinės svetainės</a>
-                                <a class="dropdown-item px-md-0 mt-2" href="grafinis-dizainas.html">- Grafinis dizainas</a>
+        <nav class="navbar navbar-expand-md position-md-absolute w-100 z-2" id="main-nav">
+            <div class="d-flex align-items-start w-100 px-md-5">
+                <a href="index.html" class="navbar-brand mt-md-3">
+                    <img src="img/Logo/logo_blue.png" alt="">
+                </a>
+                <button class="navbar-toggler border-0 mt-2 pt-2" data-toggle="collapse" data-target="#navbarNav">
+                    <i class="fas fa-bars text-dark"></i>
+                </button>
+                <div class="collapse navbar-collapse mt-md-4" id="navbarNav">
+                    <hr class="d-md-none">
+                    <ul class="navbar-nav ml-auto mt-md-3 mt-lg-0">
+                        <li class="nav-item ml-lg-3">
+                            <a href="index.html" class="nav-link text-uppercase">Pradžia</a>
+                        </li>
+                        <li class="nav-item ml-lg-3">
+                            <a href="apie-mus.html" class="nav-link text-uppercase">Apie mus</a>
+                        </li>
+                        <li class="nav-item ml-lg-3">
+                            <a href="#" class="nav-link text-uppercase d-flex align-items-center" data-target="#dropdown-services" data-toggle="collapse">Paslaugos<span><ion-icon name="chevron-down-outline" class="pt-1 ml-2"></ion-icon></span></a>
+                            <div id="dropdown-services" class="collapse nav-dropdown position-md-absolute">
+                                <a href="internetines-svetaines.html" class="nav-link">Internetinės svetainės</a>
+                                <a href="grafinis-dizainas.html" class="nav-link">Grafinis dizainas</a>
                             </div>
-                        </div>
-                    </li>
-                    <li class="nav-item ml-3 ml-md-2 ml-lg-4">
-                        <a aria-label="Link" href="kontaktai.html" class="nav-link">Kontaktai</a>
-                    </li>
-                </ul>
+                        </li>
+                        <li class="nav-item ml-lg-3">
+                            <a href="kontaktai.html" class="nav-link text-uppercase">Kontaktai</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-
-        <header id="header-main" class="d-none d-sm-block">
-            <div class="header-overlay">
-                <div class="row">
-                    <div class="col-5 ml-5 pl-3">
-                        <h1>Internetinių svetainių kūrimas</h1>
-                        <h5>Mes pasiūlysime jums unikalų sprendimą. Mūsų misija - originalumas</h5>
-                    </div>
+        
+        <header id="header-main" class="position-relative z-1">
+            <div class="header-overlay position-absolute h-100 w-100 row align-items-sm-center z-2">
+                <div class="col-sm-6 col-md-5 offset-sm-1 pr-lg-5 pb-4">
+                    <h1 class="d-sm-none text-white mt-4 ml-4">Internetinių svetainių kūrimas</h1>
+                    <p class="d-sm-none text-white w-75 pr-4 mt-3 ml-4">Mes pasiūlysime jums unikalų sprendimą. Mūsų misija - originalumas</p>
+                    <h1 class="d-none d-sm-block">Internetinių svetainių kūrimas</h1>
+                    <p class="d-none d-sm-block text-body mt-3">Mes pasiūlysime jums unikalų sprendimą. Mūsų misija - originalumas</p>
                 </div>
             </div>
-            <img src="img/Backgrounds/hero_web.png" alt="" class="header-image">
-        </header>
-
-        <header id="header-main-mobile" class="d-block d-sm-none">
-            <div class="header-overlay">
-                <div class="row justify-content-center">
-                    <div class="col-10 mt-5">
-                        <h3 class="text-white">Internetinių svetainių kūrimas</h3>
-                        <p class="text-white pr-5">Mes pasiūlysime jums unikalų sprendimą. Mūsų misija - originalumas</p>
-                    </div>
-                </div>
-            </div>
-            <img src="img/Backgrounds/hero_web_mobile.png" alt="" class="header-image">
+            <img src="img/Backgrounds/hero_web_mobile.png" alt="" class="header-background d-sm-none">
+            <img src="img/Backgrounds/hero_web.png" alt="" class="header-background d-none d-sm-block">
         </header>
 
         <section id="section-aboutweb" class="mt-5">
@@ -113,32 +104,32 @@
                         <div class="h-100 position-relative d-flex align-items-center justify-content-center">
                             <img src="img/Graphical_elements/square_1.png" alt="" class="img-fluid">
                             <div class="card-text card-text-margin position-absolute p-5">
-                                <h5 class="text-secondary mb-4">Internetinių svetainių kūrimas</h5>
+                                <h5 class="text-secondary mb-4">Svetainių kūrimas</h5>
                                 <div class="list-group text-left mt-3">
                                     <div class="d-flex">
-                                        <i class="far fa-check-circle text-success fa-sm mt-1"></i><p class="ml-3 mb-2">Programavimo darbai</p>
+                                        <i class="far fa-check-circle text-secondary fa-sm mt-1"></i><p class="ml-3 mb-2">Programavimo darbai</p>
                                     </div>
                                     <div class="d-flex">
-                                        <i class="far fa-check-circle text-success fa-sm mt-1"></i><p class="ml-3 mb-2">UX/UI</p>
+                                        <i class="far fa-check-circle text-secondary fa-sm mt-1"></i><p class="ml-3 mb-2">UX/UI</p>
                                     </div>
                                     <div class="d-flex">
-                                        <i class="far fa-check-circle text-success fa-sm mt-1"></i><p class="ml-3 mb-0">Vidinės integracijos</p>
+                                        <i class="far fa-check-circle text-secondary fa-sm mt-1"></i><p class="ml-3 mb-0">Turinio valdymas</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-10 col-sm-7 col-md-5 col-lg-4 col-xl-3 text-center px-0 card-padding-negative card-padding-negative-z">
+                    <div class="col-10 col-sm-7 col-md-5 col-lg-4 col-xl-3 text-center px-0 card-padding-negative z-2">
                         <div class="h-100 position-relative d-flex align-items-center justify-content-center">
                             <img src="img/Graphical_elements/square_2.png" alt="" class="img-fluid">
                             <div class="card-text card-text-margin position-absolute p-5">
-                                <h5 class="text-secondary mb-4">Internetinių svetainių dizainas</h5>
+                                <h5 class="text-secondary mb-4">Svetainių dizainas</h5>
                                 <div class="list-group text-left mt-3">
                                     <div class="d-flex">
-                                        <i class="far fa-check-circle text-success fa-sm mt-1"></i><p class="ml-3 mb-2">Unikalus svetainių dizainas</p>
+                                        <i class="far fa-check-circle text-secondary fa-sm mt-1"></i><p class="ml-3 mb-2">Unikalus svetainių dizainas</p>
                                     </div>
                                     <div class="d-flex">
-                                        <i class="far fa-check-circle text-success fa-sm mt-1"></i><p class="ml-3 mb-2">Individualios iliustracijos</p>
+                                        <i class="far fa-check-circle text-secondary fa-sm mt-1"></i><p class="ml-3 mb-2">Individualios iliustracijos</p>
                                     </div>
                                 </div>
                             </div>
@@ -149,16 +140,16 @@
                         <div class="h-100 position-relative d-flex align-items-center justify-content-center">
                             <img src="img/Graphical_elements/square_3.png" alt="" class="img-fluid">
                             <div class="card-text card-text-margin position-absolute p-5">
-                                <h5 class="text-secondary mb-4">Svetainių optimizavimas</h5>
+                                <h5 class="text-secondary mb-4">Svetainių ypatumai</h5>
                                 <div class="list-group text-left mt-3">
                                     <div class="d-flex">
-                                        <i class="far fa-check-circle text-success fa-sm mt-1"></i><p class="ml-3 mb-2">Turinio valdymo sistemos</p>
+                                        <i class="far fa-check-circle text-secondary fa-sm mt-1"></i><p class="ml-3 mb-2">Soc. tinklų integracijos</p>
                                     </div>
                                     <div class="d-flex">
-                                        <i class="far fa-check-circle text-success fa-sm mt-1"></i><p class="ml-3 mb-2">Vidinė SEO optimizacija</p>
+                                        <i class="far fa-check-circle text-secondary fa-sm mt-1"></i><p class="ml-3 mb-2">Vidinis SEO</p>
                                     </div>
                                     <div class="d-flex">
-                                        <i class="far fa-check-circle text-success fa-sm mt-1"></i><p class="ml-3 mb-0">Auditai, našumas</p>
+                                        <i class="far fa-check-circle text-secondary fa-sm mt-1"></i><p class="ml-3 mb-0">El. laiškų formos</p>
                                     </div>
                                 </div>
                             </div>
@@ -168,13 +159,13 @@
                         <div class="h-100 position-relative d-flex align-items-center justify-content-center">
                             <img src="img/Graphical_elements/square_4.png" alt="" class="img-fluid">
                             <div class="card-text card-text-margin position-absolute p-5">
-                                <h5 class="text-secondary mb-4">Internetinių svetainių tvarkymas</h5>
+                                <h5 class="text-secondary mb-4">Kiti darbai</h5>
                                 <div class="list-group text-left mt-3">
                                     <div class="d-flex">
-                                        <i class="far fa-check-circle text-success fa-sm mt-1"></i><p class="ml-3 mb-2">Dizaino perrašymas į HTML kodą</p>
+                                        <i class="far fa-check-circle text-secondary fa-sm mt-1"></i><p class="ml-3 mb-2">Dizaino perrašymas į HTML kodą</p>
                                     </div>
                                     <div class="d-flex">
-                                        <i class="far fa-check-circle text-success fa-sm mt-1"></i><p class="ml-3 mb-2">Svetainių atnaujinimas</p>
+                                        <i class="far fa-check-circle text-secondary fa-sm mt-1"></i><p class="ml-3 mb-2">Svetainių talpinimas</p>
                                     </div>
                                 </div>
                             </div>
@@ -184,308 +175,188 @@
             </div>
         </section>
 
-        <section id="portfolio-web" class="mt-5">
-            <div class="container">
+        <section class="mt-5">
+            <div class="container pt-md-5">
                 <h2 class="text-center">Mūsų darbai</h2>
                 <div class="row justify-content-center flex-md-row-reverse align-items-center mt-5">
-                    <div class="col-md-6 mt-4 mt-md-0 js--wp-1">
+                    <div class="col-md-6 js--wp-1">
                         <img src="img/Svetaines_portfolio/Lizdelis/main.jpg" alt="" class="img-fluid">
                     </div>
-                    <div class="col-11 col-md-6 mt-5 mt-md-0">
+                    <div class="col-11 col-md-6 mt-4 mt-md-0">
                         <h3 class="text-secondary text-center text-md-left">Kalbų ir kultūrų lizdelis</h3>
-                        <p class="text-justify mt-4">Šis projektas yra skirtas VšĮ „Kalbų ir kultūrų lizdelio“ veiklos pristatymui ir valdymui. Subtilaus dizaino svetainę sudaro 5 puslapiai. Joje integruoti užsiėmimų tvarkaraščiai, registracija, formų validacija, automatinis elektroninių laiškų siuntimas, socialinių tinklų naujienų srautas, „Messenger“ bei „Google Analytics“ įskiepiai.</p>
+                        <p class="text-justify mt-4">Šis projektas yra skirtas VšĮ „Kalbų ir kultūrų lizdelio“ veiklos pristatymui ir valdymui. Subtilaus dizaino svetainę sudaro 5 puslapiai. Joje integruoti užsiėmimų tvarkaraščiai, registracija, formų validacija, automatinis elektroninių laiškų siuntimas, socialinių tinklų naujienų srautas, „Messenger“ bei „Google Analytics“ integracijos.</p>
                         <div class="list-group">
                             <div class="d-flex">
-                                <i class="far fa-check-circle text-success mt-1"></i><p class="ml-3">Unikalus svetainės dizainas</p>
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Unikalus svetainės dizainas</p>
                             </div>
                             <div class="d-flex">
-                                <i class="far fa-check-circle text-success mt-1"></i><p class="ml-3">Unikalus logotipas</p>
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Unikalus logotipas</p>
                             </div>
                             <div class="d-flex">
-                                <i class="far fa-check-circle text-success mt-1"></i><p class="ml-3">Tvarkaraščiai ir registracija</p>
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Tvarkaraščiai ir registracija</p>
                             </div>
                         </div>
                         <div class="d-flex">
-                            <div data-toggle="modal" data-target="#modalLizdelis" class="btn-1 btn-1-secondary mx-auto mx-md-0">Peržiūrėti</div>
+                            <div data-toggle="modal" data-target="#modalLizdelis" class="btn btn-secondary rounded-pill text-uppercase shadow-sm mx-auto mx-md-0 mt-3">Peržiūrėti</div>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center align-items-center mt-5">
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <img src="img/Svetaines_portfolio/Party_Play/main.jpg" alt="" class="img-fluid js--wp-2">
+                    <div class="col-md-6">
+                        <img src="img/Svetaines_portfolio/Anli_Design/main.jpg" alt="" class="img-fluid js--wp-3">
                     </div>
-                    <div class="col-11 col-md-6 mt-5 mt-md-0">
-                        <h3 class="text-secondary text-center text-md-left">Party Play</h3>
-                        <p class="text-justify mt-4">Ši svetainė yra naudojama „Party Play“ nuomos tinklo veiklos pristatymui. Svetainę sudaro 5 puslapiai, kuriuose pateikta daiktų nuomos galerija, kainų skaičiuoklė, konatktų skiltis, žaidimų sąrašai. Puslapis šiuolaikiškas, ryškus. Svetainėje integruoti „Messenger“ bei „Google Analytics“ įskiepiai.</p>
-                        <div class="list-group">
-                            <div class="d-flex">
-                                <i class="far fa-check-circle text-success mt-1"></i><p class="ml-3">Unikalus svetainės dizainas</p>
-                            </div>
-                            <div class="d-flex">
-                                <i class="far fa-check-circle text-success mt-1"></i><p class="ml-3">Unikalios vizitinės</p>
-                            </div>
-                            <div class="d-flex">
-                                <i class="far fa-check-circle text-success mt-1"></i><p class="ml-3">„Messenger“ ir „Google Analytics“ integracijos</p>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div data-toggle="modal" data-target="#modalPartyplay" class="btn-1 btn-1-secondary mx-auto mx-md-0">Peržiūrėti</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center flex-md-row-reverse align-items-center mt-5">
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <img src="img/Svetaines_portfolio/Kitokios_geles/main.jpg" alt="" class="img-fluid js--wp-3">
-                    </div>
-                    <div class="col-11 col-md-6 mt-5 mt-md-0">
-                        <h3 class="text-secondary text-center text-md-left">Kitokios gėlės</h3>
-                        <p class="text-justify mt-4">Tai kūrybiškumu ir unikaliomis idėjomis stebinančiai gėlių parduotuvei „Kitokios gėlės“ skirta internetinė svetainė. Joje - 8 puslapiai, kuriuose gausu išskirtinio grožio gėlių nuotraukų, gėlių priežiūros aprašymų bei patarimų, padedančių išsirinkti norimą prekę. Svetainėje integruotas „Google Analytics“ įskiepis, naudojama "WordPress" turinio valdymo sistema.</p>
-                        <div class="list-group">
-                            <div class="d-flex">
-                                <i class="far fa-check-circle text-success mt-1"></i><p class="ml-3">Unikalus svetainės dizainas</p>
-                            </div>
-                            <div class="d-flex">
-                                <i class="far fa-check-circle text-success mt-1"></i><p class="ml-3">Interaktyvių žemėlapių ir „Google Analytics“ integracijos</p>
-                            </div>
-                            <div class="d-flex">
-                                <i class="far fa-check-circle text-success mt-1"></i><p class="ml-3">Prekių galerijos, katalogas</p>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div data-toggle="modal" data-target="#modalKitokiosgeles" class="btn-1 btn-1-secondary mx-auto mx-md-0">Peržiūrėti</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center flex-md-row-reverse align-items-center mt-5">
-                    <div class="col-11 col-md-6 mt-5 mt-md-0">
+                    <div class="col-11 col-md-6 mt-4 mt-md-0">
                         <h3 class="text-secondary text-center text-md-left">Anli Design</h3>
                         <p class="text-justify mt-4">Projektas skirtas „ANLI Design“ dizaino studijos veiklos pristatymui. Internetinėje svetainėje vaizdžiai pateikiama informacija apie veiklos kryptį, pateikiami studijos sukurtų 3D vizualizacijų pavyzdžiai, kontaktai, "Google Maps" integracija, formos, el. laiškų siuntimas. Dizainas pritaikytas mobiliesiems.</p>
                         <div class="list-group">
                             <div class="d-flex">
-                                <i class="far fa-check-circle text-success mt-1"></i><p class="ml-3">Unikalus svetainės dizainas</p>
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Unikalus svetainės dizainas</p>
                             </div>
                             <div class="d-flex">
-                                <i class="far fa-check-circle text-success mt-1"></i><p class="ml-3">Darbų pavyzdžiai, galerijos</p>
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Darbų pavyzdžiai, galerijos</p>
                             </div>
                             <div class="d-flex">
-                                <i class="far fa-check-circle text-success mt-1"></i><p class="ml-3">Formos, el. laiškų siuntimas</p>
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Formos, el. laiškų siuntimas</p>
                             </div>
                         </div>
                         <div class="d-flex">
-                            <div data-toggle="modal" data-target="#modalAnlidesign" class="btn-1 btn-1-secondary mx-auto mx-md-0">Peržiūrėti</div>
+                            <div data-toggle="modal" data-target="#modalAnlidesign" class="btn btn-secondary rounded-pill text-uppercase shadow-sm mx-auto mx-md-0 mt-3">Peržiūrėti</div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <img src="img/Svetaines_portfolio/Anli_Design/main.jpg" alt="" class="img-fluid js--wp-3">
                     </div>
                 </div>
                 <div class="row justify-content-center flex-md-row-reverse align-items-center mt-5">
-                    <div class="col-md-6 mt-4 mt-md-0">
+                    <div class="col-md-6 js--wp-1">
+                        <img src="img/Svetaines_portfolio/Atelier/main.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-11 col-md-6 mt-4 mt-md-0">
+                        <h3 class="text-secondary text-center text-md-left">Atelier Dovilė Pavalkytė</h3>
+                        <p class="text-justify mt-4">Ši individualaus dizaino svetainė skirta vestuvinių rūbų dizaino studijos „Atelier Dovilė Pavalkytė“ veiklai reprezentuoti. Puslapyje nuolat atnaujinamos individualiai kurtų suknelių galerijos, sukurta registracijos konsultacijai forma. Svetainės turinį klientas atnaujina naudodamas turinio valdymo sistemą.</p>
+                        <div class="list-group">
+                            <div class="d-flex">
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Unikalus svetainės dizainas</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Turinio valdymo sistema</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Registracijos forma</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div data-toggle="modal" data-target="#modalAtelier" class="btn btn-secondary rounded-pill text-uppercase shadow-sm mx-auto mx-md-0 mt-3">Peržiūrėti</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center mt-5">
+                    <div class="col-md-6">
+                        <img src="img/Svetaines_portfolio/Party_Play/main.jpg" alt="" class="img-fluid js--wp-2">
+                    </div>
+                    <div class="col-11 col-md-6 mt-4 mt-md-0">
+                        <h3 class="text-secondary text-center text-md-left">Party Play</h3>
+                        <p class="text-justify mt-4">Ši svetainė yra naudojama „Party Play“ nuomos tinklo veiklos pristatymui. Svetainę sudaro 5 puslapiai, kuriuose pateikta daiktų nuomos galerija, kainų skaičiuoklė, konatktų skiltis, žaidimų sąrašai. Puslapis šiuolaikiškas, ryškus. Svetainėje integruoti „Messenger“ bei „Google Analytics“ integracijos.</p>
+                        <div class="list-group">
+                            <div class="d-flex">
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Unikalus svetainės dizainas</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Unikalios vizitinės</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">„Messenger“ ir „Google Analytics“ integracijos</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div data-toggle="modal" data-target="#modalPartyplay" class="btn btn-secondary rounded-pill text-uppercase shadow-sm mx-auto mx-md-0 mt-3">Peržiūrėti</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center flex-md-row-reverse align-items-center mt-5">
+                    <div class="col-md-6">
                         <img src="img/Svetaines_portfolio/AsTuVisa/main.png" alt="" class="img-fluid js--wp-3">
                     </div>
-                    <div class="col-11 col-md-6 mt-5 mt-md-0">
+                    <div class="col-11 col-md-6 mt-4 mt-md-0">
                         <h3 class="text-secondary text-center text-md-left">Aš Tu Visa</h3>
                         <p class="text-justify mt-4">Svetainė skirta vidinio tobulėjimo studijai „Aš Tu Visa“. Individualaus dizaino puslapyje plačiai aprašoma veiklos kryptis, supažindinama su bioenergetinių konsultacijų, meditacijos prasme, svetainėje nuolat atnaujinami renginių, mokymų skelbimai, rašomas tinklaraštis. Svetainės turinį klientas atnaujina naudodamas individualiai sukurtą dizaino kūrimo įrankį "WordPress" turinio valdymo sistemoje.</p>
                         <div class="list-group">
                             <div class="d-flex">
-                                <i class="far fa-check-circle text-success mt-1"></i><p class="ml-3">Unikalus svetainės dizainas</p>
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Unikalus svetainės dizainas</p>
                             </div>
                             <div class="d-flex">
-                                <i class="far fa-check-circle text-success mt-1"></i><p class="ml-3">Tinklaraštis, dinamiškas turinys</p>
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Tinklaraštis, dinamiškas turinys</p>
                             </div>
                             <div class="d-flex">
-                                <i class="far fa-check-circle text-success mt-1"></i><p class="ml-3">Unikalaus dizaino puslapio kūrimo įrankis</p>
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Unikalaus dizaino puslapio kūrimo įrankis</p>
                             </div>
                         </div>
                         <div class="d-flex">
-                            <div data-toggle="modal" data-target="#modalAsTuVisa" class="btn-1 btn-1-secondary mx-auto mx-md-0">Peržiūrėti</div>
+                            <div data-toggle="modal" data-target="#modalAsTuVisa" class="btn btn-secondary rounded-pill text-uppercase shadow-sm mx-auto mx-md-0 mt-3">Peržiūrėti</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center mt-5">
+                    <div class="col-md-6">
+                        <img src="img/Svetaines_portfolio/Raudondvario_dvaras/main.png" alt="" class="img-fluid js--wp-2">
+                    </div>
+                    <div class="col-11 col-md-6 mt-4 mt-md-0">
+                        <h3 class="text-secondary text-center text-md-left">Raudondvario dvaro oranžerija</h3>
+                        <p class="text-justify mt-4">Projektas skirtas Raudondvario dvaro oranžerijos restorano veiklai reprezentuoti. Puslapyje nuolat atnaujinamas restorano patiekalų sąrašas, pateiktos restorano menės bei valgių galerijos, veikia „Facebook“ ir „Google Maps“ integracijos. Svetainės turinį klientas atnaujina naudodamas turinio valdymo sistemą.</p>
+                        <div class="list-group">
+                            <div class="d-flex">
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Unikalus svetainės dizainas</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Redaguojamas restorano meniu</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">„Facebook“ ir „Google Maps“ integracijos</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div data-toggle="modal" data-target="#modalDvaras" class="btn btn-secondary rounded-pill text-uppercase shadow-sm mx-auto mx-md-0 mt-3">Peržiūrėti</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center flex-md-row-reverse align-items-center mt-5">
+                    <div class="col-md-6">
+                        <img src="img/Svetaines_portfolio/Kitokios_geles/main.jpg" alt="" class="img-fluid js--wp-3">
+                    </div>
+                    <div class="col-11 col-md-6 mt-4 mt-md-0">
+                        <h3 class="text-secondary text-center text-md-left">Kitokios gėlės</h3>
+                        <p class="text-justify mt-4">Tai kūrybiškumu ir unikaliomis idėjomis stebinančiai gėlių parduotuvei „Kitokios gėlės“ skirta internetinė svetainė. Joje - 8 puslapiai, kuriuose gausu išskirtinio grožio gėlių nuotraukų, gėlių priežiūros aprašymų bei patarimų, padedančių išsirinkti norimą prekę. Svetainėje integruotas „Google Analytics“, naudojama "WordPress" turinio valdymo sistema.</p>
+                        <div class="list-group">
+                            <div class="d-flex">
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Unikalus svetainės dizainas</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Interaktyvių žemėlapių ir „Google Analytics“ integracijos</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="far fa-check-circle text-secondary mt-1"></i><p class="ml-3">Prekių galerijos, katalogas</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div data-toggle="modal" data-target="#modalKitokiosgeles" class="btn btn-secondary rounded-pill text-uppercase shadow-sm mx-auto mx-md-0 mt-3">Peržiūrėti</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- <section id="calculate-price" class="mt-5 pt-5">
-            <div class="container">
-                <h2 class="text-center">Mokėkite tik už tai, ko Jums reikia</h2>
-                <h5 class="text-black text-center mt-4">Pasirinkite Jums reikalingas paslaugas ir gaukite individualų pasiūlymą</h5>
-                <div class="d-flex">
-                    <a href="#step-all" data-toggle="collapse" data-parent="#calculate-price" id="calculate-btn" class="btn-1 btn-1-secondary mt-4 mx-auto">skaičiuoti kainą</a>
-                </div>
-                <div id="step-all" class="collapse">
-                    <h3 class="text-center text-secondary mt-5">Puslapių skaičius</h3>
-                    <div class="d-flex px-3">
-                        <div class="range-wrap mt-3 mx-auto">
-                            <input id="page-amount" type="range" class="range" min="1" max="10" step="1">
-                            <output id="bubble" class="bubble"></output>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <a href="#step-2" id="step-2-button" data-toggle="collapse" data-parent="#calculate-price" class="next-step btn-1 btn-1-secondary mt-4 mx-auto">toliau</a>
-                    </div>
-                    <div id="step-2" class="collapse">
-                        <h3 class="text-center text-secondary mt-5">Dizainas</h3>
-                        <div class="card-choose mt-5">
-                            <label class="mx-3">
-                                <input type="radio" name="select-design" value="template"/>
-                                <div class="template box">
-                                    <span>Šabloninis</span>
-                                </div>
-                            </label>
-                            <label class="mx-3">
-                                <input type="radio" name="select-design" value="unique" checked/>
-                                <div class="unique box">
-                                    <span>Unikalus</span>
-                                </div>
-                            </label>
-                        </div>
-                        <div class="d-flex">
-                            <a href="#step-3" id="step-3-button" data-toggle="collapse" data-parent="#calculate-price" class="next-step btn-1 btn-1-secondary mt-4 mx-auto">toliau</a>
-                        </div>
-                    </div>
-                    <div id="step-3" class="collapse">
-                        <h3 class="text-center text-secondary mt-5">Puslapio funkcijos</h3>
-                        <div class="row justify-content-center mt-5">
-                            <div class="col-5 col-sm-4 col-md-2">
-                                <img src="img/Icons/icon-googleanalytics.png" alt="" id="analytics" class="web-feature img-fluid p-2 rounded-circle unselected-feature" data-toggle="tooltip" data-placement="top" title="Prisijungus prie sistemos bus galima sekti svetainės lankytojų srautą, populiariausią lankymo laiką, laiką, praleistą svetainėje ir kt.">
-                                <p class="text-center mt-2">„Google Analytics“</p>
-                            </div>
-                            <div class="col-5 col-sm-4 col-md-2">
-                                <img src="img/Icons/icon-responsive.png" alt="" id="responsive" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" data-toggle="tooltip" data-placement="top" title="Svetainė bus pritaikyta įveiriems ekranų dydžiams (kompiuteriams, plančetėms, mobilisiems telefonams ir kt.)">
-                                <p class="text-center mt-2">Mobili svetainės versija</p>
-                            </div>
-                            <div class="col-5 col-sm-4 col-md-2">
-                                <img src="img/Icons/icon-seo.png" alt="" id="seo" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" data-toggle="tooltip" data-placement="top" title="Svetainės turinys bei struktūra bus paruošti pagal Google standartus tam, kad svetainė būtų rodoma aukštesnėse pozicijose Google paieškoje, dėl ko padidėtų svetainės lankomumas">
-                                <p class="text-center mt-2">Vidinis SEO</p>
-                            </div>
-                            <div class="col-5 col-sm-4 col-md-2">
-                                <img src="img/Icons/icon-language.png" alt="" id="languages" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" data-toggle="tooltip" data-placement="top" title="Lankytojas galės pasirinkti norimą svetainės kalbą. Vertimų paslaugos į šį punktą nėra įtraukiamos">
-                                <p class="text-center mt-2">Papildomos kalbos</p>
-                            </div>
-                            <div class="col-5 col-sm-4 col-md-2">
-                                <img src="img/Icons/icon-video.png" alt="" id="video" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" data-toggle="tooltip" data-placement="top" title="Reprezentatyvinės ar kitos video medžiagos talpinimas svetainėje">
-                                <p class="text-center mt-2">Video medžiagos talpinimas</p>
-                            </div>
-                            <div class="col-5 col-sm-4 col-md-2">
-                                <img src="img/Icons/icon-map.png" alt="" id="maps" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" data-toggle="tooltip" data-placement="top" title="Bus paruoštas ir integruotas Google žemėlapis pagal Jūsų norimą adresą">
-                                <p class="text-center mt-2">Interaktyvūs žemėlapiai</p>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center mt-4">
-                            <div class="col-5 col-sm-4 col-md-2">
-                                <img src="img/Icons/icon-messenger.png" alt="" id="messenger" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" data-toggle="tooltip" data-placement="top" title="Ši integracija leis svetainės lankytojams su Jumis susisiekti per Messenger platformą tiesiogiai iš svetainės.">
-                                <p class="text-center mt-2">„Messenger“ pokalbių įskiepis</p>
-                            </div>
-                            <div class="col-5 col-sm-4 col-md-2">
-                                <img src="img/Icons/icon-form.png" alt="" id="form" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" data-toggle="tooltip" data-placement="top" title="Bus sukurtos unikalios, puslapio stilistiką atitinkančios elektroninęs klientų formos (kontakiniams nuomenims įvesti, susisiekimui elektroniniu paštu ir kitiems tikslams). Taip pat bus atliekama formų validacija">
-                                <p class="text-center mt-2">Elektroninės klientų formos</p>
-                            </div>
-                            <div class="col-5 col-sm-4 col-md-2">
-                                <img src="img/Icons/icon-gallery.png" alt="" id="gallery" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" data-toggle="tooltip" data-placement="top" title="Bus integruotos jūsų norimos nuotraukų galerijos. Nuotraukas bus galima išdidinti">
-                                <p class="text-center mt-2">Galerijos</p>
-                            </div>
-                            <div class="col-5 col-sm-4 col-md-2">
-                                <img src="img/Icons/icon-feed.png" alt="" id="feed" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" data-toggle="tooltip" data-placement="top" title="Bus integruotos Jūsų Facebook arba Instagram paskyros naujienos, kurios, paskelbus naują pranešimą, automatiškai atsinaujins ir svetainėje">
-                                <p class="text-center mt-2">Socialinių tinklų naujienų srautas</p>
-                            </div>
-                            <div class="col-5 col-sm-4 col-md-2">
-                                <img src="img/Icons/icon-ssl.png" alt="" id="ssl" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" data-toggle="tooltip" data-placement="top" title="Klientai labiau pasitiki svetainėmis su SSL sertifikatais - duomenų saugumo garantu, būtinu visur, kur naudojami asmeniniai klientų duomenys. Įdiegus sertifikatą, svetainės lankytojo naršyklė su serveriu susijungia saugiu HTTPS protokolu, o prie svetainės adreso rodoma spynelės piktograma">
-                                <p class="text-center mt-2">SSL sertifikatas</p>
-                            </div>
-                            <div class="col-5 col-sm-4 col-md-2">
-                                <img src="img/Icons/icon-blog.png" alt="" id="blog" class="web-feature img-fluid bg-light p-2 rounded-circle unselected-feature" data-toggle="tooltip" data-placement="top" title="Tinklaraščio įrašo šablono sukūrimas">
-                                <p class="text-center mt-2">Tinklaraštis</p>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <a href="#step-4" data-toggle="collapse" data-parent="#calculate-price" class="next-step btn-1 btn-1-secondary mt-4 mx-auto">toliau</a>
-                        </div>
-                    </div>
-                    <div id="step-4" class="collapse">
-                        <h3 class="text-center text-secondary mt-5">Turinio redagavimas</h3>
-                        <div class="card-choose mt-5">
-                            <label class="mx-3">
-                                <input type="radio" name="select-cms" value="static" />
-                                <div class="static box">
-                                    <span>Statinis</span>
-                                </div>
-                            </label>
-                            <label class="mx-3">
-                                <input type="radio" name="select-cms" value="wordpress" />
-                                <div class="wordpress box">
-                                    <span>WordPress</span>
-                                </div>
-                            </label>
-                            <label class="mx-3">
-                                <input type="radio" name="select-cms" value="other" checked/>
-                                <div class="othercms box">
-                                    <span>Netlify CMS</span>
-                                </div>
-                            </label>
-                        </div>
-                        <div class="d-flex laststep-btn">
-                            <a href="#step-5" id="step-5-button" data-toggle="collapse" data-parent="#calculate-price" class="next-step btn-1 btn-1-secondary mt-4 mx-auto">toliau</a>
-                        </div>
-                    </div>
-                    <div id="step-5" class="collapse">
-                        <h3 class="text-center text-secondary mt-5">Priedai</h3>
-                        <div class="row justify-content-center align-items-center mt-5">
-                            <div class="col-3 col-sm-2 col-md-1">
-                                <p><input type="checkbox" id="domain" class="test" /><label for="domain"><span class="ui"></span></label></p>
-                            </div>
-                            <div class="col-9 col-sm-8 col-md-4">
-                                <p class="m-0">Domeno įregistravimas ir svetainės talpinimas</p>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center align-items-center mt-3">
-                            <div class="col-3 col-sm-2 col-md-1">
-                                <p><input type="checkbox" id="logo" class="test" /><label for="logo"><span class="ui"></span></label></p>
-                            </div>
-                            <div class="col-9 col-sm-8 col-md-4">
-                                <p class="m-0">Reikalingas unikalaus dizaino logotipas</p>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center align-items-center mt-3">
-                            <div class="col-3 col-sm-2 col-md-1">
-                                <p><input type="checkbox" id="visitCard" class="test" /><label for="visitCard"><span class="ui"></span></label></p>
-                            </div>
-                            <div class="col-9 col-sm-8 col-md-4">
-                                <p class="m-0">Reikalingas maketas vizitinei kortelei</p>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center align-items-center mt-4">
-                            <div class="col-3 col-sm-2 col-md-1">
-                                <p><input type="checkbox" id="domainEmail" class="test" /><label for="domainEmail"><span class="ui"></span></label></p>
-                            </div>
-                            <div class="col-9 col-sm-8 col-md-4">
-                                <p class="m-0">Domeno elektroninio pašto kūrimas ir konfigūravimas (perkėlimas į gmail?)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="mt-4">
-                    <h4 class="text-center text-black mt-5">Preliminari projekto kaina: <span id="total-price">0</span> €</h4>
-                    <div class="submit-btn d-none mt-4">
-                        <a href="kontaktai.html" class="btn-1 btn-1-secondary mx-auto">Susisiekti!</a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <section id="price-table" class="mt-5 pt-5">
-            <div class="container">
+        <section id="price-table" class="mt-5">
+            <div class="container pt-md-5">
                 <h2 class="text-center">Kainoraštis</h2>
-                <div class="row justify-content-center mt-5 pt-3">
+                <div class="row justify-content-center mt-4 mt-md-5">
                     <div class="col-md-8 d-flex flex-column">
-                        <table id="design-price-table" class="table table-hover bg-white shadow">
-                            <thead class="bg-light">
+                        <table class="table bg-white rounded-lg shadow position-relative z-2">
+                            <thead class="bg-light rounded-lg-top">
                                 <tr>
-                                    <th class="align-middle">PASLAUGA</th>
-                                    <th class="align-middle">KAINA</th>
+                                    <th class="rounded-lg-top-left border-0 letter-space">PASLAUGA</th>
+                                    <th class="rounded-lg-top-right border-0 letter-space">KAINA</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="price-table-category">
-                                    <th colspan="2" class="text-secondary">INTERNETINIŲ SVETAINIŲ KŪRIMAS</th>
+                                <tr>
+                                    <th colspan="2" class="letter-space text-secondary">INTERNETINIŲ SVETAINIŲ KŪRIMAS</th>
                                 </tr>
                                 <tr>
                                     <td>Įprasta svetainė</td>
@@ -499,8 +370,8 @@
                                     <td>Turinio valdymo sistemos įdiegimas</td>
                                     <td>nuo 200 €</td>
                                 </tr>
-                                <tr class="price-table-category">
-                                    <th colspan="2"class="text-secondary">Integracijos</th>
+                                <tr>
+                                    <th colspan="2"class="letter-space text-secondary">INTEGRACIJOS</th>
                                 </tr>
                                 <tr>
                                     <td>Elektroninės klientų formos</td>
@@ -530,8 +401,8 @@
                                     <td>SSL sertifikatas</td>
                                     <td>5 €</td>
                                 </tr>
-                                <tr class="price-table-category">
-                                    <th colspan="2"class="text-secondary">PAPILDOMOS PASLAUGOS</th>
+                                <tr>
+                                    <th colspan="2"class="letter-space text-secondary">PAPILDOMOS PASLAUGOS</th>
                                 </tr>
                                 <tr>
                                     <td>Domeno įregistravimas ir svetainės talpinimas</td>
@@ -541,8 +412,8 @@
                         </table>
                         <div class="d-none d-md-block side-leaf1"></div>
                         <div class="d-none d-md-block side-leaf2"></div>
-                        <h5 class="text-center text-secondary mt-4">JEIGU JUS DOMINANTI PASLAUGA NĖRA PAMINĖTA, LAUKSIME SUSISIEKIANT!</h5>
-                        <a href="kontaktai.html" class="btn-1 btn-1-secondary mx-auto border-0 mt-4">Susisiekti</a>
+                        <h5 class="text-center text-secondary w-75 mx-auto mt-4">Jeigu jūs dominanti paslauga nėra paminėta, lauksime Jūsų susisiekiant!</h5>
+                        <a href="kontaktai.html" class="btn btn-secondary rounded-pill text-uppercase shadow-sm mx-auto mt-4">Susisiekti</a>
                     </div>
                 </div>
             </div>
@@ -642,48 +513,38 @@
             </div>
         </section> -->
 
-        <section id="section-contacts" class="mt-5 d-flex flex-column justify-content-end">
+        <footer class="mt-5 d-flex flex-column justify-content-end">
             <div class="container">
-                <div class="row justify-content-center mt-4 align-items-stretch">
-                    <div class="col-md-4 text-center text-white border-right border-responsive-footer">
-                        <div class="h-100">
-                            <h5 class="text-secondary">Sužinok</h5>
-                            <hr class="hr-small mt-2 d-block d-md-none">
-                            <a href="apie-mus.html" class="d-block contacts-nav-item mt-4 mb-1">Apie mus</a>
-                            <a href="internetines-svetaines.html" class="d-block contacts-nav-item mb-1">Svetainių kūrimas</a>
-                            <a href="grafinis-dizainas.html" class="d-block contacts-nav-item mb-1">Grafinis dizainas</a>
-                            <a href="kontaktai.html" class="d-block contacts-nav-item">Kontaktai</a>
-                        </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-lg-3 d-flex flex-column">
+                        <img src="img/Logo/logo_white.png" class="w-75 mx-auto mx-md-0 px-5 pl-md-0 pr-md-4" alt="">
                     </div>
-                    <div class="col-md-4 text-center text-white border-right border-responsive-footer mt-4 mt-md-0">
-                        <div class="h-100">
-                            <h5 class="text-secondary">Susisiek</h5>
-                            <hr class="hr-small mt-2 d-block d-md-none">
-                            <h6 class="mt-4 mb-1">El. paštas:</h6>
-                            <a aria-label="Link" href="mailto:info@ficusmedia.lt" class="contacts-nav-item">info@ficusmedia.lt</a>
-                            <h6 class="mt-2 mb-1">Tel. nr.:</h6>
-                            <a aria-label="Link" href="tel:+37062114494" class="contacts-nav-item">+ 370 621 14494</a>
-                        </div>
+                    <div class="col-md-4 col-lg-3 text-center text-md-left text-white mt-5 mt-md-0">
+                        <h5 class="text-uppercase text-secondary mb-md-4">Sužinok</h5>
+                        <hr class="hr-small mt-2 mb-3 d-block d-md-none">
+                        <a href="apie-mus.html" class="d-block white-hover mb-1">Apie mus</a>
+                        <a href="internetines-svetaines.html" class="d-block white-hover mb-1">Internetinės svetainės</a>
+                        <a href="grafinis-dizainas.html" class="d-block white-hover mb-1">Grafinis dizainas</a>
+                        <a href="kontaktai.html" class="d-block white-hover">Kontaktai</a>
                     </div>
-                    <div class="col-md-4 text-center text-white mt-4 mt-md-0">
-                        <div class="h-100">
-                        <img src="img/Logo/logo_white.png" class="logo-footer" alt="">
-                            <div class="mt-4">
-                                <a href="https://www.facebook.com/ficusmedia" target="_blank">
-                                    <i class="fab fa-facebook-f fa-lg contacts-nav-item"></i>
-                                </a>
-                                <a href="https://www.instagram.com/ficusmedia/" target="_blank" class="ml-2">
-                                    <i class="fab fa-instagram fa-lg contacts-nav-item"></i>
-                                </a>
-                            </div>
+                    <div class="col-md-4 col-lg-3 text-center text-md-left text-white mt-4 mt-md-0">
+                        <h5 class="text-uppercase text-secondary mb-md-4">Susisiek</h5>
+                        <hr class="hr-small mt-2 mb-3 d-block d-md-none">
+                        <a aria-label="Link" href="mailto:info@ficusmedia.lt" class="d-block white-hover mb-1">info@ficusmedia.lt</a>
+                        <a aria-label="Link" href="tel:+37062114494" class="d-block white-hover mb-1">+ 370 621 14494</a>
+                        <div class="mt-2 ml-1">
+                            <a href="https://www.facebook.com/ficusmedia" target="_blank">
+                                <i class="fab fa-facebook-f white-hover"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ficusmedia/" target="_blank" class="ml-2">
+                                <i class="fab fa-instagram white-hover"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
+                <p class="text-center text-white mb-0 py-5"><span id="year"></span> © ficusmedia.lt 🌱</p>
             </div>
-            <footer class="d-flex justify-content-center align-items-center mt-3">
-                <p class="text-gradient mb-0">copyright © ficusmedia.lt <span id="year"></span></p>
-            </footer>
-        </section>
+        </footer>
 
 
         <div class="modal" id="modalLizdelis">
@@ -697,7 +558,7 @@
                                 <div class="col-md-8 mt-2">
                                     <img src="img/Svetaines_portfolio/Lizdelis/main.jpg" alt="" class="img-fluid">
                                 </div>
-                                <a href="https://www.lizdelis.lt/" target="_blank" class="uppercase text-center text-secondary mt-4 mb-0">eiti į www.lizdelis.lt <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
+                                <a href="https://www.lizdelis.lt/" target="_blank" class="text-uppercase letter-space text-center text-secondary mt-4 mb-0">eiti į www.lizdelis.lt <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
                                 <hr class="hr-small mt-4">
                             </div>
                             <div class="row justify-content-center mt-5 pt-4">
@@ -760,8 +621,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h3 id="logo-lizdelis" class="text-center text-secondary mt-5 pt-4">Logotipas</h3>
-                        <div class="row justify-content-center mt-5">
+                        <div id="logo-lizdelis" class="row justify-content-center mt-5 pt-md-5">
                             <div class="col-7 col-md-3 col-lg-2">
                                 <img src="img/Svetaines_portfolio/Lizdelis/logo.png" alt="" class="img-fluid">
                             </div>
@@ -769,8 +629,7 @@
                                 <img src="img/Svetaines_portfolio/Lizdelis/logo2.jpg" alt="" class="img-fluid">
                             </div>
                         </div>
-                        <h3 id="design-lizdelis" class="text-center text-secondary mt-5 pt-4">Svetainės vaizdas</h3>
-                        <div class="mt-5">
+                        <div id="design-lizdelis" class="mt-5 pt-md-5">
                             <div>
                                 <img src="img/Svetaines_portfolio/Lizdelis/1.jpg" alt="" class="w-100 shadow">
                             </div>
@@ -792,6 +651,78 @@
             </div>
         </div>
 
+        <div class="modal" id="modalAtelier">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body px-0 pb-0">
+                        <button class="close mr-4" data-dismiss="modal">&times;</button>
+                        <div class="container">
+                            <div class="row flex-column justify-content-center align-items-center mt-5">
+                                <img src="img/Svetaines_portfolio/Atelier/logo.jpg" alt="" height="120">
+                                <div class="col-md-8 mt-2">
+                                    <img src="img/Svetaines_portfolio/Atelier/main.png" alt="" class="img-fluid">
+                                </div>
+                                <a href="https://www.atelierdovilepavalkyte.lt/" target="_blank" class="text-uppercase letter-space text-center text-secondary mt-4 mb-0">eiti į www.atelierdovilepavalkyte.lt <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
+                                <hr class="hr-small mt-4">
+                            </div>
+                            <div class="row justify-content-center mt-5 pt-4">
+                                <div class="col-md-5">
+                                    <h3 class="text-secondary">Funkcijos:</h3>
+                                    <p><strong>Tipas:</strong><br>Reprezentacinė svetainė</p>
+                                    <p><strong>Puslapių skaičius:</strong><br>2</p>
+                                    <p><strong>Puslapio ypatumai:</strong><br>
+                                        Šiuolaikiškas dizainas<br>
+                                        Registracijos forma<br>
+                                        Pritaikymas mobiliesiems<br>
+                                        Vidinė SEO optimizacija
+                                    </p>
+                                </div>
+                                <div class="col-md-5 mt-5 mt-md-0">
+                                    <h3 class="text-secondary">Atlikti darbai:</h3>
+                                    <p class="mb-0 mt-3"><strong>Logotipas:</strong><br>Kliento</p>
+                                    <p class="mb-0 mt-3"><strong>Dizainas:</strong><br>Sukurtas Ficus Media komandos</p>
+                                    <a href="#design-atelier" class="text-secondary">PERŽIŪRĖTI</a>
+                                    <p class="mt-3"><strong>Programavimo darbai:</strong><br>Atlikta Ficus Media komandos</p>
+                                    <p class="mt-3"><strong>Hostingas ir domeno talpinimas:</strong><br>Atlikta Ficus Media komandos</p>
+                                    <h3 class="text-secondary mt-5">Naudoti įrankiai:</h3>
+                                    <div class="row align-items-start mt-4">
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/Tools/html5.jpg" alt="" height="50">
+                                            <small class="text-center mt-2">HTML 5</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/Tools/css.png" alt="" height="50">
+                                            <small class="text-center mt-2">CSS 3</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/Tools/sass.png" alt="" height="50">
+                                            <small class="text-center mt-2">SASS</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/Tools/bootstrap.png" alt="" height="50">
+                                            <small class="text-center mt-2">Bootstrap 4</small>
+                                        </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/Tools/js.png" alt="" height="50">
+                                            <small class="text-center mt-2">Java Script</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="design-atelier" class="mt-5 pt-md-5">
+                            <div>
+                                <img src="img/Svetaines_portfolio/Atelier/1.jpg" alt="" class="w-100 shadow">
+                            </div>
+                            <div class="mt-5 pt-4">
+                                <img src="img/Svetaines_portfolio/Atelier/2.jpg" alt="" class="w-100 shadow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="modal" id="modalPartyplay">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -803,7 +734,7 @@
                                 <div class="col-md-8 mt-2">
                                     <img src="img/Svetaines_portfolio/Party_Play/main.jpg" alt="" class="img-fluid">
                                 </div>
-                                <a href="https://www.partyplay.lt/" target="_blank" class="uppercase text-center text-secondary mt-4 mb-0">eiti į www.partyplay.lt <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
+                                <a href="https://www.partyplay.lt/" target="_blank" class="text-uppercase letter-space text-center text-secondary mt-4 mb-0">eiti į www.partyplay.lt <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
                                 <hr class="hr-small mt-4">
                             </div>
                             <div class="row justify-content-center mt-5 pt-4">
@@ -860,8 +791,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h3 id="design-partyplay" class="text-center text-secondary mt-5 pt-4">Svetainės vaizdas</h3>
-                        <div class="mt-5">
+                        <div id="design-partyplay" class="mt-5 pt-md-5">
                             <div>
                                 <img src="img/Svetaines_portfolio/Party_Play/1.jpg" alt="" class="w-100 shadow">
                             </div>
@@ -894,7 +824,7 @@
                                 <div class="col-md-8 mt-4">
                                     <img src="img/Svetaines_portfolio/Kitokios_geles/main.jpg" alt="" class="img-fluid">
                                 </div>
-                                <a href="https://www.kitokiosgeles.lt/" target="_blank" class="uppercase text-center text-secondary mt-5 mb-0">eiti į www.kitokiosgeles.lt <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
+                                <a href="https://www.kitokiosgeles.lt/" target="_blank" class="text-uppercase text-center text-secondary mt-5 mb-0">eiti į www.kitokiosgeles.lt <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
                                 <hr class="hr-small mt-4">
                             </div>
                             <div class="row justify-content-center mt-5 pt-4">
@@ -943,8 +873,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h3 id="design-kitokiosgeles" class="text-center text-secondary mt-5 pt-4">Svetainės vaizdas</h3>
-                        <div class="mt-5">
+                        <div id="design-kitokiosgeles" class="mt-5 pt-md-5">
                             <div>
                                 <img src="img/Svetaines_portfolio/Kitokios_geles/1.jpg" alt="" class="w-100 shadow">
                             </div>
@@ -986,7 +915,7 @@
                                 <div class="col-md-8 mt-2">
                                     <img src="img/Svetaines_portfolio/Anli_Design/main.jpg" alt="" class="img-fluid">
                                 </div>
-                                <a href="https://anli-design.ie/" target="_blank" class="uppercase text-center text-secondary mt-4 mb-0">eiti į www.anli-design.ie <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
+                                <a href="https://anli-design.ie/" target="_blank" class="text-uppercase letter-space text-center text-secondary mt-4 mb-0">eiti į www.anli-design.ie <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
                                 <hr class="hr-small mt-4">
                             </div>
                             <div class="row justify-content-center mt-5 pt-4">
@@ -1044,8 +973,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h3 id="design-anlidesign" class="text-center text-secondary mt-5 pt-4">Svetainės vaizdas</h3>
-                        <div class="mt-5">
+                        <div id="design-anlidesign" class="mt-5 pt-md-5">
                             <div>
                                 <img src="img/Svetaines_portfolio/Anli_Design/1.png" alt="" class="w-100 shadow">
                             </div>
@@ -1072,7 +1000,7 @@
                                 <div class="col-md-7 mt-2">
                                     <img src="img/Svetaines_portfolio/AsTuVisa/main.png" alt="" class="img-fluid">
                                 </div>
-                                <a href="https://www.astuvisa.lt/" target="_blank" class="uppercase text-center text-secondary mt-4 mb-0">eiti į www.astuvisa.ie <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
+                                <a href="https://www.astuvisa.lt/" target="_blank" class="text-uppercase letter-space text-center text-secondary mt-4 mb-0">eiti į www.astuvisa.ie <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
                                 <hr class="hr-small mt-4">
                             </div>
                             <div class="row justify-content-center mt-5 pt-4">
@@ -1140,8 +1068,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h3 id="design-astuvisa" class="text-center text-secondary mt-5 pt-4">Svetainės vaizdas</h3>
-                        <div class="mt-5">
+                        <div id="design-astuvisa" class="mt-5 pt-md-5">
                             <div>
                                 <img src="img/Svetaines_portfolio/AsTuVisa/1.png" alt="" class="w-100 shadow">
                             </div>
@@ -1177,7 +1104,7 @@
                                 <div class="col-md-8 mt-2">
                                     <img src="img/Svetaines_portfolio/Lizdelis/main.jpg" alt="" class="img-fluid">
                                 </div>
-                                <a href="https://www.lizdelis.lt/" target="_blank" class="uppercase text-center text-secondary mt-4 mb-0">eiti į www.lizdelis.lt <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
+                                <a href="https://www.lizdelis.lt/" target="_blank" class="text-uppercase letter-space text-center text-secondary mt-4 mb-0">eiti į www.lizdelis.lt <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
                                 <hr class="hr-small mt-4">
                             </div>
                             <div class="row justify-content-center mt-5 pt-4">
@@ -1249,8 +1176,7 @@
                                 <img src="img/Svetaines_portfolio/Lizdelis/logo2.jpg" alt="" class="img-fluid">
                             </div>
                         </div>
-                        <h3 id="design-lizdelis" class="text-center text-secondary mt-5 pt-4">Svetainės vaizdas</h3>
-                        <div class="mt-5">
+                        <div id="design-lizdelis" class="mt-5 pt-md-5">
                             <div>
                                 <img src="img/Svetaines_portfolio/Lizdelis/1.jpg" alt="" class="w-100 shadow">
                             </div>
@@ -1272,113 +1198,81 @@
             </div>
         </div>
 
-        <!-- <div class="modal" id="submitTable">
+        <div class="modal" id="modalDvaras">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-body">
+                    <div class="modal-body px-0 pb-0">
                         <button class="close mr-4" data-dismiss="modal">&times;</button>
                         <div class="container">
+                            <div class="row flex-column justify-content-center align-items-center mt-5">
+                                <img src="img/Svetaines_portfolio/Raudondvario_dvaras/logo.png" alt="" height="120">
+                                <div class="col-md-8 mt-2">
+                                    <img src="img/Svetaines_portfolio/Raudondvario_dvaras/main.png" alt="" class="img-fluid">
+                                </div>
+                                <a href="https://www.raudondvariodvaromene.lt/" target="_blank" class="text-uppercase letter-space text-center text-secondary mt-4 mb-0">eiti į www.raudondvariodvaromene.lt <span style="vertical-align: middle;"><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
+                                <hr class="hr-small mt-4">
+                            </div>
                             <div class="row justify-content-center mt-5 pt-4">
-                                <div class="col-12 col-md-10">
-                                    <h2 class="text-black text-center">internetinės svetainės užsakymas</h2>
-                                    <table class="table table-hover shadow mt-5 pt-4">
-                                        <thead>
-                                            <tr>
-                                                <th class="align-middle">PASLAUGA</th>
-                                                <th class="align-middle">KIEKIS</th>
-                                                <th class="align-middle">KAINA</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th colspan="3" class="text-secondary">PUSLAPIŲ SKAIČIUS</th>
-                                            </tr>
-                                            <tr>
-                                                <td>Puslapių skaičius</td>
-                                                <td>0</td>
-                                                <td>0 €</td>
-                                            </tr>
-                                            <tr>
-                                                <th colspan="3" class="text-secondary">DIZAINAS</th>
-                                            </tr>
-                                            <tr>
-                                                <td>Šabloninis</td>
-                                                <td>0</td>
-                                                <td>0 €</td>
-                                            </tr>
-                                            <tr>
-                                                <th colspan="3" class="text-secondary">TURINIO REDAGAVIMAS</th>
-                                            </tr>
-                                            <tr>
-                                                <td>Statinis</td>
-                                                <td>0</td>
-                                                <td>0 €</td>
-                                            </tr>
-                                            <tr>
-                                                <th colspan="3" class="text-secondary">PRIEDAI</th>
-                                            </tr>
-                                            <tr>
-                                                <td>Logotipas</td>
-                                                <td>0</td>
-                                                <td>0 €</td>
-                                            </tr>
-                                            <tr>
-                                                <th colspan="2" class="bg-light">IŠ VISO*:</th>
-                                                <td class="bg-light">0 €</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <p>* kaina preliminari ir gali keistis priklausomai nuo kitų norimų funkcijų</p>
-                                    <form id="webForm" class="mt-5 pt-4" data-netlify="true" method="POST" name="WEB UŽSAKYMAS" action="./success-message.html" novalidate>
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Jūsų vardas ir pavardė / Įmonės pavadinimas:</label>
-                                            <div class="col">
-                                                <input type="text" class="form-control" placeholder="Vardas, pavardė / Pavadinimas" name="Vardas">
-                                            </div>
+                                <div class="col-md-5">
+                                    <h3 class="text-secondary">Funkcijos:</h3>
+                                    <p><strong>Tipas:</strong><br>Reprezentacinė svetainė</p>
+                                    <p><strong>Puslapių skaičius:</strong><br>6</p>
+                                    <p><strong>Integracijos:</strong><br>
+                                        „Facebook“ naujienų langas<br>
+                                        Interaktyvus žemėlapis
+                                    </p>
+                                    <p><strong>Kiti ypatumai:</strong><br>
+                                        Temą atspindintis dizainas<br>
+                                        Pritaikymas mobiliesiems<br>
+                                        Vidinė SEO optimizacija
+                                    </p>
+                                </div>
+                                <div class="col-md-5 mt-5 mt-md-0">
+                                    <h3 class="text-secondary">Atlikti darbai:</h3>
+                                    <p class="mb-0 mt-3"><strong>Logotipas:</strong><br>Kliento</p>
+                                    <p class="mb-0 mt-3"><strong>Dizainas:</strong><br>Sukurtas Ficus Media komandos</p>
+                                    <a href="#design-dvaras" class="text-secondary">PERŽIŪRĖTI</a>
+                                    <p class="mt-3"><strong>Programavimo darbai:</strong><br>Atlikta Ficus Media komandos</p>
+                                    <p class="mt-3"><strong>Hostingas ir domeno talpinimas:</strong><br>Atlikta Ficus Media komandos</p>
+                                    <h3 class="text-secondary mt-5">Naudoti įrankiai:</h3>
+                                    <div class="row align-items-start mt-4">
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/Tools/html5.jpg" alt="" height="50">
+                                            <small class="text-center mt-2">HTML 5</small>
                                         </div>
-                                        <div class="form-group row">
-                                            <label for="inputEmail2" class="col-sm-3 col-form-label">El. paštas:</label>
-                                            <div class="col">
-                                                <input type="email" name="El. paštas" class="form-control" id="inputEmail2" placeholder="El. paštas">
-                                            </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/Tools/css.png" alt="" height="50">
+                                            <small class="text-center mt-2">CSS 3</small>
                                         </div>
-                                        <div class="form-group row">
-                                            <label for="inputPhoneNumber2" class="col-sm-3 col-form-label">Tel. numeris:</label>
-                                            <div class="col">
-                                                <input type="tel" name="Telefono nr." class="form-control" id="inputPhoneNumber2" placeholder="Tel. nr.">
-                                            </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/Tools/sass.png" alt="" height="50">
+                                            <small class="text-center mt-2">SASS</small>
                                         </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Bus reikalingos svetainės administravimo paslaugos (kaina 15 € metams)</label>
-                                            <div class="col custom-control custom-checkbox ml-3 mt-3">
-                                                <input type="checkbox" id="customRadio1" name="customRadio" class="custom-control-input ml-3 mt-3">
-                                                <label class="custom-control-label" for="customRadio1">Taip</label>
-                                            </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/Tools/bootstrap.png" alt="" height="50">
+                                            <small class="text-center mt-2">Bootstrap 4</small>
                                         </div>
-                                        <div class="form-group row">
-                                            <label for="inputComments" class="col-sm-3 col-form-label">Komentarai:</label>
-                                            <div class="col">
-                                                <textarea class="form-control" name="Komentarai" id="inputComments" rows="2"></textarea>
-                                            </div>
+                                        <div class="col-2 mx-2 px-1 d-flex flex-column justify-content-center align-items-center">
+                                            <img src="img/Tools/js.png" alt="" height="50">
+                                            <small class="text-center mt-2">Java Script</small>
                                         </div>
-                                        <div class="d-flex my-4">
-                                            <button type="submit" class="btn-1 btn-1-secondary mx-auto border-0">Užsakyti</button>
-                                        </div>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div id="design-dvaras" class="mt-5 pt-md-5">
+                            <img src="img/Svetaines_portfolio/Raudondvario_dvaras/1.jpg" alt="" class="w-100 shadow">
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
 
         <script src="https://kit.fontawesome.com/e3336da53c.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/animate.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

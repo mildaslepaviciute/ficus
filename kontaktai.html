@@ -21,10 +21,11 @@
         <!-- links and scripts -->
         <link rel="image_src" href="img/logo_cover.png">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;900&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         
         <!-- title -->
@@ -47,90 +48,75 @@
             <div class="spinner">
                 <div class="double-bounce1"></div>
                 <div class="double-bounce2"></div>
-              </div>
+            </div>
         </div>
 
         <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v8.0'
-          });
-        };
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v8.0'
+            });
+            };
 
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
-      <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution=setup_tool
-        page_id="102749038208950"
-        theme_color="#031A70"
-        logged_in_greeting="Sveiki! Kuo galime Jums padėti?"
-        logged_out_greeting="Sveiki! Kuo galime Jums padėti?">
-      </div>
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat"
+            attribution=setup_tool
+            page_id="102749038208950"
+            theme_color="#031A70"
+            logged_in_greeting="Sveiki! Kuo galime Jums padėti?"
+            logged_out_greeting="Sveiki! Kuo galime Jums padėti?">
+        </div>
 
-        <nav class="navbar navbar-expand-md stroke w-100 pt-2" id="main-nav">
-            <a aria-label="Link" href="index.html" class="navbar-brand mt-1 mt-md-4">
-                <img src="img/Logo/logo_blue.png" class="logo-main d-block d-md-none ml-3 ml-md-5" alt="">
-                <img src="img/Logo/logo_white.png" class="logo-main d-none d-md-block ml-3 ml-md-5" alt="">            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <ion-icon name="menu-outline" class="text-secondary"></ion-icon>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto mr-md-3 mr-lg-5">
-                    <li class="nav-item ml-3 ml-md-2 ml-lg-4">
-                        <a aria-label="Link" href="index.html" class="nav-link">Pradžia</a>
-                    </li>
-                    <li class="nav-item ml-3 ml-md-2 ml-lg-4">
-                        <a aria-label="Link" href="apie-mus.html" class="nav-link">Apie mus</a>
-                    </li>
-                    <li class="nav-item dropdown ml-3 ml-md-2 ml-lg-4">
-                        <a class="nav-link" href="#" id="dropdown01" aria-haspopup="true" aria-expanded="false" data-toggle="collapse" data-target="#dropdown-menu01">Paslaugos <span><ion-icon name="chevron-down-outline"></ion-icon></span></a>
-                        <div>
-                            <div id="dropdown-menu01" class="dropdown-menu collapse" aria-labelledby="dropdown01" data-parent="#main-nav">
-                                <a class="dropdown-item px-md-0" href="internetines-svetaines.html">- Internetinės svetainės</a>
-                                <a class="dropdown-item px-md-0 mt-2" href="grafinis-dizainas.html">- Grafinis dizainas</a>
+        <nav class="navbar navbar-expand-md position-md-absolute w-100 z-2" id="main-nav">
+            <div class="d-flex align-items-start w-100 px-md-5">
+                <a href="index.html" class="navbar-brand mt-md-3">
+                    <img src="img/Logo/logo_blue.png" alt="" class="d-md-none">
+                    <img src="img/Logo/logo_white.png" alt="" class="d-none d-md-block">
+                </a>
+                <button class="navbar-toggler border-0 mt-2 pt-2" data-toggle="collapse" data-target="#navbarNav">
+                    <i class="fas fa-bars text-dark"></i>
+                </button>
+                <div class="collapse navbar-collapse mt-md-4" id="navbarNav">
+                    <hr class="d-md-none">
+                    <ul class="navbar-nav ml-auto mt-md-3 mt-lg-0">
+                        <li class="nav-item ml-lg-3">
+                            <a href="index.html" class="nav-link text-uppercase">Pradžia</a>
+                        </li>
+                        <li class="nav-item ml-lg-3">
+                            <a href="apie-mus.html" class="nav-link text-uppercase">Apie mus</a>
+                        </li>
+                        <li class="nav-item ml-lg-3">
+                            <a href="#" class="nav-link text-uppercase d-flex align-items-center" data-target="#dropdown-services" data-toggle="collapse">Paslaugos<span><ion-icon name="chevron-down-outline" class="pt-1 ml-2"></ion-icon></span></a>
+                            <div id="dropdown-services" class="collapse nav-dropdown position-md-absolute">
+                                <a href="internetines-svetaines.html" class="nav-link">Internetinės svetainės</a>
+                                <a href="grafinis-dizainas.html" class="nav-link">Grafinis dizainas</a>
                             </div>
-                        </div>
-                    </li>
-                    <li class="nav-item ml-3 ml-md-2 ml-lg-4">
-                        <a aria-label="Link" href="kontaktai.html" class="nav-link">Kontaktai</a>
-                    </li>
-                </ul>
+                        </li>
+                        <li class="nav-item ml-lg-3">
+                            <a href="kontaktai.html" class="nav-link text-uppercase">Kontaktai</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
-        <!-- <header id="header-main">
-            <video autoplay loop muted class="header-main-video">
-               <source src="Comp_1.mp4">
-            </video>
-        </header> -->
-
-        <header id="header-main" class="d-none d-sm-block">
-            <div class="header-overlay">
-                <div class="row">
-                    <!-- <div class="col-5 ml-5 pl-3 mt-5 pt-5">
-                        <h1>Internetinių svetainių kūrimas</h1>
-                        <h5>Internetinių svetainių kūrimo ir grafinio dizaino darbai</h5>
-                    </div> -->
-                </div>
-            </div>
-            <img src="img/Backgrounds/hero_contacts.png" alt="" class="header-image">
+        <header id="header-main">
+            <img src="img/Backgrounds/hero_contacts_mobile.png" alt="" class="header-background d-block d-sm-none">
+            <img src="img/Backgrounds/hero_contacts.png" alt="" class="header-background d-none d-sm-block">
         </header>
 
-        <header id="header-main-mobile" class="d-block d-sm-none">
-            <img src="img/Backgrounds/hero_contacts_mobile.png" alt="" class="header-image">
-        </header>
-
-        <section id="section-contacts-main">
+        <section>
             <div class="container">
                 <h2 class="text-center mt-5 mt-md-0">Mūsų kontaktai</h2>
                 <div class="row justify-content-center align-items-stretch mt-5">
@@ -138,7 +124,7 @@
                         <div class="h-100 position-relative d-flex align-items-center justify-content-center">
                             <img src="img/Graphical_elements/square_1.png" alt="" class="img-fluid">
                             <div class="card-text card-text-margin position-absolute p-5">
-                                <i class="fas fa-mobile-alt fa-lg"></i>
+                                <i class="fas fa-mobile-alt fa-lg text-secondary"></i>
                                 <h6 class="text-secondary mb-4 mt-2">Tel. nr.</h6>
                                 <p>+ 3706 211 4494</p>
                             </div>
@@ -148,7 +134,7 @@
                         <div class="h-100 position-relative d-flex align-items-center justify-content-center">
                             <img src="img/Graphical_elements/square_2.png" alt="" class="img-fluid">
                             <div class="card-text card-text-margin position-absolute p-5">
-                                <i class="far fa-envelope fa-lg"></i>
+                                <i class="far fa-envelope fa-lg text-secondary"></i>
                                 <h6 class="text-secondary mb-4 mt-2">El. paštas</h6>
                                 <p>info@<wbr>ficusmedia.lt</p>
                             </div>
@@ -159,7 +145,7 @@
                         <div class="h-100 position-relative d-flex align-items-center justify-content-center">
                             <img src="img/Graphical_elements/square_3.png" alt="" class="img-fluid">
                             <div class="card-text card-text-margin position-absolute p-5">
-                                <i class="fab fa-facebook-f fa-lg"></i>
+                                <i class="fab fa-facebook-f fa-lg text-secondary"></i>
                                 <h6 class="text-secondary mb-4 mt-2">Facebook</h6>
                                 <p>/ficusmedia</p>
                             </div>
@@ -169,7 +155,7 @@
                         <div class="h-100 position-relative d-flex align-items-center justify-content-center">
                             <img src="img/Graphical_elements/square_4.png" alt="" class="img-fluid">
                             <div class="card-text card-text-margin position-absolute p-5">
-                                <i class="fab fa-instagram fa-lg"></i>
+                                <i class="fab fa-instagram fa-lg text-secondary"></i>
                                 <h6 class="text-secondary mb-4 mt-2">Instagram</h6>
                                 <p>@ficusmedia</p>
                             </div>
@@ -179,49 +165,32 @@
             </div>
         </section>
 
-        <section id="email-us" class="mt-5 pt-0 pt-md-5">
-            <div class="container mt-4">
+        <section id="email-us" class="mt-5 pt-4">
+            <div class="container mt-md-5">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-12 col-md-10 col-lg-4 mb-3 mb-lg-0">
                         <h2 class="text-center text-lg-left mb-4 mb-lg-3">Turite klausimų?<br>Rašykite mums</h2>
                     </div>
-                    <div class="col-11 col-sm-9 col-md-7 col-lg-6 offset-lg-1 position-relative">
-                        <form id="emailForm" data-netlify="true" method="POST" name="PRANEŠIMAI" action="./success-message.html" class="bg-white shadow rounded p-3 p-sm-4 p-md-5 mb-4" novalidate>
-                            <div class="form-group row">
-                                <label class="col-md-3 col-form-label">Jūsų vardas:</label>
-                                <div class="col">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <input type="text" class="form-control" placeholder="Vardas" name="Vardas">
-                                        </div>
-                                        <div class="col-md-6 mt-3 mt-md-0">
-                                            <input type="text" class="form-control" placeholder="Pavardė" name="Pavardė">
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-11 col-sm-9 col-md-7 col-lg-5 offset-lg-2 position-relative">
+                        <form id="emailForm" data-netlify="true" method="POST" name="PRANEŠIMAI" action="success-message.html" class="bg-white shadow rounded-lg p-3 p-sm-4 p-md-5 mb-4" novalidate>
+                            <div class="form-group">
+                                <label for="inputName" class="form-label">Jūsų vardas:</label>
+                                <input type="text" name="Vardas, pavardė" class="form-control" id="inputName" placeholder="Vardas, pavardė">
                             </div>
-                            <div class="form-group row">
-                                <label for="inputEmail1" class="col-md-3 col-form-label">Jūsų el. paštas:</label>
-                                <div class="col">
-                                    <input type="email" name="El. paštas" class="form-control" id="inputEmail1" placeholder="El. paštas">
-                                </div>
+                            <div class="form-group">
+                                <label for="inputEmail" class="form-label">Jūsų el. paštas:</label>
+                                <input type="email" name="El. paštas" class="form-control" id="inputEmail" placeholder="El. paštas">
                             </div>
-                            <div class="form-group row">
-                                <label for="inputPhoneNumber1" class="col-md-3 col-form-label">Jūsų numeris:</label>
-                                <div class="col">
-                                    <input type="tel" name="Tel. nr." class="form-control" id="inputPhoneNumber1" placeholder="Tel. nr.">
-                                </div>
+                            <div class="form-group">
+                                <label for="inputPhoneNumber" class="form-label">Jūsų numeris:</label>
+                                <input type="tel" name="Tel. nr." class="form-control" id="inputPhoneNumber" placeholder="Tel. nr.">
                             </div>
-                            <div class="form-group row">
-                                <label for="inputMessage" class="col-md-3 col-form-label">Žinutė:</label>
-                                <div class="col">
-                                    <textarea class="form-control" name="Žinutė" id="inputMessage" rows="2"></textarea>
-                                </div>
+                            <div class="form-group">
+                                <label for="inputMessage" class="form-label">Žinutė:</label>
+                                <textarea class="form-control" name="Žinutė" id="inputMessage" rows="1"></textarea>
                             </div>
-                            <div class="form-group row mb-0">
-                                <div class="col-md-9 offset-md-3 d-flex">
-                                    <button type="submit" class="btn-1 btn-1-secondary mx-auto border-0">Siųsti</button>
-                                </div>
+                            <div class="form-group d-flex">
+                                <button type="submit" class="btn btn-secondary rounded-pill text-uppercase shadow-sm mx-auto mt-2">Siųsti</button>
                             </div>
                         </form>
                         <div class="d-block d-md-none row justify-content-center">
@@ -237,55 +206,44 @@
             </div>
         </section>
 
-        <section id="section-contacts" class="mt-5 d-flex flex-column justify-content-end">
+        <footer class="mt-5 d-flex flex-column justify-content-end">
             <div class="container">
-                <div class="row justify-content-center mt-4 align-items-stretch">
-                    <div class="col-md-4 text-center text-white border-right border-responsive-footer">
-                        <div class="h-100">
-                            <h5 class="text-secondary">Sužinok</h5>
-                            <hr class="hr-small mt-2 d-block d-md-none">
-                            <a href="apie-mus.html" class="d-block contacts-nav-item mt-4 mb-1">Apie mus</a>
-                            <a href="internetines-svetaines.html" class="d-block contacts-nav-item mb-1">Internetinės svetainės</a>
-                            <a href="grafinis-dizainas.html" class="d-block contacts-nav-item mb-1">Grafinis dizainas</a>
-                            <a href="kontaktai.html" class="d-block contacts-nav-item">Kontaktai</a>
-                        </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-lg-3 d-flex flex-column">
+                        <img src="img/Logo/logo_white.png" class="w-75 mx-auto mx-md-0 px-5 pl-md-0 pr-md-4" alt="">
                     </div>
-                    <div class="col-md-4 text-center text-white border-right border-responsive-footer mt-4 mt-md-0">
-                        <div class="h-100">
-                            <h5 class="text-secondary">Susisiek</h5>
-                            <hr class="hr-small mt-2 d-block d-md-none">
-                            <h6 class="mt-4 mb-1">El. paštas:</h6>
-                            <a aria-label="Link" href="mailto:info@ficusmedia.lt" class="contacts-nav-item">info@ficusmedia.lt</a>
-                            <h6 class="mt-2 mb-1">Tel. nr.:</h6>
-                            <a aria-label="Link" href="tel:+37062114494" class="contacts-nav-item">+ 370 621 14494</a>
-                        </div>
+                    <div class="col-md-4 col-lg-3 text-center text-md-left text-white mt-5 mt-md-0">
+                        <h5 class="text-uppercase text-secondary mb-md-4">Sužinok</h5>
+                        <hr class="hr-small mt-2 mb-3 d-block d-md-none">
+                        <a href="apie-mus.html" class="d-block white-hover mb-1">Apie mus</a>
+                        <a href="internetines-svetaines.html" class="d-block white-hover mb-1">Internetinės svetainės</a>
+                        <a href="grafinis-dizainas.html" class="d-block white-hover mb-1">Grafinis dizainas</a>
+                        <a href="kontaktai.html" class="d-block white-hover">Kontaktai</a>
                     </div>
-                    <div class="col-md-4 text-center text-white mt-4 mt-md-0">
-                        <div class="h-100">
-                        <img src="img/Logo/logo_white.png" class="logo-footer" alt="">
-                            <div class="mt-4">
-                                <a href="https://www.facebook.com/ficusmedia" target="_blank">
-                                    <i class="fab fa-facebook-f fa-lg contacts-nav-item"></i>
-                                </a>
-                                <a href="https://www.instagram.com/ficusmedia/" target="_blank" class="ml-2">
-                                    <i class="fab fa-instagram fa-lg contacts-nav-item"></i>
-                                </a>
-                            </div>
+                    <div class="col-md-4 col-lg-3 text-center text-md-left text-white mt-4 mt-md-0">
+                        <h5 class="text-uppercase text-secondary mb-md-4">Susisiek</h5>
+                        <hr class="hr-small mt-2 mb-3 d-block d-md-none">
+                        <a aria-label="Link" href="mailto:info@ficusmedia.lt" class="d-block white-hover mb-1">info@ficusmedia.lt</a>
+                        <a aria-label="Link" href="tel:+37062114494" class="d-block white-hover mb-1">+ 370 621 14494</a>
+                        <div class="mt-2 ml-1">
+                            <a href="https://www.facebook.com/ficusmedia" target="_blank">
+                                <i class="fab fa-facebook-f white-hover"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ficusmedia/" target="_blank" class="ml-2">
+                                <i class="fab fa-instagram white-hover"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
+                <p class="text-center text-white mb-0 py-5"><span id="year"></span> © ficusmedia.lt 🌱</p>
             </div>
-            <footer class="d-flex justify-content-center align-items-center mt-3">
-                <p class="text-gradient mb-0">copyright © ficusmedia.lt <span id="year"></span></p>
-            </footer>
-        </section>
+        </footer>
 
 
         <script src="https://kit.fontawesome.com/e3336da53c.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/animate.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
