@@ -230,6 +230,11 @@ NAVBAR
   width: 60px;
 }
 
+.navbar > .container {
+  max-width: 97% !important;
+  min-width: 97% !important;
+}
+
 
 /* -----------------------------------
 
@@ -598,6 +603,10 @@ QUERIES
 
   .position-md-absolute {
     position: absolute;
+  }
+
+  .navbar > .container {
+    width: 100% !important;
   }
 
   // .text-positioning-title {
