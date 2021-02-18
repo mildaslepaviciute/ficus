@@ -601,6 +601,10 @@ QUERIES
     transition-duration: .3s;
   }
 
+  .collapse .nav-link {
+    padding-bottom: 0px;
+  }
+
   .position-md-absolute {
     position: absolute;
   }
