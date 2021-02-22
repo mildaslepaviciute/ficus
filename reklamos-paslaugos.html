@@ -52,8 +52,7 @@
         <nav class="navbar navbar-expand-md position-md-absolute w-100 z-2" id="main-nav">
             <div class="container d-flex align-items-start px-md-5">
                 <a href="index.html" class="navbar-brand mt-md-3">
-                    <img src="img/Logo/logo_blue.png" alt="" class="d-md-none">
-                    <img src="img/Logo/logo_white.png" alt="" class="d-none d-md-block">
+                    <img src="img/Logo/logo_blue.png" alt="">
                 </a>
                 <button class="navbar-toggler border-0 mt-2 pt-2" data-toggle="collapse" data-target="#navbarNav">
                     <i class="fas fa-bars text-dark"></i>
@@ -83,15 +82,22 @@
             </div>
         </nav>
 
-        <header id="header-main">
-            <img src="img/Backgrounds/hero_about_mobile.png" alt="" class="header-background d-block d-sm-none">
-            <img src="img/Backgrounds/hero_about.png" alt="" class="header-background d-none d-sm-block">
+        <header id="header-main" class="position-relative z-1">
+            <div class="header-overlay position-absolute h-100 w-100 row align-items-sm-center z-2">
+                <div class="col-sm-6 col-md-5 offset-sm-1 pr-lg-5 pb-4">
+                    <h1 class="d-sm-none text-white mt-4 ml-4">Reklamos paslaugos</h1>
+                    <p class="d-sm-none text-white w-75 pr-4 mt-3 ml-4">Mes pasiūlysime jums unikalų sprendimą</p>
+                    <h1 class="d-none d-sm-block">Reklamos paslaugos</h1>
+                    <p class="d-none d-sm-block text-body mt-3">Mes pasiūlysime jums unikalų sprendimą</p>
+                </div>
+            </div>
+            <img src="img/Backgrounds/hero_design_mobile.png" alt="" class="header-background d-sm-none">
+            <img src="img/Backgrounds/hero_ads.png" alt="" class="header-background d-none d-sm-block">
         </header>
 
         <section>
             <div class="container">
-                <h2 class="text-center mt-5 mt-md-0">Reklamos paslaugos</h2>
-                <div class="row mt-5 pt-0 pt-md-5 js--wp-1">
+                <div class="row js--wp-1">
                     <div class="col-md-3">
                         <h3>Ką mes siūlome?</h3>
                     </div>
