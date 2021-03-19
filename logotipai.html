@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178889875-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-178889875-1');
+        </script>
+
+        <!-- meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Grafinio dizaino kūrimo paslaugos. Mes pasiūlysime jums unikalų sprendimą. Mūsų misija - originalumas">
+
+        <!-- links and scripts -->
+        <link rel="image_src" href="img/logo_cover.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+        <!-- title -->
+        <title>Grafinis dizainas</title>
+
+        <!-- favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#ffc40d">
+        <meta name="theme-color" content="#ffffff">
+
+    </head>
+
+    <body>
+
+        <div class="spinner-wrapper">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-md position-md-absolute w-100 z-2" id="main-nav">
+            <div class="container d-flex align-items-start px-md-5">
+                <a href="index.html" class="navbar-brand mt-md-3">
+                    <img src="img/Logo/logo_blue.png" alt="">
+                </a>
+                <button class="navbar-toggler border-0 mt-2 pt-2" data-toggle="collapse" data-target="#navbarNav">
+                    <i class="fas fa-bars text-dark"></i>
+                </button>
+                <div class="collapse navbar-collapse mt-md-4" id="navbarNav">
+                    <hr class="d-md-none">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ml-lg-3">
+                            <a href="index.html" class="nav-link text-uppercase">Pradžia</a>
+                        </li>
+                        <li class="nav-item ml-lg-3">
+                            <a href="apie-mus.html" class="nav-link text-uppercase">Apie mus</a>
+                        </li>
+                        <li class="nav-item ml-lg-3">
+                            <a href="#" class="nav-link text-uppercase d-flex align-items-center" data-target="#dropdown-services" data-toggle="collapse">Paslaugos<span><ion-icon name="chevron-down-outline" class="pt-1 ml-2"></ion-icon></span></a>
+                            <div id="dropdown-services" class="collapse nav-dropdown position-md-absolute">
+                                <a href="internetines-svetaines.html" class="nav-link">Internetinės svetainės</a>
+                                <a href="grafinis-dizainas.html" class="nav-link">Grafinis dizainas</a>
+                                <a href="reklamos-paslaugos.html" class="nav-link">Reklamos paslaugos</a>
+                            </div>
+                        </li>
+                        <li class="nav-item ml-lg-3">
+                            <a href="kontaktai.html" class="nav-link text-uppercase">Kontaktai</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header id="header-main" class="position-relative z-1">
+            <div class="header-overlay position-absolute h-100 w-100 row align-items-sm-center z-2">
+                <div class="col-sm-6 col-md-5 offset-sm-1 pr-lg-5 pb-4">
+                    <h1 class="d-sm-none text-white mt-4 ml-4">Logotipai</h1>
+                    <p class="d-sm-none text-white w-75 pr-4 mt-3 ml-4">Mes pasiūlysime jums unikalų sprendimą. Mūsų misija - originalumas</p>
+                    <h1 class="d-none d-sm-block">Logotipai</h1>
+                    <p class="d-none d-sm-block text-body mt-3">Mes pasiūlysime jums unikalų sprendimą. Mūsų misija - originalumas</p>
+                </div>
+            </div>
+            <img src="img/Backgrounds/hero_design_mobile.png" alt="" class="header-background d-sm-none">
+            <img src="img/Backgrounds/hero_design.png" alt="" class="header-background d-none d-sm-block">
+        </header>
+
+        <section id="portfolio-design">
+            <div class="container">
+                <h2 class="text-center">Mūsų darbai</h2>
+                <div class="row mt-4 mt-md-5">
+                    <div class="col-md-6 my-3">
+                        <div data-toggle="modal" data-target="#modalBio1" class="position-relative pointer">
+                            <div class="hover-dark position-absolute h-100 w-100"></div>
+                            <img src="img/Grafinio_dizaino_portfolio/Logotipai/rope&roll.png" alt="" class="img-fluid rounded-lg shadow">
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div data-toggle="modal" data-target="#modalBiomapas1" class="position-relative pointer">
+                            <div class="hover-dark position-absolute h-100 w-100"></div>
+                            <img src="img/Grafinio_dizaino_portfolio/Logotipai/atlasacademy.png" alt="" class="img-fluid rounded-lg shadow">
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div data-toggle="modal" data-target="#modalBiomapas1" class="position-relative pointer">
+                            <div class="hover-dark position-absolute h-100 w-100"></div>
+                            <img src="img/Grafinio_dizaino_portfolio/Logotipai/ballaro.png" alt="" class="img-fluid rounded-lg shadow">
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div data-toggle="modal" data-target="#modalBio1" class="position-relative pointer">
+                            <div class="hover-dark position-absolute h-100 w-100"></div>
+                            <img src="img/Grafinio_dizaino_portfolio/Logotipai/saramedica.png" alt="" class="img-fluid rounded-lg shadow">
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div data-toggle="modal" data-target="#modalBio1" class="position-relative pointer">
+                            <div class="hover-dark position-absolute h-100 w-100"></div>
+                            <img src="img/Grafinio_dizaino_portfolio/Logotipai/kkl.png" alt="" class="img-fluid rounded-lg shadow">
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div data-toggle="modal" data-target="#modalBiomapas1" class="position-relative pointer">
+                            <div class="hover-dark position-absolute h-100 w-100"></div>
+                            <img src="img/Grafinio_dizaino_portfolio/Logotipai/lgra.png" alt="" class="img-fluid rounded-lg shadow">
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div data-toggle="modal" data-target="#modalBiomapas1" class="position-relative pointer">
+                            <div class="hover-dark position-absolute h-100 w-100"></div>
+                            <img src="img/Grafinio_dizaino_portfolio/Logotipai/butinosprekessportui.png" alt="" class="img-fluid rounded-lg shadow">
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div data-toggle="modal" data-target="#modalBiomapas1" class="position-relative pointer">
+                            <div class="hover-dark position-absolute h-100 w-100"></div>
+                            <img src="img/Grafinio_dizaino_portfolio/Logotipai/elever.png" alt="" class="img-fluid rounded-lg shadow">
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div data-toggle="modal" data-target="#modalBiomapas1" class="position-relative pointer">
+                            <div class="hover-dark position-absolute h-100 w-100"></div>
+                            <img src="img/Grafinio_dizaino_portfolio/Logotipai/ficusmedia.png" alt="" class="img-fluid rounded-lg shadow">
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div data-toggle="modal" data-target="#modalBiomapas1" class="position-relative pointer">
+                            <div class="hover-dark position-absolute h-100 w-100"></div>
+                            <img src="img/Grafinio_dizaino_portfolio/Logotipai/avantiura2.png" alt="" class="img-fluid rounded-lg shadow">
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div data-toggle="modal" data-target="#modalBiomapas1" class="position-relative pointer">
+                            <div class="hover-dark position-absolute h-100 w-100"></div>
+                            <img src="img/Grafinio_dizaino_portfolio/Logotipai/avantiura.png" alt="" class="img-fluid rounded-lg shadow">
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div data-toggle="modal" data-target="#modalBiomapas1" class="position-relative pointer">
+                            <div class="hover-dark position-absolute h-100 w-100"></div>
+                            <img src="img/Grafinio_dizaino_portfolio/Logotipai/dogsgoout.png" alt="" class="img-fluid rounded-lg shadow">
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div data-toggle="modal" data-target="#modalBiomapas1" class="position-relative pointer">
+                            <div class="hover-dark position-absolute h-100 w-100"></div>
+                            <img src="img/Grafinio_dizaino_portfolio/Logotipai/towardspanna.png" alt="" class="img-fluid rounded-lg shadow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-5 d-flex flex-column justify-content-end">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-lg-3 d-flex flex-column">
+                        <img src="img/Logo/logo_white.png" class="w-75 mx-auto mx-md-0 px-5 pl-md-0 pr-md-4" alt="">
+                    </div>
+                    <div class="col-md-4 col-lg-3 text-center text-md-left text-white mt-5 mt-md-0">
+                        <h5 class="text-uppercase text-secondary mb-md-4">Sužinok</h5>
+                        <hr class="hr-small mt-2 mb-3 d-block d-md-none">
+                        <a href="apie-mus.html" class="d-block white-hover mb-1">Apie mus</a>
+                        <a href="internetines-svetaines.html" class="d-block white-hover mb-1">Internetinės svetainės</a>
+                        <a href="grafinis-dizainas.html" class="d-block white-hover mb-1">Grafinis dizainas</a>
+                        <a href="kontaktai.html" class="d-block white-hover">Kontaktai</a>
+                    </div>
+                    <div class="col-md-4 col-lg-3 text-center text-md-left text-white mt-4 mt-md-0">
+                        <h5 class="text-uppercase text-secondary mb-md-4">Susisiek</h5>
+                        <hr class="hr-small mt-2 mb-3 d-block d-md-none">
+                        <a aria-label="Link" href="mailto:info@ficusmedia.lt" class="d-block white-hover mb-1">info@ficusmedia.lt</a>
+                        <a aria-label="Link" href="tel:+37062114494" class="d-block white-hover mb-1">+ 370 621 14494</a>
+                        <div class="mt-2 ml-1">
+                            <a href="https://www.facebook.com/ficusmedia" target="_blank">
+                                <i class="fab fa-facebook-f white-hover"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ficusmedia/" target="_blank" class="ml-2">
+                                <i class="fab fa-instagram white-hover"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center text-white mb-0 py-5"><span id="year"></span> © ficusmedia.lt 🌱</p>
+            </div>
+        </footer>
+
+
+        <div class="modal fade bd-example-modal-xl" id="modalBio1">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body px-0 pb-0">
+                        <button class="close mr-4" data-dismiss="modal">&times;</button>
+                        <div class="container">
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-12 col-md-11">
+                                    <h2 class="text-black">BIO1 REKLAMINĖ KAMPANIJA</h2>
+                                    <p><strong>Tipas:</strong><br>Socialinių tinklų turinio dizainas</p>
+                                    <p><strong>Klientas:</strong><br>UAB „BIO1“</p>
+                                    <p><strong>Pritaikymas:</strong><br>Facebook socialinėje platformoje</p>
+                                    <p><strong>Sukurtų vizualizacijų skaičius:</strong><br>6</p>
+                                    <p>Įmonei siekiant padidinti klinikinių tyrimų savanorių skaičių Lietuvoje, buvo orientuotasi į
+                                        naują reklamos kampaniją, kuri veiktų „Facebook“ socialiniame tinkle. Šiai kampanijai
+                                        įgyvendinti buvo kuriama vizualizacijų serija, kuri perteiktų tą pačią žinutę – prie vaistų išradimo
+                                        ir jų tobulinimo gali prisidėti ir asmuo į kurį orientuota reklaminė žinutė.
+                                        <br><br>
+                                        Visose vizualizacijose atsispindi ta pati stilistika, spalvinė gama orientuota į įmonės firminį stilių, UAB
+                                        „BIO1“ logotipą, bei perduodama ta pati pagrindinė mintis – „Išrasti
+                                        ką nors naujo neįmanoma? Netiesa.“ Šiuo šūkiu ir buvo bandoma informuoti potencialius
+                                        savanorius apie galimybę prisidėti prie vaistų tyrimų.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <img src="img/Grafinio_dizaino_portfolio/BIO1/1.png" alt="" class="w-100 mt-3">
+                            <img src="img/Grafinio_dizaino_portfolio/BIO1/2.png" alt="" class="w-100 mt-3">
+                            <img src="img/Grafinio_dizaino_portfolio/BIO1/3.jpg" alt="" class="w-100 mt-3">
+                            <img src="img/Grafinio_dizaino_portfolio/BIO1/4.jpg" alt="" class="w-100 mt-3">
+                            <img src="img/Grafinio_dizaino_portfolio/BIO1/5.png" alt="" class="w-100 mt-3">
+                            <img src="img/Grafinio_dizaino_portfolio/BIO1/6.png" alt="" class="w-100 mt-3">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bd-example-modal-xl" id="modalBiomapas1">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body px-0 pb-0">
+                        <button class="close mr-4" data-dismiss="modal">&times;</button>
+                        <div class="container">
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-12 col-md-11">
+                                    <h2 class="text-black">BIOMAPAS WEBINAR</h2>
+                                    <p class="mt-4"><strong>Tipas:</strong><br>Socialinių tinklų turinio dizainas</p>
+                                    <p><strong>Klientas:</strong><br>UAB „Biomapas“</p>
+                                    <p><strong>Pritaikymas:</strong><br>Linkedin socialinėje platformoje</p>
+                                    <p><strong>Sukurtų vizualizacijų skaičius:</strong><br>4</p>
+                                    <p><strong>Sukurtų animuotų reklaminių video:</strong><br>3</p>
+                                    <p>
+                                        Įmonė aktyviai save reprezentuoja ir vykdo efektyvų komunikacijos planą „Linkedin“ profesiniame socialiniame tinkle. Pastebėta, jog vaizdo įrašai yra labiau pritraukiantys dėmesį nei grafinė vizualizacija. Į tai atsižvelgus buvo kuriama vazdo įrašų serija, vaizduojanti įmonės plėtimąsi pasaulio šalyse, pasiekimus ir kitus aspektus. Buvo pasirinkta judesio grafika objektams animuoti.
+                                        <br><br>
+                                        Statinėse vizualizacijose yra išlaikomas įmonės firminis stilius, vientisumas bei minimalistinė stilistika.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">                                                               
+                            <img src="img/Grafinio_dizaino_portfolio/Biomapas/Project_1/1.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Biomapas/Project_1/2.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Biomapas/Project_1/3.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Biomapas/Project_1/4.png" alt="" class="w-100">
+                            <video controls autoplay muted class="w-100">
+                                <source src="img/Grafinio_dizaino_portfolio/Biomapas/Project_1/video_1.mp4">
+                            </video>                                
+                            <video controls loop muted class="w-100">
+                                <source src="img/Grafinio_dizaino_portfolio/Biomapas/Project_1/video_2.mp4">
+                            </video>                                
+                            <video controls loop muted class="w-100">
+                                <source src="img/Grafinio_dizaino_portfolio/Biomapas/Project_1/video_3.mp4">
+                            </video> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bd-example-modal-xl" id="modalBiomapas2">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body px-0 pb-0">
+                        <button class="close mr-4" data-dismiss="modal">&times;</button>
+                        <div class="container">
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-12 col-md-11">
+                                    <h2 class="text-black">BIOMAPAS ACADEMY</h2>
+                                    <p class="mt-4"><strong>Tipas:</strong><br>Socialinių tinklų turinio dizainas</p>
+                                    <p><strong>Klientas:</strong><br>Biomapas Academy, UAB „Biomapas“</p>
+                                    <p><strong>Pritaikymas:</strong><br>Facebook socialinėje platformoje</p>
+                                    <p><strong>Sukurtų vizualizacijų skaičius:</strong><br>3</p>
+                                    <p><strong>Sukurtų animuotų reklaminių video:</strong><br>1</p>
+                                    <p>
+                                        Sukurtos vizualizacijos skirtos „Biomapas Academy“ socialinio tinklo Facebook puslapio turiniui su tikslu pritraukti daugiau galimų studentų registruotis į Akademiją, organizuojama UAB „Biomapas“. Tai mokykla, skirta tiksliųjų ir gyvybės mokslų krypties žmonėms, kurie ieško karjeros pradžios ir profesionalios patirties šios mokslo srities verslo sektoriuje.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">                                                                
+                            <img src="img/Grafinio_dizaino_portfolio/Biomapas/Project_2/5.png" alt="" class="mt-3 w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Biomapas/Project_2/6.png" alt="" class="mt-3 w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Biomapas/Project_2/7.png" alt="" class="mt-3 w-100">
+                            <video controls autoplay muted class="w-100">
+                                <source src="img/Grafinio_dizaino_portfolio/Biomapas/Project_2/videoCOVER.mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bd-example-modal-xl" id="modalLGA">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body px-0 pb-0">
+                        <button class="close mr-4" data-dismiss="modal">&times;</button>
+                        <div class="container">
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-12 col-md-11">
+                                    <h2 class="text-black">LIETUVOS GEROS KLINIKINĖS IR REGULIAVIMO PRAKTIKOS ASOCIACIJA<br>LOGOTIPAS. STILIAUS KNYGA</h2>
+                                    <p class="mt-4"><strong>Tipas:</strong><br>Logotipo ir viztinės kortelės dizainas</p>
+                                    <p><strong>Klientas:</strong><br>Lietuvos Geros Klinikinės ir Reguliavimo Praktikos asociacija</p>
+                                    <p><strong>Pritaikymas:</strong><br>Įmonės reprezentacijai viešoje erdvėje</p>
+                                    <p>Tikslas yra pristatyti stiliaus formavimo taisykles, elementų naudojimo principus išlaikant prekės 
+                                        ženklo vientisumą. Reikalavimai logotipui:
+                                        minimalistinė stilistika;
+                                        elegantiškos griežtos formos;
+                                        spalva -mėlyna 
+                                        <br><br>
+                                        Parengtas pilnai įgyvendintas logotipas naudojamas skaitmeninėje erdvėje, spaudoje.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <img src="img/Grafinio_dizaino_portfolio/LGA/1.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/LGA/2.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/LGA/3.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/LGA/4.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/LGA/5.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/LGA/6.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/LGA/7.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/LGA/8.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bd-example-modal-xl" id="modalMinded">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body px-0 pb-0">
+                        <button class="close mr-4" data-dismiss="modal">&times;</button>
+                        <div class="container">
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-12 col-md-11">
+                                    <h2 class="text-black">VDU MINDED VERSLUMO AKADEMIJA</h2>
+                                    <p class="mt-4"><strong>Tipas:</strong><br>Socialinių tinklų turinio dizainas, komerciniai plakatai</p>
+                                    <p><strong>Klientas:</strong><br>VDU „Minded“</p>
+                                    <p><strong>Pritaikymas:</strong><br>Facebook socialinėje platformoje, spaudoje</p>
+                                    <p><strong>Sukurtų vizualizacijų skaičius:</strong><br>3</p>
+                                    <p>Sukurtų vizualizacijų tikslas - perteikti „open minded“ - atvira mąstysena ir naujomis patirtimis pasižyminčias 
+                                        gretutines „Verslumo akademijos“ studijas Vytauto Didžiojo universitete. Kaip ir studijos, 
+                                        taip ir plakatų dizainas visų pirma atspindi jauną žmogų, pilną idėjų ir iššūkių. 
+                                        Vizualizacijų dizaino stilistika ir spalvos orientuotos į „Minded“ firminį stilių.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <img src="img/Grafinio_dizaino_portfolio/Minded/2.png" alt="" class="mt-3 w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Minded/3.png" alt="" class="mt-3 w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Minded/1.png" alt="" class="mt-3 w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bd-example-modal-xl" id="modalVPC">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body px-0 pb-0">
+                        <button class="close mr-4" data-dismiss="modal">&times;</button>
+                        <div class="container">
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-12 col-md-11">
+                                    <h2 class="text-black">VDU VERSLO PRAKTIKŲ CENTRAS<br>POKALBIŲ CIKLAS BIZNIS IR BAPKĖS: KĄ NUTYLI SEKMĖS ISTORIJOS</h2>
+                                    <p class="mt-4"><strong>Tipas:</strong><br>Socialinių tinklų turinio dizainas</p>
+                                    <p><strong>Klientas:</strong><br>VDU Verslo praktikų centras</p>
+                                    <p><strong>Pritaikymas:</strong><br>Facebook socialinėje platformoje, spaudoje</p>
+                                    <p><strong>Sukurtų vizualizacijų skaičius:</strong><br>1</p>
+                                    <p>Vizualizacijos dizaino tikslas - perteikti pokalbių ciklo „Biznis ir bapkės - ką nutyli sekmės istorijos“ 
+                                        idėją ir šmaikštų bei nestandartinį požiūrį į žinomų verslų sėkmės istorijas. Vizualizacija sukurta 
+                                        atsižvelgiant į įmonės firminį stilių siekiant išlaikyti vientisumą.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <img src="img/Grafinio_dizaino_portfolio/VPC_Biznis_ir_bapkės/1.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bd-example-modal-xl" id="modalLizdelis">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body px-0 pb-0">
+                        <button class="close mr-4" data-dismiss="modal">&times;</button>
+                        <div class="container">
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-12 col-md-11">
+                                    <h2 class="text-black">KALBŲ IR KULTŪRŲ LIZDELIS<br>LOGOTIPAS</h2>
+                                    <p class="mt-4"><strong>Tipas:</strong><br>Logotipo dizainas</p>
+                                    <p><strong>Klientas:</strong><br>VšĮ „Kalbų ir kultūrų lizdelis“</p>
+                                    <p><strong>Pritaikymas:</strong><br>Įmonės reprezenatacijai viešojoje erdvėje</p>
+                                    <p>Logotipas skirtas VšĮ „Kalbų ir kultūrų lizdelis“, kurio pagrindinė veikla yra ugdyti ir lavinti vaikų užsienio kalbos įgūdžius. Iškelti pagrindiniai reiklavimai logotipui:<br>
+                                        vaizduojamas lizdo simbolis;<br>
+                                        mokinio-mokytojo simboliką atspindintys paukšteliai;<br>
+                                        žemaitijos tautodailės detalės;<br>
+                                        minimalistinis stilius;<br>
+                                        oranžinė, geltona, balta spalvos.
+                                    </p>
+                                    <p>Parengtas pilnai įgyvendintas logotipas naudojamas skaitmeninėje erdvėje, spaudoje.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <img src="img/Grafinio_dizaino_portfolio/KKL/1.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/KKL/2.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/KKL/3.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/KKL/4.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/KKL/5.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bd-example-modal-xl" id="modalVDU">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body px-0 pb-0">
+                        <button class="close mr-4" data-dismiss="modal">&times;</button>
+                        <div class="container">
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-12 col-md-11">
+                                    <h2 class="text-black">VDU EKONOMIKOS IR VADYBOS FAKULTETAS<br>ATRIBUTIKOS DIZAINAS</h2>
+                                    <p class="mt-4"><strong>Tipas:</strong><br>Atributikos dizainas</p>
+                                    <p><strong>Klientas:</strong><br>Vytauto Didžiojo universitetas, Ekonomikos ir vadybos fakultetas</p>
+                                    <p><strong>Pritaikymas:</strong><br>Spauda ant megztinių, medžiaginių maišelių, lipdukų</p>
+                                    <p>Parengtas pilnai įgyvendintas logotipas naudojamas skaitmeninėje erdvėje, spaudoje.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <img src="img/Grafinio_dizaino_portfolio/VDU/2.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md-6 pr-0 mt-3">
+                                <img src="img/Grafinio_dizaino_portfolio/VDU/1.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md-6 pl-0 mt-3">
+                                <img src="img/Grafinio_dizaino_portfolio/VDU/3.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-12 mt-3">
+                                <img src="img/Grafinio_dizaino_portfolio/VDU/4.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bd-example-modal-xl" id="modalSaramedica">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body px-0 pb-0">
+                        <button class="close mr-4" data-dismiss="modal">&times;</button>
+                        <div class="container">
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-12 col-md-11">
+                                    <h2 class="text-black">SARAMEDICA<br>LOGOTIPAS</h2>
+                                    <p class="mt-4"><strong>Tipas:</strong><br>Logotipo dizainas</p>
+                                    <p><strong>Klientas:</strong><br>MB „Saramedica“</p>
+                                    <p><strong>Pritaikymas:</strong><br>Įmonės reprezenatacijai viešojoje erdvėje</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <img src="img/Grafinio_dizaino_portfolio/Saramedica/1.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Saramedica/2.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Saramedica/3.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Saramedica/4.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Saramedica/5.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Saramedica/6.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Saramedica/7.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Saramedica/8.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Saramedica/9.png" alt="" class="w-100">
+                        </div>
+                        <video controls autoplay muted class="w-100">
+                            <source src="img/Grafinio_dizaino_portfolio/Saramedica/video_1.mp4">
+                        </video>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bd-example-modal-xl" id="modalBallaro">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body px-0 pb-0">
+                        <button class="close mr-4" data-dismiss="modal">&times;</button>
+                        <div class="container">
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-12 col-md-11">
+                                    <h2 class="text-black">BALLARÒ<br>LOGOTIPAS</h2>
+                                    <p class="mt-4"><strong>Tipas:</strong><br>Logotipo dizainas</p>
+                                    <p><strong>Klientas:</strong><br>„Ballarò“</p>
+                                    <p><strong>Pritaikymas:</strong><br>Įmonės reprezenatacijai viešojoje erdvėje</p>
+                                    <p>
+                                        Logotipas skirtas „Ballarò“ - itališko maisto restoranui.
+                                        <br><br>
+                                        Parengtas pilnai įgyvendintas logotipas naudojamas skaitmeninėje erdvėje, spaudoje.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <img src="img/Grafinio_dizaino_portfolio/Ballaro/1.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Ballaro/2.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Ballaro/3.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Ballaro/4.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bd-example-modal-xl" id="modalTowardsPanna">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body px-0 pb-0">
+                        <button class="close mr-4" data-dismiss="modal">&times;</button>
+                        <div class="container">
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-12 col-md-11">
+                                    <h2 class="text-black">TOWARDS PANNA<br>LOGOTIPAS</h2>
+                                    <p class="mt-4"><strong>Tipas:</strong><br>Logotipo dizainas</p>
+                                    <p><strong>Klientas:</strong><br>Towards Panna</p>
+                                    <p><strong>Pritaikymas:</strong><br>Įmonės reprezenatacijai viešojoje erdvėje</p>
+                                    <p>
+                                        Logotipas skirtas „Towards Panna“, kurio pagrindinė veikla yra prekyba meditacinėmis pagalvėlėmis.
+                                        <br><br>
+                                        Parengtas pilnai įgyvendintas logotipas naudojamas skaitmeninėje erdvėje, spaudoje.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <img src="img/Grafinio_dizaino_portfolio/Towards_Panna/1.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Towards_Panna/2.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Towards_Panna/3.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Towards_Panna/4.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Towards_Panna/5.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bd-example-modal-xl" id="modalPrekesSportui">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body px-0 pb-0">
+                        <button class="close mr-4" data-dismiss="modal">&times;</button>
+                        <div class="container">
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-12 col-md-11">
+                                    <h2 class="text-black">BŪTINOS PREKĖS SPORTUI<br>LOGOTIPAS</h2>
+                                    <p class="mt-4"><strong>Tipas:</strong><br>Logotipo dizainas</p>
+                                    <p><strong>Klientas:</strong><br>„Būtinos prekės sportui“</p>
+                                    <p><strong>Pritaikymas:</strong><br>Įmonės reprezenatacijai viešojoje erdvėje</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <img src="img/Grafinio_dizaino_portfolio/Prekės_sportui/1.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Prekės_sportui/2.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Prekės_sportui/3.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Prekės_sportui/4.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Prekės_sportui/5.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Prekės_sportui/6.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Prekės_sportui/7.png" alt="" class="w-100">
+                            <img src="img/Grafinio_dizaino_portfolio/Prekės_sportui/8.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://kit.fontawesome.com/e3336da53c.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/animate.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+        <script src="js/range.js"></script>
+
+    </body>
+</html>
